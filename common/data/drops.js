@@ -3334,6 +3334,38 @@ window.drops = {
             'Defeat Level Rewards': [ 4107 ],
         },
 
+        {
+            name: 'CP0',
+            dropID: 'pka10',
+            thumb: 4127,
+            global: true,
+            //nakama: 6395200,
+            gamewith: null,
+            'Defeat Level Rewards': [ 4127 ],
+            boosters: [
+                {"effect": "30% chance to add 1 additional item drop! Reduces Special charge time by 7 turns at start of quest!", "units": [2936, 2940, 2938, 2942, 2944, 2948, 2946, 2952, 2950, 3884, 4066, 4047, 4025, 3999, 3976, 3952, 3927, 3885, 3247, 3286, 3287, 3305, 3304, 3353, 3382, 3401, 3400, 3425, 4021, 3874, 3903, 3887, 3855, 3835, 3796, 3815, 3795, 3770, 3743, 3750, 3728, 3713, 3678, 3657, 3620, 3634, 3601, 3560, 3579, 3559, 3520, 3539, 3518, 3481, 3498, 3477, 3436]},
+                {"effect": "50% chance to add 1 additional item drop! Boosts stats by 1.2x, and, reduces Special charge time by 7 turns at start of quest!", "units": [4088, 3886, 4074, 4053, 4033]},
+                {"effect": "75% chance to add 1 additional item drop! Boosts stats by 1.2x, and reduces Special charge time by 10 turns at start of quest!", "units": [4119, 4107, 4100, 4102, 4103, 4104, 4105, 4106, 4098, 4089, 4082, 4084, 4087, 4086, 4085]},
+                {"effect": "Adds 1 additional item drop! Boosts stats by 1.2x, and reduces Special charge time by 10 turns at start of quest!", "units": [4120, 4118, 4108, 5571, 5572, 5573]},
+                {"effect": "Adds 2 additional item drops! Boosts stats by 1.2x, and reduces Special charge time by 15 turns at start of quest! Boosts stats by 1.3x during that map when landing on Bonus Hex!", "units": [4125, 4126]},
+                {"effect": "Adds 3 additional item drops! Boosts stats by 1.5x, and reduces Special charge time by 15 turns at start of quest! Further adds 1 additional item drop and boosts stats by 1.7x during that map when landing on Bonus Hex! ", "units": [4122, 4124, 5578, 5579, 5580, 5581, 5586, 5587, 5588, 5589]},
+            ],
+            /* gimmicks: {
+                "East Blue": [
+                    { "title": "Fight 1", "recUnits": [1], "gimmicks": "Fight 1 Gimmicks" },
+                    { "title": "Fight 2", "recUnits": [2], "gimmicks": "Fight 2 Gimmicks" }
+                ],
+                "Grand Line": [
+                    { "title": "Fight 1", "recUnits": [3], "gimmicks": "Fight 1 Gimmicks" },
+                    { "title": "Fight 2", "recUnits": [4], "gimmicks": "Fight 2 Gimmicks" }
+                ],
+                "New World": [
+                    { "title": "Fight 1", "recUnits": [5], "gimmicks": "Fight 1 Gimmicks" },
+                    { "title": "Fight 2", "recUnits": [6], "gimmicks": "Fight 2 Gimmicks" }
+                ],
+            } */
+        },
+
     ],
 
 
@@ -8798,6 +8830,13 @@ window.drops = {
             nakama: 6224400,
             gamewith: null,
             condition: "Challenge: Crew's Special gauge is maxed",
+        },
+
+        {
+            name: 'Exciting!! Future Island Exploration',
+            thumb: 4129,
+            global: true,
+            'Chopper Man Missions': [ 4129 ],
         },
    ],
 

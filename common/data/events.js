@@ -2629,4 +2629,116 @@ window.events = {
                 $scope.notify({ text: 'Disabling Class Override.' });
         }
     },
+    5574: {
+        onInsertion: function($scope) {
+            if (++$scope.options.gOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [G] orbs support.' });
+            if (++$scope.options.emptyOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [EMPTY] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.gOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [G] orbs support.' });
+            if (--$scope.options.emptyOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [EMPTY] orbs support.' });
+        }
+    },
+    5575: {
+        onInsertion: function($scope) {
+            if (++$scope.options.gOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [G] orbs support.' });
+            if (++$scope.options.emptyOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [EMPTY] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.gOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [G] orbs support.' });
+            if (--$scope.options.emptyOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [EMPTY] orbs support.' });
+        }
+    },
+    5576: {
+        onInsertion: function($scope) {
+            if (++$scope.options.gOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [G] orbs support.' });
+            if (++$scope.options.emptyOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [EMPTY] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.gOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [G] orbs support.' });
+            if (--$scope.options.emptyOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [EMPTY] orbs support.' });
+        }
+    },
+    5577: {
+        onInsertion: function($scope) {
+            if (++$scope.options.gOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [G] orbs support.' });
+            if (++$scope.options.emptyOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [EMPTY] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.gOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [G] orbs support.' });
+            if (--$scope.options.emptyOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [EMPTY] orbs support.' });
+        }
+    },
+    5578: {
+        onInsertion: function($scope) {
+            if (++$scope.options.gOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [G] orbs support.' });
+            if (++$scope.options.emptyOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [EMPTY] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.gOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [G] orbs support.' });
+            if (--$scope.options.emptyOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [EMPTY] orbs support.' });
+        }
+    },
+    5579: {
+        onInsertion: function($scope) {
+            if (++$scope.options.gOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [G] orbs support.' });
+            if (++$scope.options.emptyOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [EMPTY] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.gOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [G] orbs support.' });
+            if (--$scope.options.emptyOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [EMPTY] orbs support.' });
+        }
+    },
+    5580: {
+        onInsertion: function($scope) {
+            if (++$scope.options.gOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [G] orbs support.' });
+            if (++$scope.options.emptyOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [EMPTY] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.gOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [G] orbs support.' });
+            if (--$scope.options.emptyOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [EMPTY] orbs support.' });
+        }
+    },
+    5581: {
+        onInsertion: function($scope) {
+            if (++$scope.options.gOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [G] orbs support.' });
+            if (++$scope.options.emptyOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [EMPTY] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.gOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [G] orbs support.' });
+            if (--$scope.options.emptyOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [EMPTY] orbs support.' });
+        }
+    },
 };

@@ -3041,6 +3041,222 @@ var ghostsAltSpecials = {
         atkbase: function(p) { return Math.ceil(10 + 1240*(1 - p.cached.multiplier/100)); },
         onActivation: function(p) { p.cached.multiplier = p.percHP; },
     },
+    574: {
+        increaseDamageTaken: function(p) { return p.cached.multiplier; },
+        ignoresImmunities: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            var levels = [1.25, 1.75];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier1 = [[],['increaseDamageTaken']][n];
+            p.scope.notify({
+                text: 'Using ' + levels[n] + 'x Increase Damage Taken. To switch to' + levels[(n + 1) % levels.length] + 'x Increase Damage Taken, disable and re-enable this special',
+                name: '5329warning'
+            });
+        },
+    },
+    575: {
+        increaseDamageTaken: function(p) { return p.cached.multiplier; },
+        ignoresImmunities: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            var levels = [1.25, 1.75];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier1 = [[],['increaseDamageTaken']][n];
+            p.scope.notify({
+                text: 'Using ' + levels[n] + 'x Increase Damage Taken. To switch to' + levels[(n + 1) % levels.length] + 'x Increase Damage Taken, disable and re-enable this special',
+                name: '5329warning'
+            });
+        },
+    },
+    576: {
+        increaseDamageTaken: function(p) { return p.cached.multiplier; },
+        ignoresImmunities: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            var levels = [1.25, 1.75];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier1 = [[],['increaseDamageTaken']][n];
+            p.scope.notify({
+                text: 'Using ' + levels[n] + 'x Increase Damage Taken. To switch to' + levels[(n + 1) % levels.length] + 'x Increase Damage Taken, disable and re-enable this special',
+                name: '5329warning'
+            });
+        },
+    },
+    577: {
+        increaseDamageTaken: function(p) { return p.cached.multiplier; },
+        ignoresImmunities: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            var levels = [1.25, 1.75];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier1 = [[],['increaseDamageTaken']][n];
+            p.scope.notify({
+                text: 'Using ' + levels[n] + 'x Increase Damage Taken. To switch to' + levels[(n + 1) % levels.length] + 'x Increase Damage Taken, disable and re-enable this special',
+                name: '5329warning'
+            });
+        },
+    },
+    578: {
+        increaseDamageTaken: function(p) { return p.cached.multiplier; },
+        ignoresImmunities: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            var levels = [1.25, 1.75];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier1 = [[],['increaseDamageTaken']][n];
+            p.scope.notify({
+                text: 'Using ' + levels[n] + 'x Increase Damage Taken. To switch to' + levels[(n + 1) % levels.length] + 'x Increase Damage Taken, disable and re-enable this special',
+                name: '5329warning'
+            });
+        },
+    },
+    579: {
+        increaseDamageTaken: function(p) { return p.cached.multiplier; },
+        ignoresImmunities: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            var levels = [1.25, 1.75];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier1 = [[],['increaseDamageTaken']][n];
+            p.scope.notify({
+                text: 'Using ' + levels[n] + 'x Increase Damage Taken. To switch to' + levels[(n + 1) % levels.length] + 'x Increase Damage Taken, disable and re-enable this special',
+                name: '5329warning'
+            });
+        },
+    },
+    580: {
+        increaseDamageTaken: function(p) { return p.cached.multiplier; },
+        ignoresImmunities: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            var levels = [1.25, 1.75];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier1 = [[],['increaseDamageTaken']][n];
+            p.scope.notify({
+                text: 'Using ' + levels[n] + 'x Increase Damage Taken. To switch to' + levels[(n + 1) % levels.length] + 'x Increase Damage Taken, disable and re-enable this special',
+                name: '5329warning'
+            });
+        },
+    },
+    581: {
+        increaseDamageTaken: function(p) { return p.cached.multiplier; },
+        ignoresImmunities: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            var levels = [1.25, 1.75];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier1 = [[],['increaseDamageTaken']][n];
+            p.scope.notify({
+                text: 'Using ' + levels[n] + 'x Increase Damage Taken. To switch to' + levels[(n + 1) % levels.length] + 'x Increase Damage Taken, disable and re-enable this special',
+                name: '5329warning'
+            });
+        },
+    },
+    582: {
+        negative: function(p) { return 1; },
+        ignoresImmunities: function(p) { return [[''],['negative']][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: '' + ['Swap', 'Super Swap'][n] + ' boost. To ' + ['Swap', 'Super Swap'][(n + 1) % levels.length] + ' boost, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    583: {
+        negative: function(p) { return 1; },
+        ignoresImmunities: function(p) { return [[''],['negative']][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: '' + ['Swap', 'Super Swap'][n] + ' boost. To ' + ['Swap', 'Super Swap'][(n + 1) % levels.length] + ' boost, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    584: {
+        negative: function(p) { return 1; },
+        ignoresImmunities: function(p) { return [[''],['negative']][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: '' + ['Swap', 'Super Swap'][n] + ' boost. To ' + ['Swap', 'Super Swap'][(n + 1) % levels.length] + ' boost, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    585: {
+        negative: function(p) { return 1; },
+        ignoresImmunities: function(p) { return [[''],['negative']][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: '' + ['Swap', 'Super Swap'][n] + ' boost. To ' + ['Swap', 'Super Swap'][(n + 1) % levels.length] + ' boost, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    586: {
+        negative: function(p) { return 1; },
+        ignoresImmunities: function(p) { return [[''],['negative']][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: '' + ['Swap', 'Super Swap'][n] + ' boost. To ' + ['Swap', 'Super Swap'][(n + 1) % levels.length] + ' boost, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    587: {
+        negative: function(p) { return 1; },
+        ignoresImmunities: function(p) { return [[''],['negative']][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: '' + ['Swap', 'Super Swap'][n] + ' boost. To ' + ['Swap', 'Super Swap'][(n + 1) % levels.length] + ' boost, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    588: {
+        negative: function(p) { return 1; },
+        ignoresImmunities: function(p) { return [[''],['negative']][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: '' + ['Swap', 'Super Swap'][n] + ' boost. To ' + ['Swap', 'Super Swap'][(n + 1) % levels.length] + ' boost, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    589: {
+        negative: function(p) { return 1; },
+        ignoresImmunities: function(p) { return [[''],['negative']][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: '' + ['Swap', 'Super Swap'][n] + ' boost. To ' + ['Swap', 'Super Swap'][(n + 1) % levels.length] + ' boost, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
 }
 
 Object.keys(ghostsAltSpecials).forEach(function (key) {

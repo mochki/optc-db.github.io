@@ -17777,6 +17777,34 @@ window.specials = {
             });
         },
     },
+    4125: {
+        def: function(p) { return 0.5; },
+        ignoresImmunities: function(p) { return ["def"]; },
+        chainAddition: function(p) { return 1; },
+    },
+    4126: {
+        poison: function(p) { return [1, 0, 1][p.cached.multiplier]; },
+        orb: function(p) { return p.unit.type == "INT" || p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? [1.75, 2.25, 2.25][p.cached.multiplier] : 1; },
+        onActivation: function(p) {
+            var levels = [0, 1, 2];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["Stage 1", "Stage 2", "Stage 2 + Poison"][levels[n]] + ' special. To switch to ' + ["Stage 1", "Stage 2", "Stage 2 + Poison"][levels[(n + 1) % levels.length]] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    4127: {
+        chain: function(p) { return 3.5; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 3.5 : 1;
+        },
+    },
+    4129: {
+        delay: function(p) { return 2; },
+    },
 };
 
 var calcGhostStartIDSpecials = { "start": 5000 };
@@ -22360,6 +22388,142 @@ var ghostsSpecials = {
                 text: 'HP ' + (p.percHP <= 30 ? 'below' : 'above') + ' 30%, using the ' + p.cached.multiplier + 'x multiplier.',
                 name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
             });
+        }
+    },
+    574: {
+        affinity: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? p.cached.multiplier : 1; },
+        affinityPlus: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
+            p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
+        }
+    },
+    575: {
+        affinity: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? p.cached.multiplier : 1; },
+        affinityPlus: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
+            p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
+        }
+    },
+    576: {
+        affinity: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? p.cached.multiplier : 1; },
+        affinityPlus: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
+            p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
+        }
+    },
+    577: {
+        affinity: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? p.cached.multiplier : 1; },
+        affinityPlus: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
+            p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
+        }
+    },
+    578: {
+        affinity: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? p.cached.multiplier : 1; },
+        affinityPlus: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
+            p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
+        }
+    },
+    579: {
+        affinity: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? p.cached.multiplier : 1; },
+        affinityPlus: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
+            p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
+        }
+    },
+    580: {
+        affinity: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? p.cached.multiplier : 1; },
+        affinityPlus: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
+            p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
+        }
+    },
+    581: {
+        affinity: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? p.cached.multiplier : 1; },
+        affinityPlus: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
+            p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
+        }
+    },
+    582: {
+        atk: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? p.cached.multiplier : 1; },
+        type: "class",
+        atkPlus: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
+            p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
+        }
+    },
+    583: {
+        atk: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? p.cached.multiplier : 1; },
+        type: "class",
+        atkPlus: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
+            p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
+        }
+    },
+    584: {
+        atk: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? p.cached.multiplier : 1; },
+        type: "class",
+        atkPlus: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
+            p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
+        }
+    },
+    585: {
+        atk: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? p.cached.multiplier : 1; },
+        type: "class",
+        atkPlus: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
+            p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
+        }
+    },
+    586: {
+        atk: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? p.cached.multiplier : 1; },
+        type: "class",
+        atkPlus: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
+            p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
+        }
+    },
+    587: {
+        atk: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? p.cached.multiplier : 1; },
+        type: "class",
+        atkPlus: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
+            p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
+        }
+    },
+    588: {
+        atk: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? p.cached.multiplier : 1; },
+        type: "class",
+        atkPlus: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
+            p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
+        }
+    },
+    589: {
+        atk: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? p.cached.multiplier : 1; },
+        type: "class",
+        atkPlus: function(p) { return p.cached.multiplier1; },
+        onActivation: function(p) {
+            p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
+            p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
         }
     },
 };

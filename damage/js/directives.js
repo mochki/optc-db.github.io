@@ -754,6 +754,43 @@ directives.carrychainCounter = function() {
     };
 };
 
+directives.debuffCounter = function() {
+    return {
+        retrict: 'E',
+        replace: true,
+        template: '<div id="debuffs"><div id="debuffSlider"></div>' +
+            '<div id="debuffLabel"><b>{{currentDebuffs ? currentDebuffs/10 : 0}}x</b> Chain Value in last turn</div></div>',
+        link: function(scope, element, attrs) {
+
+            scope.currentdebuffs = 0;
+
+            var slider = element.find('#debuffSlider')[0];
+            var sliderSettings = {
+                start: [ scope.currentdebuffs ],
+                range: { min: [ 0 ], max: [ 10 ] },
+                step: 1,
+                connect: 'lower'
+            };
+
+            var createSlider = function() {
+                if (slider.noUiSlider) slider.noUiSlider.destroy();
+                noUiSlider.create(slider, sliderSettings);
+                slider.noUiSlider.on('change', function(_,__,value) { update('change', value); });
+                slider.noUiSlider.on('slide', function(_,__,value) { update('slide', value); });
+            };
+
+            var update = function(event,value) {
+                scope.currentDebuffs = parseInt(value, 10);
+                if (event == 'change') scope.tdata.debuffCounter.value = scope.currentDebuffs / 10;
+                scope.$apply();
+            };
+
+            createSlider();
+
+        }
+    };
+};
+
 directives.levelLabel = function($timeout) {
     return {
         restrict: 'E',

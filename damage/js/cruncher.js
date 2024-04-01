@@ -744,6 +744,9 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
             currentDefense = Math.min(currentDefense,baseDefense * .75);
             enemyEffects.def = true;
         }
+        if(enemyEffects.negative){
+            currentDefense = Math.ceil(currentDefense*0.8)
+        }
     };
 
     var getShipBonus = function(type,static,unit,slot,captain,chainPosition,parameters) {
@@ -1535,6 +1538,7 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
         $scope.tdata.damageCounter.enabled = false;
         $scope.tdata.dmgreductionCounter.enabled = false;
         $scope.tdata.carrychainCounter.enabled = false;
+        $scope.tdata.debuffCounter.enabled = false;
         // get ship bonus
         shipBonus = jQuery.extend({ bonus: window.ships[$scope.data.ship[0]] },{ level: $scope.data.ship[1] });
         // orb map effects
@@ -1636,6 +1640,8 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
                 $scope.tdata.dmgreductionCounter.enabled = true;
             if ([3829, 3830].has(id))
                 $scope.tdata.carrychainCounter.enabled = true;
+            if ([5574, 5575, 5576, 5577, 5578, 5579, 5580, 5581, 5582, 5583, 5584, 5585, 5586, 5587, 5588, 5589].has(id))
+                $scope.tdata.debuffCounter.enabled = true;
         });
         if (conflictWarning) 
             $scope.notify({ type: 'error', text: 'One or more specials you selected cannot be activated due to an active map effect.' });
@@ -2098,6 +2104,7 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
             damageCounter: $scope.tdata.damageCounter.value,
             dmgreductionCounter: $scope.tdata.dmgreductionCounter.value,
             carrychainCounter: $scope.tdata.carrychainCounter.value,
+            debuffCounter: $scope.tdata.debuffCounter.value,
             chainPosition: chainPosition,
             classCount: classCounter(),
             colorCount: colorCounter(),

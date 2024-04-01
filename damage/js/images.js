@@ -237,6 +237,14 @@ app.controller('ImageGeneratorCtrl', function($scope, $filter, $timeout) {
         type(context, { text: carrychains + 'x Chain Value in last turn', x: baseX + 25, y: baseY + 20 });
         baseY += 25;
     }
+    
+    // debuff counter
+    if ($scope.tdata.debuffCounter.enabled) {
+        awesome(context, { text: 'f162', x: baseX + 8, y: baseY + 20, align: 'center' });
+        var debuffs = $scope.tdata.debuffCounter.value;
+        type(context, { text: debuffs + ' Debuff{{debuffs!=1 ? `s` : ``}} applied to the enemy', x: baseX + 25, y: baseY + 20 });
+        baseY += 25;
+    }
 
     // specials
     awesome(context, { text: 'f0e7', x: baseX + 8, y: baseY + 20, align: 'center' });

@@ -14559,6 +14559,24 @@ window.captains = {
         atk: function(p) { return p.unit.class.has("Striker") || p.unit.class.has("Slasher") ? p.actions[p.sourceSlot] ? 5 : 4.25 : 1; },
         hp: function(p) { return p.unit.class.has("Striker") || p.unit.class.has("Slasher") ? 1.25 : 1; },
     },
+    4125: {
+        atk: function(p) { return p.unit.class.has("Driven") ? 3.5 : 1; },
+        status: function(p) { return p.increaseDamageTaken || p.enemyEffects.delayed > 1 || p.defenseDown || p.poisoned || p.paralysis ? 1.1 : 1; },
+        hp: function(p) { return p.unit.class.has("Driven") ? 1.5 : 1; },
+    },
+    4126: {
+        atk: function(p) { return p.unit.class.has("Driven") ? 3.5 : 1; },
+        status: function(p) { return p.increaseDamageTaken || p.enemyEffects.delayed > 1 || p.defenseDown || p.poisoned || p.paralysis ? 1.2 : 1; },
+        hp: function(p) { return p.unit.class.has("Driven") ? 1.25 : 1; },
+    },
+    4127: {
+        atk: function(p) { return p.unit.class.has("Driven") ? 3.5 : 1; },
+        status: function(p) { return p.increaseDamageTaken || p.enemyEffects.delayed > 1 || p.defenseDown || p.poisoned || p.paralysis ? 1.2 : 1; },
+        hp: function(p) { return p.unit.class.has("Driven") ? 1.25 : 1; },
+    },
+    4129: {
+        atk: function(p) { return p.slot == p.sourceSlot ? 1.25 : 3.5; },
+    },
 };
 
 var calcGhostStartIDCaptains = { "start": 5000 };
@@ -17062,6 +17080,64 @@ var ghostsCaptains = {
     573: {
         atk: function(p) { return (p.colorCount.INT>=1 && p.colorCount.PSY>=1 && p.colorCount.STR>=1 && p.colorCount.DEX>=1 && p.colorCount.QCK>=1) ? p.slot == p.sourceSlot ? [5, 5.75][CrunchUtils.llimitUnlock(p, "captains")] : [5, 5.5][CrunchUtils.llimitUnlock(p, "captains")] : 1; },
         hp: function(p) { return 1.3; },
+    },
+    574: {
+        atk: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? ['empty', 'g'].has(p.orb) || (CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) ? 5 : 4.75 : 1; },
+        hp: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? 1.2 : 1; },
+    },
+    575: {
+        atk: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? ['empty', 'g'].has(p.orb) || (CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) ? 5 : 4.75 : 1; },
+        hp: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? 1.2 : 1; },
+        recover: function(p) { return 0.2*p.hitcombo[0].filter(x => x=="Perfect").length; }
+    },
+    576: {
+        atk: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? ['empty', 'g'].has(p.orb) || (CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) ? 6 : 5.25 : 1; },
+        hp: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? 1.2 : 1; },
+        recover: function(p) { return 0.5*p.hitcombo[0].filter(x => x=="Perfect").length; }
+    },
+    577: {
+        atk: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? ['empty', 'g'].has(p.orb) || (CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) ? 6 : 5.25 : 1; },
+        hp: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? 1.2 : 1; },
+        recover: function(p) { return 0.5*p.hitcombo[0].filter(x => x=="Perfect").length; }
+    },
+    578: {
+        atk: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? ['empty', 'g'].has(p.orb) || (CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) ? 5 : 4.75 : 1; },
+        hp: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? 1.2 : 1; },
+    },
+    579: {
+        atk: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? ['empty', 'g'].has(p.orb) || (CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) ? 5 : 4.75 : 1; },
+        hp: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? 1.2 : 1; },
+        recover: function(p) { return 0.2*p.hitcombo[0].filter(x => x=="Perfect").length; }
+    },
+    580: {
+        atk: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? ['empty', 'g'].has(p.orb) || (CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) ? 6 : 5.25 : 1; },
+        hp: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? 1.2 : 1; },
+        recover: function(p) { return 0.5*p.hitcombo[0].filter(x => x=="Perfect").length; }
+    },
+    581: {
+        atk: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? ['empty', 'g'].has(p.orb) || (CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) ? 6 : 5.25 : 1; },
+        hp: function(p) { return p.unit.class.has("Driven") || p.unit.class.has("Cerebral") ? 1.2 : 1; },
+        recover: function(p) { return 0.5*p.hitcombo[0].filter(x => x=="Perfect").length; }
+    },
+    582: {
+        atk: function(p) { return p.unit.class.has("Cerebral") || p.unit.class.has("Driven") ? 4.5 : 1; },
+        status: function(p) { return p.increaseDamageTaken || p.enemyEffects.delayed > 1 || p.defenseDown || p.poisoned || p.paralysis || p.enemyEffects.negative ? 1.15 : 1; },
+        hp: function(p) { return p.unit.class.has("Cerebral") || p.unit.class.has("Driven") ? 1.3 : 1; },
+    },
+    583: {
+        atk: function(p) { return p.unit.class.has("Cerebral") || p.unit.class.has("Driven") ? 4.5 : 1; },
+        status: function(p) { return p.enemyEffects.negative ? 1.2 : 1; },
+        hp: function(p) { return p.unit.class.has("Cerebral") || p.unit.class.has("Driven") ? 1.3 : 1; },
+    },
+    584: {
+        atk: function(p) { return p.unit.class.has("Cerebral") || p.unit.class.has("Driven") ? 5 : 1; },
+        status: function(p) { return Math.pow(1.04, Math.min(p.debuffCounter, 7)); },
+        hp: function(p) { return p.unit.class.has("Cerebral") || p.unit.class.has("Driven") ? 1.3 : 1; },
+    },
+    585: {
+        atk: function(p) { return p.unit.class.has("Cerebral") || p.unit.class.has("Driven") ? 5 : 1; },
+        status: function(p) { return Math.pow(1.04, Math.min(p.debuffCounter, 7)); },
+        hp: function(p) { return p.unit.class.has("Cerebral") || p.unit.class.has("Driven") ? 1.3 : 1; },
     },
 };
 
