@@ -3335,7 +3335,7 @@ window.drops = {
         },
 
         {
-            name: 'CP0',
+            name: 'CP-0',
             dropID: 'pka10',
             thumb: 4127,
             global: true,
@@ -3350,20 +3350,15 @@ window.drops = {
                 {"effect": "Adds 2 additional item drops! Boosts stats by 1.2x, and reduces Special charge time by 15 turns at start of quest! Boosts stats by 1.3x during that map when landing on Bonus Hex!", "units": [4125, 4126]},
                 {"effect": "Adds 3 additional item drops! Boosts stats by 1.5x, and reduces Special charge time by 15 turns at start of quest! Further adds 1 additional item drop and boosts stats by 1.7x during that map when landing on Bonus Hex! ", "units": [4122, 4124, 5578, 5579, 5580, 5581, 5586, 5587, 5588, 5589]},
             ],
-            /* gimmicks: {
-                "East Blue": [
-                    { "title": "Fight 1", "recUnits": [1], "gimmicks": "Fight 1 Gimmicks" },
-                    { "title": "Fight 2", "recUnits": [2], "gimmicks": "Fight 2 Gimmicks" }
-                ],
-                "Grand Line": [
-                    { "title": "Fight 1", "recUnits": [3], "gimmicks": "Fight 1 Gimmicks" },
-                    { "title": "Fight 2", "recUnits": [4], "gimmicks": "Fight 2 Gimmicks" }
-                ],
-                "New World": [
-                    { "title": "Fight 1", "recUnits": [5], "gimmicks": "Fight 1 Gimmicks" },
-                    { "title": "Fight 2", "recUnits": [6], "gimmicks": "Fight 2 Gimmicks" }
-                ],
-            } */
+            gimmicks: {
+                "Vs. CP-0": [
+                    { "title": "Lv. 1-39", "gimmicks": "BATTLE 3\n\nSlot Change: [EMPTY]\nDespair: (1 turn)\nDefeated Action\nRemove Beneficial Effects\n\nBATTLE 4\n\nImmunity (DEF Down): (98 turns)\nNon-Normal Attacks Deals 1 Damage: (1 turn)\nParalysis: (1 turn)\nGunman x3\n\nBOSS\n\nImmunity (Delay): (98 turns)\nNullify Percentage Damage: (98 turns)\nBurn (take Burn damage when landing PERFECT strikes): (1 turn)\nBarrier (Tap-Timing): PERFECT 1 time (1 turn)\nGunman x2" },
+                    { "title": "Lv. 40-59", "gimmicks": "BATTLE 3\n\nSlot Change: [EMPTY]\nBind: Right-Column (3 turns)\nDespair: (3 turns)\nDefeated Action\nRemove Beneficial Effects\n\nBATTLE 4\n\nImmunity (DEF Down): (98 turns)\nNon-Normal Attacks Deals 1 Damage: (2 turns)\nParalysis: (1 turn)\nGunman x3\n\nBOSS\n\nImmunity (Delay): (98 turns)\nNullify Percentage Damage: (98 turns)\nBurn (take Burn damage when landing PERFECT strikes): (3 turns)\nBarrier (Tap-Timing): PERFECT 2 times (1 turn)\nGunman x2" },
+                    { "title": "Lv. 60-79", "gimmicks": "BATTLE 3\n\nSlot Change: [EMPTY]\nBind: Right-Column (5 turns)\nSecial Reverse: Crewmate (1 turn)\nDespair: (5 turns)\nDefeated Action\nRemove Beneficial Effects\n\nBATTLE 4\n\nImmunity (DEF Down): (98 turns)\nNon-Normal Attacks Deals 1 Damage: (2 turns)\nATK Boost: (98 turns)\nParalysis: (2 turns)\nSpecial Reverse: (1 turn)\nGunman x3\n\nBOSS\n\nImmunity (Delay): (98 turns)\nNullify Percentage Damage: (98 turns)\nResilience: (3 turns)\nBurn (take Burn damage when landing PERFECT strikes): (3 turns)\nBarrier (Tap-Timing): PERFECT 3 times (1 turn)\nGunman x2" },
+                    { "title": "Lv. 80-99", "gimmicks": "BATTLE 3\n\nSlot Change: [EMPTY]\nBind: Right-Column (6 turns)\nSpecial Reverse: (1 turn)\nDespair: (6 turns)\nDefeated Action\nRemove Beneficial Effects\n\nBATTLE 4\n\nImmunity (DEF Down): (98 turns)\nNon-Normal Attacks Deals 1 Damage: (2 turns)\nATK Boost: (98 turns)\nBarrier (Damage): (20000000 damage) (1 turn)\nParalysis: (3 turns)\nStun: Friend Captain (Top-Left)\nSpecial Reverse: (1 turn)\nGunman x3\nBarrier (Damage): (3000000 damage) (2 turns)\n\nBOSS\n\nImmunity (Delay): (98 turns)\nNullify Percentage Damage: (98 turns)\nResilience: (5 turns)\nSpecial Bind: (5 turns)\nBurn (take Burn damage when landing PERFECT strikes): (4 turns)\nBarrier (Tap-Timing): PERFECT 3 times (2 turns)\nDamage Nullification: For over 5000000 damage (20 turns) (reduce 10 turns for each defeated Gunman)\nGunman x2" },
+                    { "title": "Lv. 100+", "gimmicks": "BATTLE 3\n\nSlot Change: [EMPTY]\nBind: Right-Column (8 turns)\nSpecial Reverse: (1 turn)\nDespair: (8 turns)\nSlot Change Impossible: Middle-Row (PERFECT 1 time)\nSlot Change Impossible: Bottom-Row (GOOD 1 time)\nDefeated Action\nRemove Beneficial Effects\n\nBATTLE 4\n\nImmunity (DEF Down): (98 turns)\nNon-Normal Attacks Deals 1 Damage: (2 turns)\nATK Boost: (98 turns)\nBarrier (Damage): (50000000 damage)  (2 turns)\nParalysis: (4 turns)\nStun: Friend Captain (Top-Left)\nIntimidation: ATK Boost (-2 turns) (3 turns)\nSpecial Reverse: (2 turns)\nGunman x3\nBarrier (Damage): (30000000 damage) (2 turns)\n\nBOSS\n\nImmunity (Delay): (98 turns)\nNullify Percentage Damage: (98 turns)\nResilience: (5 turns)\nSpecial Bind: (7 turns)\nBurn (take Burn damage when landing PERFECT strikes): (6 turns)\nBarrier (Tap-Timing): PERFECT 5 times (2 turns)\nDamage Nullification: For over 20000000 damage (98 turns) (reduce 50 turns for each defeated Gunman)\nLock Target: (3 turns)\nGunman x2\nResilience: (5 turns)" }
+                ]
+            }
         },
 
     ],
