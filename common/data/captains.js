@@ -14577,6 +14577,10 @@ window.captains = {
     4129: {
         atk: function(p) { return p.slot == p.sourceSlot ? 1.25 : 3.5; },
     },
+    4132: {
+        atk: function(p) { return p.unit.class.has("Fighter") || p.unit.class.has("Shooter") ? p.percHP <= 30 ? 5.5 : 5 : 1; },
+        hp: function(p) { return p.unit.class.has("Fighter") || p.unit.class.has("Shooter") ? 1.5 : 1; },
+    },
 };
 
 var calcGhostStartIDCaptains = { "start": 5000 };

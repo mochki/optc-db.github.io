@@ -17805,6 +17805,19 @@ window.specials = {
     4129: {
         delay: function(p) { return 2; },
     },
+    4132: {
+        atkbase: function(p) { return p.unit.type == "STR" || p.unit.class.has("Fighter") || p.unit.class.has("Shooter") ? [1500, 0, 1500][p.cached.multiplier] : 1; },
+        atkbasePlus: function(p) { return [0, 500, 500][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1, 2];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["Base ATK Boost", "Base ATK Buff", "Both Effects"][levels[n]] + '. To switch to ' + ["Base ATK Boost", "Base ATK Buff", "Both Effects"][levels[(n + 1) % levels.length]] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
 };
 
 var calcGhostStartIDSpecials = { "start": 5000 };
