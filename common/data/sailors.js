@@ -3331,6 +3331,9 @@ window.sailors = {
     4129: {
         hp: function(p) { return p.captain.type == "PSY" ? 0.7 : 1; },
     },
+    4133: {
+        atkStatic: function(p) { return p.slot <= 1 ? [0, 0, 150][CrunchUtils.limitUnlock(p, "sailors")] : 0; },
+    },
     4986: {
         staticMult: function(p) { return 3; }
     },

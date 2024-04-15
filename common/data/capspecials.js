@@ -125,6 +125,9 @@ window.capspecials = {
     4100: {
         status: function(p) { return p.enemyEffects.increaseDamageTaken ? 2.25 : 1; },
     },
+    4133: {
+        orbPlus: function(p) { return 0.25; },
+    },
 };
 
 var calcGhostStartIDCapSpecials = { "start": 5000 };

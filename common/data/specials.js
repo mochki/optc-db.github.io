@@ -17802,6 +17802,13 @@ window.specials = {
             return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 3.5 : 1;
         },
     },
+    4128: {
+        chain: function(p) { return 2.75; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 10 : 1;
+        },
+    },
     4129: {
         delay: function(p) { return 2; },
     },
@@ -17817,6 +17824,47 @@ window.specials = {
                 name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
             });
         },
+    },
+    4133: {
+        atk: function(p) { return p.unit.type == "INT" || p.unit.class.has("Cerebral") || p.unit.class.has("Fighter") ? [2.75, 1, 2.75][p.cached.multiplier] : 1; },
+        type: "class",
+        atkPlus: function(p) { return [0, 0.5, 0.5][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1, 2];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["ATK Boost", "ATK Buff", "ATK Boost and ATK Buff"][levels[n]] + '. To switch to ' + ["ATK Boost", "ATK Buff", "ATK Boost and ATK Buff"][levels[(n + 1) % levels.length]] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    4134: {
+        def: function(p) { return 0; },
+        chain: function(p) { return p.cached.multiplier2[0]; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? p.cached.multiplier2[1] : 1;
+        },
+        chainPlus: function(p) { return p.cached.multiplier2[2]; },
+        chainAddition: function(p) { return p.cached.multiplier1; },
+        chainAdditionPlus: function(p) { return [0, 0.6][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier1 = p.captain.type == "INT" ? 1.2 : 0;
+            p.cached.multiplier2 = p.captain.class.has("Cerebral") ? [2.25, 15, 0.3] : [1, Infinity, 0];
+            p.scope.notify({
+                text: 'Using the ' + ["No Chain Addition Buff", "Chain Addition Buff"][levels[n]] + '. To switch to ' + ["No Chain Addition Buff", "Chain Addition Buff"][levels[(n + 1) % levels.length]] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    4135: {
+        tapTiming: function(p) { return p.unit.class.has("Cerebral") ? { Good: 0.2, Great: 0.3, Perfect: 0.2 } : { Good: 0, Great: 0, Perfect: 0 }; },
+        atkbase: function(p) { return p.unit.class.has("Cerebral") ? 1000 : 0; },
+        atkbasePlus: function(p) { return 500; },
     },
 };
 

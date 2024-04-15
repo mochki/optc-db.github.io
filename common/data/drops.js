@@ -6884,6 +6884,195 @@ window.drops = {
             } */
         },
 
+        {
+            name: 'CP-0',
+            dropID: 'treasuremap79',
+            thumb: 4128,
+            global: true,
+            nakama: 8375500,
+            gamewith: null,
+            'Raging Sea': [ "4128-skull" ],
+            boosters: [
+                {"effect": "Boosts Treasure Pts by 2.5x! Plus, stats boosted by 2.5x and Special charge time reduced by 10 turns at start of quest! [Card Enhance Effect] Adds 1 Card slot! Boosts success chance of Steering Wheel Cards by +20%! Boosts Treasure Pts multiplier of Slingshot/Pistol/Cannon Cards by +0.5!", "units": [4133]},
+                {"effect": "Boosts Treasure Pts by 1.6x! Plus, stats boosted by 2.5x and Special charge time reduced by 10 turns at start of quest! [Card Enhance Effect] Boosts success chance of  Slingshot/Pistol/Cannon Cards by +20%!", "units": [4134]},
+                {"effect": "Boosts Treasure Pts by 1.6x! Plus, stats boosted by 2.5x and Special charge time reduced by 10 turns at start of quest! [Card Enhance Effect] Boosts success chance of Sea Chart Cards by +20%!", "units": [4135]},
+                {"effect": "Boosts Treasure Pts by 1.4x! Plus, stats boosted by 2.5x and Special charge time reduced by 10 turns at start of quest! [Card Enhance Effect] Boosts the number of times obtaining Treasure Pts with Sea Cat Cards by +5 times!", "units": [4127]},
+                {"effect": "Boosts Treasure Pts by 1.4x! Plus, stats boosted by 2.5x and Special charge time reduced by 10 turns at start of quest! [Card Enhance Effect] Boosts Navigation Lv. increment effect of Sea Chart Cards by +1!", "units": [4108]},
+                {"effect": "Boosts Treasure Pts by 1.4x! Plus, stats boosted by 2.5x and Special charge time reduced by 10 turns at start of quest!", "units": [4122, 4124, 4128, 5578, 5579, 5580, 5581, 5586, 5587, 5588, 5589]},
+                {"effect": "Boosts Treasure Pts by 1.35x! Plus, stats boosted by 1.25x and Special charge time reduced by 7 turns at start of quest!", "units": [4125, 4126, 4132, 4119, 4120, 4118, 5571, 5572, 5573]},
+                {"effect": "Boosts Treasure Pts by 1.25x! Plus, stats boosted by 1.25x and Special charge time reduced by 7 turns at start of quest!", "units": [4089, 4068, 4067, 1853, 2000, 2583, 2659, 2995, 3197, 3297, 3491, 3527, 3758, 2977, 5012, 5013, 5014, 5015]},
+                {"effect": "Boosts Treasure Pts by 1.25x! Plus, stats boosted by 1.25x and Special charge time reduced by 10 turns at start of quest!", "units": [3364, 3462, 3483, 3523, 3543, 3563, 3641, 3735, 3775, 3861, 3933, 4003, 4050, 4071, 5393, 5394, 5395, 5396, 5516, 5517, 5518, 5519, 5551, 5552, 5553, 5554]},
+                {"effect": "Boosts Treasure Pts by 1.2x! Plus, stats boosted by 1.2x and Special charge time reduced by 5 turns at start of quest!", "units": [2936, 2938, 2940, 2942, 2944, 2946, 2948, 2950, 2952, 3884, 3886, 603, 836, 1830, 1879, 2015, 5012, 2197, 2394, 3143, 3399, 1630, 1733, 2111, 2611, 3110, 3189, 3269, 3293, 3361, 3580, 4129]},
+                {"effect": "Boosts Treasure Pts by 1.2x! Plus, stats boosted by 1.25x and Special charge time reduced by 5 turns at start of quest!", "units": [3688, 3687, 3686, 4004, 4005, 4111, 4112, 4113, 4094, 4093, 4092]},
+                {"effect": "Boosts Treasure Pts by 1.2x! Plus, stats boosted by 1.2x and Special charge time reduced by 20 turns at start of quest!", "units": [5024, 887, 951, 765, 2056, 2088, 852, 2517, 1169, 5054, 5055, 5056, 5057]},
+            ],
+            gimmicks: 
+            {
+                "East Blue": [
+                    {
+                        "title": "Vs. Luffy (Age 70) [STR]",
+                        "recUnits": [
+                            4127
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\nVS Effect gauge reduction: 5 \nSuper Switch Effect requirement reduction: 5 \nReduce Special Charge by 5 \nRetreat \n\nStage 3:\nTurn 0:\n2 turn(s)  if chain multiplier is 1.5 or less, 50% ATK Down \n2 turn(s)  if chain multiplier is 5 or more, 50% ATK Down \n2 turn(s) Damage over 1000 70% Reduction \nCounter Stance \n\n"
+                    },
+                    {
+                        "title": "Vs. Robin [INT]",
+                        "recUnits": [
+                            4108,
+                            3197
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\n[QCK][PSY][INT] type VS Effect gauge reduction: 5 \n[QCK][PSY][INT] type Super Switch Effect requirement reduction: 5 \n[QCK][PSY][INT] type Reduce Special Charge by 5 \nRetreat \n\nStage 3:\nTurn 0:\n2 turn(s) Left-Column  Bind \n98 turn(s) Non-Normal Attacks deal 1 damage \nRight-Column  Special Reverse 1 turn(s) \n98 turn(s) Immunity \n2 turn(s) Top-Row  Despair \n\n"
+                    },
+                    {
+                        "title": "Vs. Zoro [DEX]",
+                        "recUnits": [
+                            4118,
+                            4120
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\nSlasher Powerhouse Striker  class VS Effect gauge reduction: 5 \nSlasher Powerhouse Striker  class Super Switch Effect requirement reduction: 5 \nSlasher Powerhouse Striker  class Reduce Special Charge by 5 \nRetreat \n\nStage 3:\nTurn 0:\n98 turn(s) Non-Normal Attacks deal 1 damage \n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [BLOCK] Slots \nCrewmate  Special Reverse 2 turn(s) \n98 turn(s) Immunity \nTop-Row  Special Reverse 2 turn(s) \n\nTurn 0:\n98 turn(s) Non-Normal Attacks deal 1 damage \n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [BLOCK] Slots \nCrewmate  Special Reverse 1 turn(s) \n98 turn(s) Immunity \nTop-Row  Special Reverse 1 turn(s) \n\nTurn 6:\nRoronoa Zoro: When remaining HP is 100% or below\nRoronoa Zoro: When remaining HP is 82% or below\nRoronoa Zoro: When remaining HP is 64% or below\nRoronoa Zoro: When remaining HP is 46% or below\nRoronoa Zoro: When remaining HP is 28% or below\n\n"
+                    },
+                    {
+                        "title": "Vs. Dr. Vegapunk \"Lilith the Evil\" [STR]",
+                        "recUnits": [
+                            4122,
+                            4125,
+                            4126
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\nDriven Cerebral Powerhouse  class VS Effect gauge reduction: 5 \nDriven Cerebral Powerhouse  class Super Switch Effect requirement reduction: 5 \nDriven Cerebral Powerhouse  class Reduce Special Charge by 5 \nRetreat \n\nStage 3:\nTurn 0:\n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [Unfavorable] Slots \n2 turn(s) Special Bind \n98 turn(s) Immunity \n98 turn(s) Non-Normal Attacks deal 1 damage \n2 turn(s) Top-Row  Despair \n1 turn(s) Paralysis \n\nTurn 6:\nDr. Vegapunk \"Lilith the Evil\": When remaining HP is 100% or below\nDr. Vegapunk \"Lilith the Evil\": When remaining HP is 50% or below\n\n"
+                    },
+                    {
+                        "title": "Final Boss Vs. S-Shark [PSY]",
+                        "recUnits": [
+                            4133,
+                            4134,
+                            4135,
+                            4124
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\n[DEX][QCK][INT] type VS Effect gauge reduction: 5 \n[DEX][QCK][INT] type Super Switch Effect requirement reduction: 5 \n[DEX][QCK][INT] type Reduce Special Charge by 5 \nRetreat \n\nStage 2:\nTurn 0:\n2 turn(s) Top-Row  Bind \n98 turn(s) Non-Normal Attacks deal 1 damage \n2 turn(s) 7000 damage Burn \n2 turn(s) Reduce damage taken 50% \n98 turn(s) Immunity \n\nOn Death:\nFull HP Recovery \nRetreat \n\nStage 3:\nTurn 0:\n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [RCV] Slots \n2 turn(s) Remove SFX \nFor 1 turn(s) receive 3000 damage after an action when taking any action besides normal taps\nFor 2 turn(s), accumulate healing from [RCV][SEMLA] slots and convert to damage at end of turn\nFor 2 turn(s), when attacking with [STR][DEX][QCK][PSY][INT][RCV][TND][WANO] slots, reduce damage dealt by 50% \n1 turn(s)  if chain multiplier is 2 or less, 50% ATK Down \n2 turn(s) Reduce damage taken 50% \n\n"
+                    },
+                    {
+                        "title": "Intrusion Vs. Lucci & Kaku & Stussy [PSY]",
+                        "recUnits": [
+                            4133,
+                            4134,
+                            4135,
+                            4108
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\nCerebral Fighter Striker  class VS Effect gauge reduction: 5 \nCerebral Fighter Striker  class Super Switch Effect requirement reduction: 5 \nCerebral Fighter Striker  class Reduce Special Charge by 5 \nRetreat \n\nStage 2:\nTurn 0:\n98 turn(s) Non-Normal Attacks deal 1 damage \nPercentage damage 20% of current HP \nFor 1 turn(s), accumulate healing from [RCV][SEMLA] slots and convert to damage at end of turn\nFor 1 turn(s), convert healing effects to damage except for [RCV][SEMLA] slots\n2 turn(s) Top-Row  Bind \n2 turn(s) Top-Row  Despair \n\nOn Death:\nFull HP Recovery \nRetreat \n\nStage 3:\nTurn 0:\n1 turn(s) Slot Effect x 1.1 \n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [BLOCK] Slots \n2 turn(s) ATK 50% Down \n2 turn(s) DEF x 1000 \n2 turn(s) Damage over 10000 99% Reduction \n2 turn(s) Reduce damage taken 50% \n\n"
+                    }
+                ],
+                "Grand Line": [
+                    {
+                        "title": "Vs. Luffy (Age 70) [STR]",
+                        "recUnits": [
+                            4127
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\nVS Effect gauge reduction: 5 \nSuper Switch Effect requirement reduction: 5 \nReduce Special Charge by 5 \nRetreat \n\nStage 3:\nTurn 0:\n3 turn(s)  if chain multiplier is 3 or less, 70% ATK Down \n3 turn(s)  if chain multiplier is 4.5 or more, 70% ATK Down \n4 turn(s) Damage over 10000 70% Reduction \nCounter Stance \n\nSpecial Interupt: When enemy status <state_id=47> is not applied (after Special/Super Special/VS Effect/Switch Effect/Super Switch Effect)\nUntil 1 time(s) \n2 turn(s) Damage over 100000 70% Reduction \n\nSpecial Interupt: Set Chain Multiplier \nUntil 1 time(s) \n1 turn(s) Crewmate  character swap Captain \n\n"   
+                    },
+                    {
+                        "title": "Vs. Robin [INT]",
+                        "recUnits": [
+                            4108,
+                            3197
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\n[QCK][PSY][INT] type VS Effect gauge reduction: 5 \n[QCK][PSY][INT] type Super Switch Effect requirement reduction: 5 \n[QCK][PSY][INT] type Reduce Special Charge by 5 \nRetreat \n\nStage 3:\nTurn 0:\n5 turn(s) Left-Column  Bind \n98 turn(s) Non-Normal Attacks deal 1 damage \nRight-Column  Special Reverse 1 turn(s) \n98 turn(s) Immunity \n5 turn(s) Top-Row  Despair \n\nOn Death:\nEnemy ATK x 0.8 damage \n\n"
+                    },
+                    {
+                        "title": "Vs. Zoro [DEX]",
+                        "recUnits": [
+                            4118,
+                            4120
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\nSlasher Powerhouse Striker  class VS Effect gauge reduction: 5 \nSlasher Powerhouse Striker  class Super Switch Effect requirement reduction: 5 \nSlasher Powerhouse Striker  class Reduce Special Charge by 5 \nRetreat \n\nStage 3:\nTurn 0:\n98 turn(s) Non-Normal Attacks deal 1 damage \n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [BLOCK] Slots \nCrewmate  Special Reverse 2 turn(s) \n2 turn(s) Slot Barrier ([QCK] Slots 2 time(s))\n98 turn(s) Immunity \nTop-Row  Special Reverse 4 turn(s) \n\nTurn 0:\n98 turn(s) Non-Normal Attacks deal 1 damage \n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [BLOCK] Slots \nCrewmate  Special Reverse 1 turn(s) \n1 turn(s) Slot Barrier ([QCK] Slots 1 time(s))\n98 turn(s) Immunity \nTop-Row  Special Reverse 2 turn(s) \n\nSpecial Interupt: Charge Specials \nUntil 1 time(s) \nPercentage damage 50% of current HP \nSpecial Reverse 1 turn(s) \nLocked Special Turns (PERFECT 1 time(s)) \n\nTurn 6:\nRoronoa Zoro: When remaining HP is 100% or below\nRoronoa Zoro: When remaining HP is 82% or below\nRoronoa Zoro: When remaining HP is 64% or below\nRoronoa Zoro: When remaining HP is 46% or below\nRoronoa Zoro: When remaining HP is 28% or below\n\n"
+                    },
+                    {
+                        "title": "Vs. Dr. Vegapunk \"Lilith the Evil\" [STR]",
+                        "recUnits": [
+                            4122,
+                            4125,
+                            4126
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\nDriven Cerebral Powerhouse  class VS Effect gauge reduction: 5 \nDriven Cerebral Powerhouse  class Super Switch Effect requirement reduction: 5 \nDriven Cerebral Powerhouse  class Reduce Special Charge by 5 \nRetreat \n\nStage 3:\nTurn 0:\n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [Unfavorable] Slots \n4 turn(s) Special Bind \n98 turn(s) Non-Normal Attacks deal 1 damage \n98 turn(s) Immunity \n3 turn(s) Resilience \n2 turn(s) Tap-Timing Barrier (GREAT 3 time(s))\n5 turn(s) Top-Row  Despair \n2 turn(s) Paralysis \n\nTurn 6:\nDr. Vegapunk \"Lilith the Evil\": When remaining HP is 100% or below\nDr. Vegapunk \"Lilith the Evil\": When remaining HP is 50% or below\n\n"
+                    },
+                    {
+                        "title": "Final Boss Vs. S-Shark [PSY]",
+                        "recUnits": [
+                            4133,
+                            4134,
+                            4135,
+                            4124
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\n[DEX][QCK][INT] type VS Effect gauge reduction: 5 \n[DEX][QCK][INT] type Super Switch Effect requirement reduction: 5 \n[DEX][QCK][INT] type Reduce Special Charge by 5 \nRetreat \n\nStage 2:\nTurn 0:\n5 turn(s) Top-Row  Bind \n98 turn(s) Non-Normal Attacks deal 1 damage \n3 turn(s) 15000 damage Burn \n3 turn(s) Reduce damage taken 70% \n2 turn(s) Tap-Timing Barrier (PERFECT 1 time(s))\n98 turn(s) Immunity \n\nOn Death:\nFull HP Recovery \nRetreat \n\nStage 3:\nTurn 0:\n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [RCV] Slots \n3 turn(s) Remove SFX \nFor 2 turn(s) receive 15000 damage after an action when taking any action besides normal taps\nFor 4 turn(s), accumulate healing from [RCV][SEMLA] slots and convert to damage at end of turn\nFor 4 turn(s), when attacking with [STR][DEX][QCK][PSY][INT][RCV][TND][WANO] slots, reduce damage dealt by 70% \n2 turn(s)  if chain multiplier is 3.2 or less, 70% ATK Down \n4 turn(s) Reduce damage taken 70% \n2 turn(s) Slot Barrier ([STR] Slots 1 time(s))\n\nSpecial Interupt: Slot Change \nUntil 1 time(s) \n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [RCV] Slots \n\n"
+                    },
+                    {
+                        "title": "Intrusion Vs. Lucci & Kaku & Stussy [PSY]",
+                        "recUnits": [
+                            4133,
+                            4134,
+                            4135,
+                            4108
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\nCerebral Fighter Striker  class VS Effect gauge reduction: 5 \nCerebral Fighter Striker  class Super Switch Effect requirement reduction: 5 \nCerebral Fighter Striker  class Reduce Special Charge by 5 \nRetreat \n\nStage 2:\nTurn 0:\n98 turn(s) Non-Normal Attacks deal 1 damage \nPercentage damage 50% of current HP \nFor 2 turn(s), accumulate healing from [RCV][SEMLA] slots and convert to damage at end of turn\nFor 2 turn(s), convert healing effects to damage except for [RCV][SEMLA] slots\n1 turn(s) Top-Row  Slot Bind \n5 turn(s) Top-Row  Bind \n5 turn(s) Top-Row  Despair \n\nOn Death:\nFull HP Recovery \nRetreat \n\nSpecial Interupt: Damage \nUntil 1 time(s) \n6 turn(s) Top-Row  Despair \n\nStage 3:\nTurn 0:\n1 turn(s) Slot Effect x 1.1 \n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [BLOCK] Slots \n4 turn(s) ATK 70% Down \n4 turn(s) DEF x 100000 \n4 turn(s) Damage over 5000 99% Reduction \n4 turn(s) Reduce damage taken 70% \n\nOn Death:\n50000 damage \n\nSpecial Interupt: Slot Change \nUntil 1 time(s) \n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [S. BLOCK] Slots \n\n"
+                    }
+                ],
+                "New World": [
+                    {
+                        "title": "Vs. Luffy (Age 70) [STR]",
+                        "recUnits": [
+                            4127
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\nVS Effect gauge reduction: 5 \nSuper Switch Effect requirement reduction: 5 \nReduce Special Charge by 5 \nRetreat \n\nStage 3:\nTurn 0:\n5 turn(s)  if chain multiplier is 3 or less, 99% ATK Down \n5 turn(s)  if chain multiplier is 4.5 or more, 99% ATK Down \n6 turn(s) Damage over 100000 70% Reduction \nCounter Stance \n\nSpecial Interupt: When enemy status <state_id=47> is not applied (after Special/Super Special/VS Effect/Switch Effect/Super Switch Effect)\nUntil 1 time(s) \n3 turn(s) Damage over 100000 70% Reduction \n\nSpecial Interupt: Set Chain Multiplier \nUntil 1 time(s) \n2 turn(s) Crewmate  character swap Captain \n\n"  
+                    },
+                    {
+                        "title": "Vs. Robin [INT]",
+                        "recUnits": [
+                            4108,
+                            3197
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\n[QCK][PSY][INT] type VS Effect gauge reduction: 5 \n[QCK][PSY][INT] type Super Switch Effect requirement reduction: 5 \n[QCK][PSY][INT] type Reduce Special Charge by 5 \nRetreat \n\nStage 3:\nTurn 0:\n8 turn(s) Left-Column  Bind \n98 turn(s) Non-Normal Attacks deal 1 damage \nRight-Column  Special Reverse 2 turn(s) \n98 turn(s) Immunity \n8 turn(s) Top-Row  Despair \n\nOn Death:\nEnemy ATK x 1 damage \n\n"
+                    },
+                    {
+                        "title": "Vs. Zoro [DEX]",
+                        "recUnits": [
+                            4118,
+                            4120
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\nSlasher Powerhouse Striker  class VS Effect gauge reduction: 5 \nSlasher Powerhouse Striker  class Super Switch Effect requirement reduction: 5 \nSlasher Powerhouse Striker  class Reduce Special Charge by 5 \nRetreat \n\nStage 3:\nTurn 0:\n98 turn(s) Non-Normal Attacks deal 1 damage \n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [BLOCK] Slots \nCrewmate  Special Reverse 3 turn(s) \n4 turn(s) Slot Barrier ([QCK] Slots 2 time(s))\n98 turn(s) Immunity \nTop-Row  Special Reverse 5 turn(s) \n\nTurn 0:\n98 turn(s) Non-Normal Attacks deal 1 damage \n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [BLOCK] Slots \nCrewmate  Special Reverse 2 turn(s) \n3 turn(s) Slot Barrier ([QCK] Slots 1 time(s))\n98 turn(s) Immunity \nTop-Row  Special Reverse 3 turn(s) \n\nSpecial Interupt: Charge Specials \nUntil 1 time(s) \nPercentage damage 80% of current HP \nSpecial Reverse 1 turn(s) \nLocked Special Turns (PERFECT 2 time(s)) \n\nTurn 6:\nRoronoa Zoro: When remaining HP is 100% or below\nRoronoa Zoro: When remaining HP is 82% or below\nRoronoa Zoro: When remaining HP is 64% or below\nRoronoa Zoro: When remaining HP is 46% or below\nRoronoa Zoro: When remaining HP is 28% or below\n\n"
+                    },
+                    {
+                        "title": "Vs. Dr. Vegapunk \"Lilith the Evil\" [STR]",
+                        "recUnits": [
+                            4122,
+                            4125,
+                            4126
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\nDriven Cerebral Powerhouse  class VS Effect gauge reduction: 5 \nDriven Cerebral Powerhouse  class Super Switch Effect requirement reduction: 5 \nDriven Cerebral Powerhouse  class Reduce Special Charge by 5 \nRetreat \n\nStage 3:\nTurn 0:\n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [Unfavorable] Slots \n7 turn(s) Special Bind \n98 turn(s) Non-Normal Attacks deal 1 damage \n98 turn(s) Immunity \n5 turn(s) Resilience \n3 turn(s) Tap-Timing Barrier (GREAT 5 time(s))\n9 turn(s) Top-Row  Despair \n3 turn(s) Paralysis \n\nTurn 6:\nDr. Vegapunk \"Lilith the Evil\": When remaining HP is 100% or below\nDr. Vegapunk \"Lilith the Evil\": When remaining HP is 50% or below\n\n"
+                    },
+                    {
+                        "title": "Final Boss Vs. S-Shark [PSY]",
+                        "recUnits": [
+                            4133,
+                            4134,
+                            4135,
+                            4124
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\n[DEX][QCK][INT] type VS Effect gauge reduction: 5 \n[DEX][QCK][INT] type Super Switch Effect requirement reduction: 5 \n[DEX][QCK][INT] type Reduce Special Charge by 5 \nRetreat \n\nStage 2:\nTurn 0:\n9 turn(s) Top-Row  Bind \n98 turn(s) Non-Normal Attacks deal 1 damage \n6 turn(s) 30000 damage Burn \n6 turn(s) Reduce damage taken 90% \n3 turn(s) Tap-Timing Barrier (PERFECT 2 time(s))\n98 turn(s) Immunity \n\nOn Death:\nFull HP Recovery \nRetreat \n\nStage 3:\nTurn 0:\n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [RCV] Slots \n5 turn(s) Remove SFX \nFor 3 turn(s) receive 25000 damage after an action when taking any action besides normal taps\nFor 6 turn(s), accumulate healing from [RCV][SEMLA] slots and convert to damage at end of turn\nFor 6 turn(s), when attacking with [STR][DEX][QCK][PSY][INT][RCV][TND][WANO] slots, reduce damage dealt by 90% \n5 turn(s)  if chain multiplier is 3.5 or less, 99% ATK Down \n6 turn(s) Reduce damage taken 90% \n4 turn(s) Slot Barrier ([STR] Slots 1 time(s))\n\nSpecial Interupt: Slot Change \nUntil 1 time(s) \n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [RCV] Slots \n\n"
+                    },
+                    {
+                        "title": "Intrusion Vs. Lucci & Kaku & Stussy [PSY]",
+                        "recUnits": [
+                            4133,
+                            4134,
+                            4135,
+                            4108
+                        ],
+                        "gimmicks": "Stage 1:\nTurn 0:\nCerebral Fighter Striker  class VS Effect gauge reduction: 5 \nCerebral Fighter Striker  class Super Switch Effect requirement reduction: 5 \nCerebral Fighter Striker  class Reduce Special Charge by 5 \nRetreat \n\nStage 2:\nTurn 0:\n98 turn(s) Non-Normal Attacks deal 1 damage \nPercentage damage 80% of current HP \nFor 3 turn(s), accumulate healing from [RCV][SEMLA] slots and convert to damage at end of turn\nFor 3 turn(s), convert healing effects to damage except for [RCV][SEMLA] slots\n1 turn(s) Top-Row  Slot Bind \n8 turn(s) Top-Row  Bind \n8 turn(s) Top-Row  Despair \n\nOn Death:\nFull HP Recovery \nRetreat \n\nSpecial Interupt: Damage \nUntil 1 time(s) \n10 turn(s) Top-Row  Despair \n\nStage 3:\nTurn 0:\n2 turn(s) Slot Effect x 1.1 \n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [BLOCK] Slots \n6 turn(s) ATK 99% Down \n6 turn(s) DEF x 1000000 \n6 turn(s) Damage over 1000 99% Reduction \n6 turn(s) Reduce damage taken 90% \n\nOn Death:\n100000 damage \n\nSpecial Interupt: Slot Change \nUntil 1 time(s) \n[EMPTY][STR][DEX][QCK][PSY][INT][G][RCV][TND][BOMB]Slots to [S. BLOCK] Slots \n\n"
+                    }
+                ]
+            }
+        },
+
     ],
 
     
