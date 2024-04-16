@@ -128,6 +128,12 @@ window.capspecials = {
     4133: {
         orbPlus: function(p) { return 0.25; },
     },
+    4134: {
+        chainAdditionPlus: function(p) { return 0.3; },
+    },
+    4133: {
+        atkbasePlus: function(p) { return 250; },
+    },
 };
 
 var calcGhostStartIDCapSpecials = { "start": 5000 };

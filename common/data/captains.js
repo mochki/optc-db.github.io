@@ -14574,12 +14574,29 @@ window.captains = {
         status: function(p) { return p.increaseDamageTaken || p.enemyEffects.delayed > 1 || p.defenseDown || p.poisoned || p.paralysis ? 1.2 : 1; },
         hp: function(p) { return p.unit.class.has("Driven") ? 1.25 : 1; },
     },
+    4128: {
+        atk: function(p) { return p.unit.class.has("Cerebral") ? 3.75 : 1; },
+        status: function(p) { return p.increaseDamageTaken || p.enemyEffects.delayed > 1 || p.defenseDown || p.poisoned || p.paralysis ? 1.2 : 1; },
+        hp: function(p) { return p.unit.class.has("Cerebral") ? 1.25 : 1; },
+    },
     4129: {
         atk: function(p) { return p.slot == p.sourceSlot ? 1.25 : 3.5; },
     },
     4132: {
         atk: function(p) { return p.unit.class.has("Fighter") || p.unit.class.has("Shooter") ? p.percHP <= 30 ? 5.5 : 5 : 1; },
         hp: function(p) { return p.unit.class.has("Fighter") || p.unit.class.has("Shooter") ? 1.5 : 1; },
+    },
+    4133: {
+        atk: function(p) { return p.unit.type == "INT" || p.unit.class.has("Fighter") || p.unit.class.has("Cerebral") ? ((CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) && (p.orb != 'g')) ? 5.5 : 5.25 : 1; },
+        hp: function(p) { return p.unit.type == "INT" || p.unit.class.has("Fighter") || p.unit.class.has("Cerebral") ? 1.35 : 1; },
+    },
+    4134: {
+        atk: function(p) { return p.unit.type == "INT" || p.unit.class.has("Cerebral") ? ((CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) && (p.orb != 'g')) ? 4.25 : 3.5 : 1; },
+        hp: function(p) { return p.unit.type == "INT" || p.unit.class.has("Cerebral") ? 1.35 : 1; },
+    },
+    4135: {
+        atk: function(p) { return p.unit.type == "INT" || p.unit.class.has("Cerebral") ? ((CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) && (p.orb != 'g')) ? 4.25 : 3.5 : 1; },
+        hp: function(p) { return p.unit.type == "INT" || p.unit.class.has("Cerebral") ? 1.35 : 1; },
     },
 };
 
