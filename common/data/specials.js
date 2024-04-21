@@ -11607,13 +11607,13 @@ window.specials = {
         },
     },
     3307: {
-        atk: function(p) { return p.unit.type == "INT" ? 2.5 : 1; },
+        atk: function(p) { return p.unit.type == "INT" ? [2.5, 2.75][CrunchUtils.llimitUnlock(p, "specials")] : 1; },
         type: "type",
         def: function(p) { return 0; },
         chain: function(p) { return p.cached.multiplier; },
         chainLimiter: function(p) {
             var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
-            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? p.cached.multiplier : 1;
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? [p.cached.multiplier, 25][CrunchUtils.llimitUnlock(p, "specials")] : 1;
         },
         onActivation: function(p) {
             var levels = [3, 3.25, 3.5];
@@ -17870,6 +17870,64 @@ window.specials = {
             p.cached.multiplier = levels[n];
             p.scope.notify({
                 text: 'Using the ' + ["Base ATK Boost", "Base ATK Buff", "Base ATK Boost and Base ATK Buff"][levels[n]] + '. To switch to ' + ["Base ATK Boost", "Base ATK Buff", "Base ATK Boost and Base ATK Buff"][levels[(n + 1) % levels.length]] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    4136: {
+        atk: function(p) { return p.unit.class.has("Cerebral") ? p.cached.multiplier[0] : 1; },
+        type: "class",
+        orb: function(p) { return p.unit.class.has("Cerebral") ? p.cached.multiplier[1] : 1; },
+        affinity: function(p) { return p.unit.class.has("Cerebral") ? p.cached.multiplier[2] : 1; },
+        atkbase: function(p) { return p.unit.class.has("Cerebral") ? p.cached.multiplier[3] : 1; },
+        chainAddition: function(p) { return p.cached.multiplier[4]; },
+        status: function(p) { return p.poisoned ? p.cached.multiplier[5] : 1; },
+        onActivation: function(p) {
+            p.cached.multiplier = [p.vegapunkOptions[0] ? 2.75 : 1, p.vegapunkOptions[1] ? 2.75 : 1, p.vegapunkOptions[2] ? 2.5 : 1, p.vegapunkOptions[3] ? 1500 : 0, p.vegapunkOptions[4] ? 1.8 : 0, p.vegapunkOptions[5] ? 2.5 : 1];
+        },
+    },
+    4137: {
+        atk: function(p) { return p.unit.class.has("Cerebral") ? p.cached.multiplier[0] : 1; },
+        type: "class",
+        orb: function(p) { return p.unit.class.has("Cerebral") ? p.cached.multiplier[1] : 1; },
+        affinity: function(p) { return p.unit.class.has("Cerebral") ? p.cached.multiplier[2] : 1; },
+        atkbase: function(p) { return p.unit.class.has("Cerebral") ? p.cached.multiplier[3] : 1; },
+        chainAddition: function(p) { return p.cached.multiplier[4]; },
+        status: function(p) { return p.poisoned ? p.cached.multiplier[5] : 1; },
+        onActivation: function(p) {
+            p.cached.multiplier = [p.vegapunkOptions[0] ? 2.75 : 1, p.vegapunkOptions[1] ? 2.75 : 1, p.vegapunkOptions[2] ? 2.5 : 1, p.vegapunkOptions[3] ? 1500 : 0, p.vegapunkOptions[4] ? 1.8 : 0, p.vegapunkOptions[5] ? 2.5 : 1];
+        },
+    },
+    4138: {
+        delay: function(p) { return 1; },
+        affinity: function(p) { return p.unit.class.has("Cerebral") ? [2, 1][p.cached.multiplier] : 1; },
+        affinityPlus: function(p) { return [0.25, 0.5][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["Affinity Boost & Buff", "+0.5x Affinity Buff"][levels[n]] + '. To switch to ' + ["Affinity Boost & Buff", "+0.5x Affinity Buff"][levels[(n + 1) % levels.length]] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    4139: {
+        def: function(p) { return 0; },
+        ignoresImmunities: function(p) { return [[], [[], ['def'], ['def']][p.cached.multiplier]][CrunchUtils.llimitUnlock(p, "specials")]; },
+        chain: function(p) { return [[3.25, 3.5, 4],[3.25, 3.25, 3.5]][CrunchUtils.llimitUnlock(p, "specials")][p.cached.multiplier]; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? [[3.25, 3.5, 4],[3.25, 25, 25]][CrunchUtils.llimitUnlock(p, "specials")][p.cached.multiplier] : 1;
+        },
+        affinity: function(p) { return p.unit.class.has("Cerebral") ? 2.5 : 1; },
+        affinityPlus: function(p) { return [0, 0.25, 0.25][CrunchUtils.llimitUnlock(p, "specials")]; },
+        onActivation: function(p) {
+            var levels = [0, 1, 2];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["<8 RCV orbs", "8-14 RCV orbs", "15+ RCV orbs"][levels[n]] + '. To switch to ' + ["<8 RCV orbs", "8-14 RCV orbs", "15+ RCV orbs"][levels[(n + 1) % levels.length]] + ', disable and re-enable this special',
                 name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
             });
         },

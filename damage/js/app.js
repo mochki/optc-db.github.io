@@ -143,6 +143,7 @@ var SharedRootCtrl = function($scope, $rootScope, $timeout) {
         emptyOrbsEnabled: 0,
         superBombOrbsEnabled: 0,
         sugarToysEnabled: 0,
+        vegapunkOptionsEnabled: 0,
         tokiStateEnabled: 0,
         cloneEnabled: 0,
         classOverrideEnabled: 0,

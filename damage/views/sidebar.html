@@ -192,6 +192,14 @@
             </div>
         </li>
 
+        <li ng-show="options.vegapunkOptionsEnabled">
+            <div id="vegapunkOptions">
+                <i class="fa fa-wrench"></i>
+                Vegapunk Options:<br>
+                <span ng-repeat="n in ::[].constructor(6) track by $index"><label>Effect {{$index+1}}: <input type="checkbox" class="wheelable" name="vegapunkOptions{{$index}}" ng-model="data.vegapunkOptions[$index]"></label></span>
+            </div>
+        </li>
+
         <li ng-show="options.tokiStateEnabled">
             <div id="toki">
                 <i class="fa fa-hourglass"></i>

@@ -618,6 +618,10 @@ window.altspecials = {
     4115: {
         increaseDamageTaken: function(p) { return 2; },
     },
+    4137: {
+        atkPlus: function(p) { return 0.25; },
+        orbPlus: function(p) { return 0.25; },
+    },
 };
 
 var calcGhostStartIDAltSpecials = { "start": 5000 };

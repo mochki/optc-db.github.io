@@ -14598,6 +14598,22 @@ window.captains = {
         atk: function(p) { return p.unit.type == "INT" || p.unit.class.has("Cerebral") ? ((CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) && (p.orb != 'g')) ? 4.25 : 3.5 : 1; },
         hp: function(p) { return p.unit.type == "INT" || p.unit.class.has("Cerebral") ? 1.35 : 1; },
     },
+    4136: {
+        atk: function(p) { return p.unit.class.has("Cerebral") ? ((CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) && (p.orb != 'g')) && p.classCount.Cerebral == 6 ? 5.75 : 5.25 : 1; },
+        hp: function(p) { return p.unit.class.has("Cerebral") ? 1.35 : 1; },
+    },
+    4137: {
+        atk: function(p) { return p.unit.class.has("Cerebral") ? ((CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) && (p.orb != 'g')) && p.classCount.Cerebral == 6 ? 5.75 : 5.25 : 1; },
+        hp: function(p) { return p.unit.class.has("Cerebral") ? 1.35 : 1; },
+    },
+    4138: {
+        atk: function(p) { return p.unit.type == "INT" || p.unit.class.has("Cerebral") ? ((CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) && (p.orb != 'g')) ? 4.25 : 3.5 : 1; },
+        hp: function(p) { return p.unit.type == "INT" || p.unit.class.has("Cerebral") ? 1.35 : 1; },
+    },
+    4139: {
+        atk: function(p) { return p.unit.type == "INT" || p.unit.class.has("Cerebral") ? [ 'meat' ].includes(p.orb) ? [5.25, 5.5][CrunchUtils.llimitUnlock(p, "captains")] : [4.75, 5][CrunchUtils.llimitUnlock(p, "captains")] : 4.25; },
+        hp: function(p) { return p.unit.type == "INT" || p.unit.class.has("Cerebral") ? [1, 1.2][CrunchUtils.llimitUnlock(p, "captains")] : 1; },
+    },
 };
 
 var calcGhostStartIDCaptains = { "start": 5000 };

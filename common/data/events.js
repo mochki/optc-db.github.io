@@ -1619,6 +1619,26 @@ window.events = {
                 $scope.notify({ text: 'Disabling [TND] orbs support.' });
         }
     },
+    4136: {
+        onInsertion: function($scope) {
+            if (++$scope.options.vegapunkOptionsEnabled == 1)
+                $scope.notify({ text: 'Enabling Vegapunk Special Options.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.vegapunkOptionsEnabled === 0)
+                $scope.notify({ text: 'Disabling Vegapunk Special Options.' });
+        }
+    },
+    4137: {
+        onInsertion: function($scope) {
+            if (++$scope.options.vegapunkOptionsEnabled == 1)
+                $scope.notify({ text: 'Enabling Vegapunk Special Options.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.vegapunkOptionsEnabled === 0)
+                $scope.notify({ text: 'Disabling Vegapunk Special Options.' });
+        }
+    },
     5052: {
         onInsertion: function($scope) {
             if (++$scope.options.meatOrbsEnabled == 1)

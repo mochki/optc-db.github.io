@@ -2125,6 +2125,7 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
             // sugarToy will be false when sugar special is off, but sugarToy in team and scope.data.team will stay
             sugarToy: $scope.tdata.sugarToysSpecialEnabled && $scope.data.team[slotNumber].sugarToy,
             tokiState: $scope.data.team[slotNumber].tokiState,
+            vegapunkOptions: $scope.data.vegapunkOptions,
             gear: [ $scope.data.gearLevelLeft, $scope.data.gearLevelRight ],
             hitcombo: hitModifiers,
             effectName: $scope.data.effect,

@@ -7802,6 +7802,22 @@ window.drops = {
             ],
         },
 
+        {
+            name: 'Lucci',
+            dropID: 'kizuna55',
+            thumb: 3422,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Kizuna Exchange': [ "4139-skull" ],
+            boosters: [
+                {"effect": "Boosts Kizuna Tickets earned for Clear Rewards by 1.5x! Plus, stats boosted by 2x, Special charge time reduced by 15 turns at start of quest, and makes character's attacks effective against all enemy types!", "units": [4137]},
+                {"effect": "Boosts Kizuna Tickets earned for Clear Rewards by 1.2x! Plus, stats boosted by 2x, Special charge time reduced by 15 turns at start of quest, and makes character's attacks effective against all enemy types!", "units": [4138]},
+                {"effect": "Stats boosted by 2x, Special charge time reduced by 15 turns at start of quest!", "units": [4122, 4124, 4125, 4126, 4132, 4133, 4134, 4135, 4128, 3307, 4139, 5578, 5579, 5580, 5581, 5586, 5587, 5588, 5589]},
+                {"effect": "Stats boosted by 1.5x, Special charge time reduced by 15 turns at start of quest!", "units": [4115, 4116, 3886, 2936, 2938, 2940, 2942, 2944, 2946, 2948, 2950, 2952, 3884, 4127, 2729, 2583, 2792, 2977, 2023, 2025, 4082, 4054, 3780, 4084, 3917, 3590, 3646, 3692, 3738, 4035, 3302, 3445, 3803, 4034, 3427, 3861, 4012, 4037, 3957, 3956, 3607, 3515, 4129, 4100, 4102, 4111, 3625, 3592, 5488, 5489, 5490, 5491, 5385, 5386, 5387, 5388]},
+            ],
+        },
+
     ],
 
 
