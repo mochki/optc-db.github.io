@@ -14599,11 +14599,11 @@ window.captains = {
         hp: function(p) { return p.unit.type == "INT" || p.unit.class.has("Cerebral") ? 1.35 : 1; },
     },
     4136: {
-        atk: function(p) { return p.unit.class.has("Cerebral") ? ((CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) && (p.orb != 'g')) && p.classCount.Cerebral == 6 ? 5.75 : 5.25 : 1; },
+        atk: function(p) { return p.classCount.Cerebral == 6 && p.unit.class.has("Cerebral") ? ((CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) && (p.orb != 'g')) ? 5.75 : 5.25 : 1; },
         hp: function(p) { return p.unit.class.has("Cerebral") ? 1.35 : 1; },
     },
     4137: {
-        atk: function(p) { return p.unit.class.has("Cerebral") ? ((CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) && (p.orb != 'g')) && p.classCount.Cerebral == 6 ? 5.75 : 5.25 : 1; },
+        atk: function(p) { return p.classCount.Cerebral == 6 && p.unit.class.has("Cerebral") ? ((CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) && (p.orb != 'g')) ? 5.75 : 5.25 : 1; },
         hp: function(p) { return p.unit.class.has("Cerebral") ? 1.35 : 1; },
     },
     4138: {

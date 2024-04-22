@@ -17881,7 +17881,7 @@ window.specials = {
         affinity: function(p) { return p.unit.class.has("Cerebral") ? p.cached.multiplier[2] : 1; },
         atkbase: function(p) { return p.unit.class.has("Cerebral") ? p.cached.multiplier[3] : 1; },
         chainAddition: function(p) { return p.cached.multiplier[4]; },
-        status: function(p) { return p.poisoned ? p.cached.multiplier[5] : 1; },
+        status: function(p) { return p.poisoned || p.defenseDown || p.delayed > 0 ? p.cached.multiplier[5] : 1; },
         onActivation: function(p) {
             p.cached.multiplier = [p.vegapunkOptions[0] ? 2.75 : 1, p.vegapunkOptions[1] ? 2.75 : 1, p.vegapunkOptions[2] ? 2.5 : 1, p.vegapunkOptions[3] ? 1500 : 0, p.vegapunkOptions[4] ? 1.8 : 0, p.vegapunkOptions[5] ? 2.5 : 1];
         },
@@ -17893,7 +17893,7 @@ window.specials = {
         affinity: function(p) { return p.unit.class.has("Cerebral") ? p.cached.multiplier[2] : 1; },
         atkbase: function(p) { return p.unit.class.has("Cerebral") ? p.cached.multiplier[3] : 1; },
         chainAddition: function(p) { return p.cached.multiplier[4]; },
-        status: function(p) { return p.poisoned ? p.cached.multiplier[5] : 1; },
+        status: function(p) { return p.poisoned || p.defenseDown || p.delayed > 0 ? p.cached.multiplier[5] : 1; },
         onActivation: function(p) {
             p.cached.multiplier = [p.vegapunkOptions[0] ? 2.75 : 1, p.vegapunkOptions[1] ? 2.75 : 1, p.vegapunkOptions[2] ? 2.5 : 1, p.vegapunkOptions[3] ? 1500 : 0, p.vegapunkOptions[4] ? 1.8 : 0, p.vegapunkOptions[5] ? 2.5 : 1];
         },
@@ -17921,7 +17921,7 @@ window.specials = {
             return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? [[3.25, 3.5, 4],[3.25, 25, 25]][CrunchUtils.llimitUnlock(p, "specials")][p.cached.multiplier] : 1;
         },
         affinity: function(p) { return p.unit.class.has("Cerebral") ? 2.5 : 1; },
-        affinityPlus: function(p) { return [0, 0.25, 0.25][CrunchUtils.llimitUnlock(p, "specials")]; },
+        affinityPlus: function(p) { return [0, 0.25, 0.25][p.cached.multiplier]; },
         onActivation: function(p) {
             var levels = [0, 1, 2];
             var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;

@@ -363,7 +363,7 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
             if (orb =='meat'){
                 for (temp = 0; temp < 2; temp++){
                     if (team[temp].unit != null){
-                        if ([ 1610, 1609, 1532, 1531, 2232, 2233, 2234, 2500, 2300, 2803, 2804, 5052, 5054, 5055, 5057, 2957, 2957, 3306, 3307, 3814, 3888, 3889, 3904, 3905, 3947, 3948, 5453, 5454, 5455, 5456, 5457, 5548, 5459, 5460, 3955, 3956, 3957, 3966, 3967, 5547, 5548, 5549, 5550, 5551, 5552, 5553, 5554, 4028, 4029 ].includes(team[temp].unit.number + 1)){
+                        if ([ 1610, 1609, 1532, 1531, 2232, 2233, 2234, 2500, 2300, 2803, 2804, 5052, 5054, 5055, 5057, 2957, 2957, 3306, 3307, 3814, 3888, 3889, 3904, 3905, 3947, 3948, 5453, 5454, 5455, 5456, 5457, 5548, 5459, 5460, 3955, 3956, 3957, 3966, 3967, 5547, 5548, 5549, 5550, 5551, 5552, 5553, 5554, 4028, 4029, 4139 ].includes(team[temp].unit.number + 1)){
                             orb = 2;
                         }
                         if ([ 2012, 2013 ].includes(team[temp].unit.number + 1) && x.unit.class.has("Free Spirit")){
@@ -767,7 +767,7 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
     };
 
     var getAffinity = function(strength, attackerType, teamSlot){
-        var superAffinity = [ 2, 0.5 ];
+        var superAffinity = [ 2.5, 0.75 ];
         enabledSpecials.forEach(function(data) {
             if (data.hasOwnProperty('superAffinity')){
                 superParams = getParameters(teamSlot);
@@ -775,8 +775,8 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
                 superAffinity[0] = data.superAffinity(params) > 1 ? data.superAffinity(params) : superAffinity[0];
             }
         });
-        if(strength == 'strong') return $scope.data["superType" + attackerType] ? $scope.data.enemySuperType ? superAffinity[0] : superAffinity[0] : $scope.data.enemySuperType ? 1.5 : superAffinity[0];
-        else return $scope.data["superType" + attackerType] ? $scope.data.enemySuperType ? 0.5 : 0.75 : $scope.data.enemySuperType ? 0.25 : 0.5;
+        if(strength == 'strong') return $scope.data["superType" + attackerType] ? $scope.data.enemySuperType ? 2 : superAffinity[0] : $scope.data.enemySuperType ? 1.5 : 2;
+        else return $scope.data["superType" + attackerType] ? $scope.data.enemySuperType ? 0.5 : superAffinity[1] : $scope.data.enemySuperType ? 0.25 : 0.5;
     };
 
     var getTypeMultiplierOfUnit = function(attackerType, attackedType, unit, teamSlot) {
