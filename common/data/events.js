@@ -2771,4 +2771,84 @@ window.events = {
                 $scope.notify({ text: 'Disabling [EMPTY] orbs support.' });
         }
     },
+    5594: {
+        onInsertion: function($scope) {
+            if (++$scope.options.superBombOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [SUPERBOMB] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.superBombOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [SUPERBOMB] orbs support.' });
+        }
+    },
+    5595: {
+        onInsertion: function($scope) {
+            if (++$scope.options.superBombOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [SUPERBOMB] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.superBombOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [SUPERBOMB] orbs support.' });
+        }
+    },
+    5596: {
+        onInsertion: function($scope) {
+            if (++$scope.options.superBombOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [SUPERBOMB] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.superBombOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [SUPERBOMB] orbs support.' });
+        }
+    },
+    5597: {
+        onInsertion: function($scope) {
+            if (++$scope.options.superBombOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [SUPERBOMB] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.superBombOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [SUPERBOMB] orbs support.' });
+        }
+    },
+    5598: {
+        onInsertion: function($scope) {
+            if (++$scope.options.superBombOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [SUPERBOMB] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.superBombOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [SUPERBOMB] orbs support.' });
+        }
+    },
+    5599: {
+        onInsertion: function($scope) {
+            if (++$scope.options.superBombOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [SUPERBOMB] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.superBombOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [SUPERBOMB] orbs support.' });
+        }
+    },
+    5600: {
+        onInsertion: function($scope) {
+            if (++$scope.options.superBombOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [SUPERBOMB] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.superBombOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [SUPERBOMB] orbs support.' });
+        }
+    },
+    5601: {
+        onInsertion: function($scope) {
+            if (++$scope.options.superBombOrbsEnabled == 1)
+                $scope.notify({ text: 'Enabling [SUPERBOMB] orbs support.' });
+        },
+        onRemoval: function($scope) {
+            if (--$scope.options.superBombOrbsEnabled === 0)
+                $scope.notify({ text: 'Disabling [SUPERBOMB] orbs support.' });
+        }
+    },
 };

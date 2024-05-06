@@ -413,9 +413,10 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
                         }
                     }
                     if (orb == 'superbomb'){
-                        if ([ 2979, 2980 ].includes(team[temp].unit.number + 1)){
+                        if ([ 2979, 2980, 5594, 5595, 5596, 5597, 5598, 5599, 5600, 5601 ].includes(team[temp].unit.number + 1)){
                             //orb = 2;
-                            orb = (window.specials[3762].turnedOn) ? 2.25 : 2;
+                            orb = (window.specials[5596].turnedOn || window.capspecials[5597].turnedOn || window.capspecials[5600].turnedOn || window.capspecials[5601].turnedOn) ? 2.5 : 
+                                (window.specials[3762].turnedOn || window.capspecials[5595].turnedOn || window.capspecials[5599].turnedOn) ? 2.25 : 2;
                         }
                     }
                     if (orb == 'dex'){
@@ -1640,7 +1641,7 @@ var CruncherCtrl = function($scope, $rootScope, $timeout) {
                 $scope.tdata.dmgreductionCounter.enabled = true;
             if ([3829, 3830].has(id))
                 $scope.tdata.carrychainCounter.enabled = true;
-            if ([5574, 5575, 5576, 5577, 5578, 5579, 5580, 5581, 5582, 5583, 5584, 5585, 5586, 5587, 5588, 5589].has(id))
+            if ([5574, 5575, 5576, 5577, 5578, 5579, 5580, 5581, 5582, 5583, 5584, 5585, 5586, 5587, 5588, 5589, 5590, 5591, 5592, 5593].has(id))
                 $scope.tdata.debuffCounter.enabled = true;
         });
         if (conflictWarning) 

@@ -17932,6 +17932,47 @@ window.specials = {
             });
         },
     },
+    4144: {
+        atk: function(p) { return (p.unit.type == "DEX" || p.unit.type == "INT") ? 2.5 : 1; },
+        type: "type",
+        chainMultiplication: function(p) { return p.cached.multiplier; },
+        onActivation: function(p) {
+            var levels = [1, 1.2];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + levels[n] + 'x Chain Multiplication. To ' + levels[(n + 1) % levels.length] + 'x Chain Multiplication, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    4145: {
+        orb: function(p) { return (p.unit.type == "DEX" || p.unit.type == "INT") ? 2.5 : 1; },
+        chainAddition: function(p) { return p.cached.multiplier; },
+        onActivation: function(p) {
+            var levels = [0, 1.3];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + levels[n] + 'x Chain Multiplication. To ' + levels[(n + 1) % levels.length] + 'x Chain Multiplication, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    4146: {
+        delay: function(p) { return [1, 0][p.cached.multiplier]; },
+        increaseDamageTaken: function(p) { return [1.5, 1.75][p.cached.multiplier]; },
+        ignoresImmunities: function(p) { return [[], ["increaseDamageTaken"]][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["Turn 1", "Next Turn"][n] + ' Effects. To ' + ["Turn 1", "Next Turn"][(n + 1) % levels.length] + ' Effects, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
 };
 
 var calcGhostStartIDSpecials = { "start": 5000 };
@@ -22652,6 +22693,238 @@ var ghostsSpecials = {
             p.cached.multiplier = p.debuffCounter >= 6 ? 2.75 : p.debuffCounter >= 3 ? 2.5 : 2.25;
             p.cached.multiplier1 = p.debuffCounter >= 8 ? 0.25 : 0;
         }
+    },
+    590: {
+        atkbase: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? p.cached.multiplier2 : 1; },
+        status: function(p) { return p.defenseDown ? [2.25, 2.5][p.cached.multiplier] : 1; },
+        statusPlus: function(p) { return p.defenseDown ? [0.25, 0.3][p.cached.multiplier] : 1; },
+        atkbasePlus: function(p) { return p.defenseDown ? [250, 300][p.cached.multiplier] : 1; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier2 = p.debuffCounter >= 10 ? 2000 : p.debuffCounter >= 7 ? 1750 : p.debuffCounter >= 4 ? 1500 : 1250;
+            p.scope.notify({
+                text: 'Using the ' + ["Solo", "Combined"][n] + ' Special. To switch to the ' + ["Solo", "Combined"][(n + 1) % levels.length] + ' Special, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    591: {
+        atkbase: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? p.cached.multiplier2 : 1; },
+        status: function(p) { return p.defenseDown ? [2.25, 2.5][p.cached.multiplier] : 1; },
+        statusPlus: function(p) { return p.defenseDown ? [0.25, 0.3][p.cached.multiplier] : 1; },
+        atkbasePlus: function(p) { return p.defenseDown ? [250, 300][p.cached.multiplier] : 1; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier2 = p.debuffCounter >= 10 ? 2000 : p.debuffCounter >= 7 ? 1750 : p.debuffCounter >= 4 ? 1500 : 1250;
+            p.scope.notify({
+                text: 'Using the ' + ["Solo", "Combined"][n] + ' Special. To switch to the ' + ["Solo", "Combined"][(n + 1) % levels.length] + ' Special, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    592: {
+        atkbase: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? p.cached.multiplier2 : 1; },
+        status: function(p) { return p.defenseDown ? [2.25, 2.5][p.cached.multiplier] : 1; },
+        statusPlus: function(p) { return p.defenseDown ? [0.25, 0.3][p.cached.multiplier] : 1; },
+        atkbasePlus: function(p) { return p.defenseDown ? [250, 300][p.cached.multiplier] : 1; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier2 = p.debuffCounter >= 10 ? 2000 : p.debuffCounter >= 7 ? 1750 : p.debuffCounter >= 4 ? 1500 : 1250;
+            p.scope.notify({
+                text: 'Using the ' + ["Solo", "Combined"][n] + ' Special. To switch to the ' + ["Solo", "Combined"][(n + 1) % levels.length] + ' Special, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    593: {
+        atkbase: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? p.cached.multiplier2 : 1; },
+        status: function(p) { return p.defenseDown ? [2.25, 2.5][p.cached.multiplier] : 1; },
+        statusPlus: function(p) { return [0.25, 0.3][p.cached.multiplier]; },
+        atkbasePlus: function(p) { return [250, 300][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier2 = p.debuffCounter >= 10 ? 2000 : p.debuffCounter >= 7 ? 1750 : p.debuffCounter >= 4 ? 1500 : 1250;
+            p.scope.notify({
+                text: 'Using the ' + ["Solo", "Combined"][n] + ' Special. To switch to the ' + ["Solo", "Combined"][(n + 1) % levels.length] + ' Special, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    594: {
+        affinity: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? [2.25, 2.5][p.cached.multiplier] : 1; },
+        tapTiming: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? { Good: 0.2, Great: 0.3, Perfect: 0.3 } : { Good: 0, Great: 0, Perfect: 0 }; },
+        chain: function(p) { return p.cached.multiplier2; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 30 : 1;
+        },
+        chainPlus: function(p) { return 0.25; },
+        affinityPlus: function(p) { return [0.25, 0.3][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier2 = p.debuffCounter >= 8 ? 3.25 : p.debuffCounter >= 6 ? 3.0 : p.debuffCounter >= 3 ? 2.75 : 2.5;
+            p.scope.notify({
+                text: 'Using the ' + ["Solo", "Combined"][n] + ' Special. To switch to the ' + ["Solo", "Combined"][(n + 1) % levels.length] + ' Special, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    595: {
+        affinity: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? [2.25, 2.5][p.cached.multiplier] : 1; },
+        tapTiming: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? { Good: 0.2, Great: 0.3, Perfect: 0.3 } : { Good: 0, Great: 0, Perfect: 0 }; },
+        chain: function(p) { return p.cached.multiplier2; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 30 : 1;
+        },
+        chainPlus: function(p) { return 0.25; },
+        affinityPlus: function(p) { return [0.25, 0.3][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier2 = p.debuffCounter >= 8 ? 3.25 : p.debuffCounter >= 6 ? 3.0 : p.debuffCounter >= 3 ? 2.75 : 2.5;
+            p.scope.notify({
+                text: 'Using the ' + ["Solo", "Combined"][n] + ' Special. To switch to the ' + ["Solo", "Combined"][(n + 1) % levels.length] + ' Special, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    596: {
+        affinity: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? [2.25, 2.5][p.cached.multiplier] : 1; },
+        tapTiming: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? { Good: 0.2, Great: 0.3, Perfect: 0.3 } : { Good: 0, Great: 0, Perfect: 0 }; },
+        chain: function(p) { return p.cached.multiplier2; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 30 : 1;
+        },
+        chainPlus: function(p) { return 0.25; },
+        affinityPlus: function(p) { return [0.25, 0.3][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier2 = p.debuffCounter >= 8 ? 3.25 : p.debuffCounter >= 6 ? 3.0 : p.debuffCounter >= 3 ? 2.75 : 2.5;
+            p.scope.notify({
+                text: 'Using the ' + ["Solo", "Combined"][n] + ' Special. To switch to the ' + ["Solo", "Combined"][(n + 1) % levels.length] + ' Special, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    597: {
+        affinity: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? [2.25, 2.5][p.cached.multiplier] : 1; },
+        tapTiming: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? { Good: 0.2, Great: 0.3, Perfect: 0.3 } : { Good: 0, Great: 0, Perfect: 0 }; },
+        chain: function(p) { return p.cached.multiplier2; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 30 : 1;
+        },
+        chainPlus: function(p) { return 0.25; },
+        affinityPlus: function(p) { return [0.25, 0.3][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier2 = p.debuffCounter >= 8 ? 3.25 : p.debuffCounter >= 6 ? 3.0 : p.debuffCounter >= 3 ? 2.75 : 2.5;
+            p.scope.notify({
+                text: 'Using the ' + ["Solo", "Combined"][n] + ' Special. To switch to the ' + ["Solo", "Combined"][(n + 1) % levels.length] + ' Special, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    598: {
+        affinity: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? [2.25, 2.5][p.cached.multiplier] : 1; },
+        tapTiming: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? { Good: 0.2, Great: 0.3, Perfect: 0.3 } : { Good: 0, Great: 0, Perfect: 0 }; },
+        chain: function(p) { return p.cached.multiplier2; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 30 : 1;
+        },
+        chainPlus: function(p) { return 0.25; },
+        affinityPlus: function(p) { return [0.25, 0.3][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier2 = p.debuffCounter >= 8 ? 3.25 : p.debuffCounter >= 6 ? 3.0 : p.debuffCounter >= 3 ? 2.75 : 2.5;
+            p.scope.notify({
+                text: 'Using the ' + ["Solo", "Combined"][n] + ' Special. To switch to the ' + ["Solo", "Combined"][(n + 1) % levels.length] + ' Special, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    599: {
+        affinity: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? [2.25, 2.5][p.cached.multiplier] : 1; },
+        tapTiming: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? { Good: 0.2, Great: 0.3, Perfect: 0.3 } : { Good: 0, Great: 0, Perfect: 0 }; },
+        chain: function(p) { return p.cached.multiplier2; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 30 : 1;
+        },
+        chainPlus: function(p) { return 0.25; },
+        affinityPlus: function(p) { return [0.25, 0.3][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier2 = p.debuffCounter >= 8 ? 3.25 : p.debuffCounter >= 6 ? 3.0 : p.debuffCounter >= 3 ? 2.75 : 2.5;
+            p.scope.notify({
+                text: 'Using the ' + ["Solo", "Combined"][n] + ' Special. To switch to the ' + ["Solo", "Combined"][(n + 1) % levels.length] + ' Special, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    600: {
+        affinity: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? [2.25, 2.5][p.cached.multiplier] : 1; },
+        tapTiming: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? { Good: 0.2, Great: 0.3, Perfect: 0.3 } : { Good: 0, Great: 0, Perfect: 0 }; },
+        chain: function(p) { return p.cached.multiplier2; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 30 : 1;
+        },
+        chainPlus: function(p) { return 0.25; },
+        affinityPlus: function(p) { return [0.25, 0.3][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier2 = p.debuffCounter >= 8 ? 3.25 : p.debuffCounter >= 6 ? 3.0 : p.debuffCounter >= 3 ? 2.75 : 2.5;
+            p.scope.notify({
+                text: 'Using the ' + ["Solo", "Combined"][n] + ' Special. To switch to the ' + ["Solo", "Combined"][(n + 1) % levels.length] + ' Special, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    601: {
+        affinity: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? [2.25, 2.5][p.cached.multiplier] : 1; },
+        tapTiming: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? { Good: 0.2, Great: 0.3, Perfect: 0.3 } : { Good: 0, Great: 0, Perfect: 0 }; },
+        chain: function(p) { return p.cached.multiplier2; },
+        chainLimiter: function(p) {
+            var prev = p.hitcombo[p.hitcombo.length - 1][p.chainPosition - 1]
+            return p.chainPosition === 0 ? 1 : (prev == 'Good'  || prev == 'Great' || prev == 'Perfect') ? 30 : 1;
+        },
+        chainPlus: function(p) { return 0.25; },
+        affinityPlus: function(p) { return [0.25, 0.3][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.cached.multiplier2 = p.debuffCounter >= 8 ? 3.25 : p.debuffCounter >= 6 ? 3.0 : p.debuffCounter >= 3 ? 2.75 : 2.5;
+            p.scope.notify({
+                text: 'Using the ' + ["Solo", "Combined"][n] + ' Special. To switch to the ' + ["Solo", "Combined"][(n + 1) % levels.length] + ' Special, disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
     },
 };
 

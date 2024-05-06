@@ -14614,6 +14614,25 @@ window.captains = {
         atk: function(p) { return p.unit.type == "INT" || p.unit.class.has("Cerebral") ? [ 'meat' ].includes(p.orb) ? [5.25, 5.5][CrunchUtils.llimitUnlock(p, "captains")] : [4.75, 5][CrunchUtils.llimitUnlock(p, "captains")] : 4.25; },
         hp: function(p) { return p.unit.type == "INT" || p.unit.class.has("Cerebral") ? [1, 1.2][CrunchUtils.llimitUnlock(p, "captains")] : 1; },
     },
+    4143: {
+        atk: function(p) { return p.unit.type == "INT" || p.unit.type == "DEX" ? 3.5 : 1; },
+        hp: function(p) { return p.unit.type == "INT" || p.unit.type == "DEX" ? 1.3 : 1; },
+    },
+    4144: {
+        atk: function(p) { return p.unit.type == "INT" || p.unit.type == "DEX" ? 3.5 : 1; },
+        hp: function(p) { return p.unit.type == "INT" || p.unit.type == "DEX" ? 1.3 : 1; },
+    },
+    4145: {
+        atk: function(p) { return p.unit.type == "INT" || p.unit.type == "DEX" ? 3.5 : 1; },
+        hp: function(p) { return p.unit.type == "INT" || p.unit.type == "DEX" ? 1.3 : 1; },
+    },
+    4146: {
+        atk: function(p) { return p.unit.type == "INT" || p.unit.type == "DEX" ? p.actions[p.sourceSlot] ? 4 : 3.75 : 1; },
+    },
+    4148: {
+        atk: function(p) { return p.unit.type == "INT" ? 2.5 : 1; },
+        hp: function(p) { return p.unit.type == "INT" ? 1.2 : 1; },
+    },
 };
 
 var calcGhostStartIDCaptains = { "start": 5000 };
@@ -17175,6 +17194,57 @@ var ghostsCaptains = {
         atk: function(p) { return p.unit.class.has("Cerebral") || p.unit.class.has("Driven") ? 5 : 1; },
         status: function(p) { return Math.pow(1.04, Math.min(p.debuffCounter, 7)); },
         hp: function(p) { return p.unit.class.has("Cerebral") || p.unit.class.has("Driven") ? 1.3 : 1; },
+    },
+    586: {
+        atk: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? p.percHP >= 80 ? 5 : 4.75 : 1; },
+        hp: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? 1.2 : 1; },
+        recoverStatic: function(p) { return 2000; }
+    },
+    587: {
+        atk: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? (CrunchUtils.getOrbMultiplier(p.orb, p.unit.type, p.unit.class, 1, 2, [p.friendCaptain, p.captain], p.effectName, p) >= 2) ? 5 : 4.75 : 1; },
+        hp: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? 1.2 : 1; },
+    },
+    588: {
+        atk: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? p.percHP >= 80 ? 6 : 5.5 : 1; },
+        hp: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? 1.2 : 1; },
+        recoverStatic: function(p) { return 5000; }
+    },
+    589: {
+        atk: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? p.percHP >= 80 ? 6 : 5.5 : 1; },
+        hp: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral") ? 1.2 : 1; },
+        recoverStatic: function(p) { return 5000; }
+    },
+    590: {
+        atk: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Driven") ? ['tnd', 'superbomb'].has(p.orb) ? 5.25 : 4.75 : 1; },
+        hp: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Driven") ? 1.3 : 1; },
+    },
+    591: {
+        atk: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Driven") ? 5 : 1; },
+        hp: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Driven") ? 1.3 : 1; },
+    },
+    592: {
+        atk: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Driven") ? ['tnd', 'superbomb'].has(p.orb) ? 6 : 5.5 : 1; },
+        hp: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Driven") ? 1.3 : 1; },
+    },
+    593: {
+        atk: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Driven") ? ['tnd', 'superbomb'].has(p.orb) ? 6 : 5.5 : 1; },
+        hp: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Driven") ? 1.3 : 1; },
+    },
+    594: {
+        atk: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Driven") ? ['tnd', 'superbomb'].has(p.orb) ? 5.25 : 4.75 : 1; },
+        hp: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Driven") ? 1.3 : 1; },
+    },
+    595: {
+        atk: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Driven") ? 5 : 1; },
+        hp: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Driven") ? 1.3 : 1; },
+    },
+    596: {
+        atk: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Driven") ? ['tnd', 'superbomb'].has(p.orb) ? 6 : 5.5 : 1; },
+        hp: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Driven") ? 1.3 : 1; },
+    },
+    597: {
+        atk: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Driven") ? ['tnd', 'superbomb'].has(p.orb) ? 6 : 5.5 : 1; },
+        hp: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Driven") ? 1.3 : 1; },
     },
 };
 

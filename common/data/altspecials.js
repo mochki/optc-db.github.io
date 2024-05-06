@@ -3261,6 +3261,174 @@ var ghostsAltSpecials = {
             });
         },
     },
+    590: {
+        atk: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral")? [1.5, 1, 2, 1, 2][p.cached.multiplier] : 1; },
+        type: "type",
+        atkPlus: function(p) { return [0, 0.25, 0.25, 0, 0.25][p.cached.multiplier]; },
+        def: function(p) { return [0.5, 1, 1, 0.2, 0.2][p.cached.multiplier]; },
+        ignoresImmunities: function(p) { return [[''],[''],[''],['def'],['def']][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1, 2, 3, 4];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["Swap", "Super Swap: ATK Buff", "Super Swap: ATK Boost and ATK Buff", "Super Swap: DEF Reduction", "Super Swap: DEF Reduction, ATK Boost and ATK Buff"][n] + '. To switch to ' + ["Swap", "Super Swap: ATK Buff", "Super Swap: ATK Boost and ATK Buff", "Super Swap: DEF Reduction", "Super Swap: DEF Reduction, ATK Boost and ATK Buff"][(n + 1) % levels.length] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    591: {
+        atk: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral")? [1.5, 1, 2, 1, 2][p.cached.multiplier] : 1; },
+        type: "type",
+        atkPlus: function(p) { return [0, 0.25, 0.25, 0, 0.25][p.cached.multiplier]; },
+        def: function(p) { return [0.5, 1, 1, 0.2, 0.2][p.cached.multiplier]; },
+        ignoresImmunities: function(p) { return [[''],[''],[''],['def'],['def']][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1, 2, 3, 4];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["Swap", "Super Swap: ATK Buff", "Super Swap: ATK Boost and ATK Buff", "Super Swap: DEF Reduction", "Super Swap: DEF Reduction, ATK Boost and ATK Buff"][n] + '. To switch to ' + ["Swap", "Super Swap: ATK Buff", "Super Swap: ATK Boost and ATK Buff", "Super Swap: DEF Reduction", "Super Swap: DEF Reduction, ATK Boost and ATK Buff"][(n + 1) % levels.length] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    592: {
+        atk: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral")? [1.5, 1, 2, 1, 2][p.cached.multiplier] : 1; },
+        type: "type",
+        atkPlus: function(p) { return [0, 0.25, 0.25, 0, 0.25][p.cached.multiplier]; },
+        def: function(p) { return [0.5, 1, 1, 0.2, 0.2][p.cached.multiplier]; },
+        ignoresImmunities: function(p) { return [[''],[''],[''],['def'],['def']][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1, 2, 3, 4];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["Swap", "Super Swap: ATK Buff", "Super Swap: ATK Boost and ATK Buff", "Super Swap: DEF Reduction", "Super Swap: DEF Reduction, ATK Boost and ATK Buff"][n] + '. To switch to ' + ["Swap", "Super Swap: ATK Buff", "Super Swap: ATK Boost and ATK Buff", "Super Swap: DEF Reduction", "Super Swap: DEF Reduction, ATK Boost and ATK Buff"][(n + 1) % levels.length] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    593: {
+        atk: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral")? [1.5, 1, 2, 1, 2][p.cached.multiplier] : 1; },
+        type: "type",
+        atkPlus: function(p) { return [0, 0.25, 0.25, 0, 0.25][p.cached.multiplier]; },
+        def: function(p) { return [0.5, 1, 1, 0.2, 0.2][p.cached.multiplier]; },
+        ignoresImmunities: function(p) { return [[''],[''],[''],['def'],['def']][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1, 2, 3, 4];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["Swap", "Super Swap: ATK Buff", "Super Swap: ATK Boost and ATK Buff", "Super Swap: DEF Reduction", "Super Swap: DEF Reduction, ATK Boost and ATK Buff"][n] + '. To switch to ' + ["Swap", "Super Swap: ATK Buff", "Super Swap: ATK Boost and ATK Buff", "Super Swap: DEF Reduction", "Super Swap: DEF Reduction, ATK Boost and ATK Buff"][(n + 1) % levels.length] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    594: {
+        orb: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral")? [1.5, 1, 2][p.cached.multiplier] : 1; },
+        orbPlus: function(p) { return [0, 0.25, 0.25][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1, 2];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["Swap", "Super Swap: Orb Buff", "Super Swap: Orb Boost and Orb Buff"][n] + '. To switch to ' + ["Swap", "Super Swap: Orb Buff", "Super Swap: Orb Boost and Orb Buff"][(n + 1) % levels.length] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    595: {
+        orb: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral")? [1.5, 1, 2][p.cached.multiplier] : 1; },
+        orbPlus: function(p) { return [0, 0.25, 0.25][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1, 2];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["Swap", "Super Swap: Orb Buff", "Super Swap: Orb Boost and Orb Buff"][n] + '. To switch to ' + ["Swap", "Super Swap: Orb Buff", "Super Swap: Orb Boost and Orb Buff"][(n + 1) % levels.length] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    596: {
+        orb: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral")? [1.5, 1, 2][p.cached.multiplier] : 1; },
+        orbPlus: function(p) { return [0, 0.25, 0.25][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1, 2];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["Swap", "Super Swap: Orb Buff", "Super Swap: Orb Boost and Orb Buff"][n] + '. To switch to ' + ["Swap", "Super Swap: Orb Buff", "Super Swap: Orb Boost and Orb Buff"][(n + 1) % levels.length] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    597: {
+        orb: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral")? [1.5, 1, 2][p.cached.multiplier] : 1; },
+        orbPlus: function(p) { return [0, 0.25, 0.25][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1, 2];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["Swap", "Super Swap: Orb Buff", "Super Swap: Orb Boost and Orb Buff"][n] + '. To switch to ' + ["Swap", "Super Swap: Orb Buff", "Super Swap: Orb Boost and Orb Buff"][(n + 1) % levels.length] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    598: {
+        orb: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral")? [1.5, 1, 2][p.cached.multiplier] : 1; },
+        orbPlus: function(p) { return [0, 0.25, 0.25][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1, 2];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["Swap", "Super Swap: Orb Buff", "Super Swap: Orb Boost and Orb Buff"][n] + '. To switch to ' + ["Swap", "Super Swap: Orb Buff", "Super Swap: Orb Boost and Orb Buff"][(n + 1) % levels.length] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    599: {
+        orb: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral")? [1.5, 1, 2][p.cached.multiplier] : 1; },
+        orbPlus: function(p) { return [0, 0.25, 0.25][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1, 2];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["Swap", "Super Swap: Orb Buff", "Super Swap: Orb Boost and Orb Buff"][n] + '. To switch to ' + ["Swap", "Super Swap: Orb Buff", "Super Swap: Orb Boost and Orb Buff"][(n + 1) % levels.length] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    600: {
+        orb: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral")? [1.5, 1, 2][p.cached.multiplier] : 1; },
+        orbPlus: function(p) { return [0, 0.25, 0.25][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1, 2];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["Swap", "Super Swap: Orb Buff", "Super Swap: Orb Boost and Orb Buff"][n] + '. To switch to ' + ["Swap", "Super Swap: Orb Buff", "Super Swap: Orb Boost and Orb Buff"][(n + 1) % levels.length] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
+    601: {
+        orb: function(p) { return p.unit.type == "DEX" || p.unit.type == "INT" || p.unit.class.has("Cerebral")? [1.5, 1, 2][p.cached.multiplier] : 1; },
+        orbPlus: function(p) { return [0, 0.25, 0.25][p.cached.multiplier]; },
+        onActivation: function(p) {
+            var levels = [0, 1, 2];
+            var n = (levels.indexOf(p.cached.multiplier) + 1) % levels.length;
+            p.cached.multiplier = levels[n];
+            p.scope.notify({
+                text: 'Using the ' + ["Swap", "Super Swap: Orb Buff", "Super Swap: Orb Boost and Orb Buff"][n] + '. To switch to ' + ["Swap", "Super Swap: Orb Buff", "Super Swap: Orb Boost and Orb Buff"][(n + 1) % levels.length] + ', disable and re-enable this special',
+                name: (p.team[p.sourceSlot].unit.number+1).toString() + 'warning'
+            });
+        },
+    },
 }
 
 Object.keys(ghostsAltSpecials).forEach(function (key) {

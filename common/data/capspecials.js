@@ -229,6 +229,72 @@ var ghostsCapSpecials = {
     475: {
         chainAddition: function(p) { return 1.2; },
     },
+    590: {
+        atkbasePlus: function(p) { return 300; },
+    },
+    591: {
+        atkbasePlus: function(p) { return 300; },
+    },
+    592: {
+        atkbasePlus: function(p) { return 300; },
+    },
+    593: {
+        atkbasePlus: function(p) { return 300; },
+    },
+    595: {
+        turnedOn: false,
+        onActivation: function(p) {
+            window.capspecials[p.team[p.sourceSlot].unit.number+1].turnedOn = true;
+        },
+        onDeactivation: function(p) {
+            window.capspecials[p.team[p.sourceSlot].unit.number+1].turnedOn = false;
+        },
+    },
+    596: {
+        turnedOn: false,
+        onActivation: function(p) {
+            window.capspecials[p.team[p.sourceSlot].unit.number+1].turnedOn = true;
+        },
+        onDeactivation: function(p) {
+            window.capspecials[p.team[p.sourceSlot].unit.number+1].turnedOn = false;
+        },
+    },
+    597: {
+        turnedOn: false,
+        onActivation: function(p) {
+            window.capspecials[p.team[p.sourceSlot].unit.number+1].turnedOn = true;
+        },
+        onDeactivation: function(p) {
+            window.capspecials[p.team[p.sourceSlot].unit.number+1].turnedOn = false;
+        },
+    },
+    599: {
+        turnedOn: false,
+        onActivation: function(p) {
+            window.capspecials[p.team[p.sourceSlot].unit.number+1].turnedOn = true;
+        },
+        onDeactivation: function(p) {
+            window.capspecials[p.team[p.sourceSlot].unit.number+1].turnedOn = false;
+        },
+    },
+    600: {
+        turnedOn: false,
+        onActivation: function(p) {
+            window.capspecials[p.team[p.sourceSlot].unit.number+1].turnedOn = true;
+        },
+        onDeactivation: function(p) {
+            window.capspecials[p.team[p.sourceSlot].unit.number+1].turnedOn = false;
+        },
+    },
+    601: {
+        turnedOn: false,
+        onActivation: function(p) {
+            window.capspecials[p.team[p.sourceSlot].unit.number+1].turnedOn = true;
+        },
+        onDeactivation: function(p) {
+            window.capspecials[p.team[p.sourceSlot].unit.number+1].turnedOn = false;
+        },
+    },
 }
 
 Object.keys(ghostsCapSpecials).forEach(function (key) {

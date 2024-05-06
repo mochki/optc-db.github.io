@@ -858,7 +858,7 @@ function conditionToString(condition, suffix) {
     case "enemies":
       return `When there are ${condition.count} or ${condition.comparator} ${condition.type} ${condition.targets ? arrayToString(condition.targets) + " characters" : ""}${condition.relative ? condition.type == "crew" ? " than the enemy team" : " than your crew" : ""}${condition.composition ? "" : " remaining"}, `
     case "trigger":
-      return `The first ${condition.count} times this character ${condition.stat == "takes damage" || condition.stat.includes("recieves") ? condition.stat : "lands a " + condition.stat}, `
+      return `The first ${condition.count} times ${condition.stat.includes("defeated") ? condition.team ? condition.team + (condition.targets ? arrayToString(condition.targets) : "") + " characters are " : "" : "this character "}${condition.stat == "takes damage" || condition.stat.includes("recieves") || condition.stat.includes("defeated") ? condition.stat : "lands a " + condition.stat}, `
     case "debuff":
       return `If this character has ${condition.stat}, `
     case "defeat":
