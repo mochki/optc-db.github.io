@@ -4214,6 +4214,8 @@ window.units = [
     [ "Momonosuke & Kin'emon & Denjiro - Regaining Their Lost Glory to Shine as Before", "STR", ["Slasher", "Free Spirit"], 6, 55, 4, 5, 99, 5000000, 2057, 890, 136, 4113, 1780, 272, 1 ],
     [ "Roronoa Zoro - Paying Respects to the Dead", "STR", ["Slasher", "Free Spirit"], 5, 30, 4, 4, 99, 4000000, 1963, 747, 75, 3925, 1493, 149, 1 ],
     [ "Sangoro - An Act Before Parting", "QCK", ["Free Spirit", "Fighter"], 5, 30, 4, 4, 99, 4000000, 1716, 751, 114, 3432, 1501, 228, 1 ],
+    [ "Edward Newgate - Memories of Marineford", "DEX", ["Powerhouse", "Striker"], 6, 55, 4, 5, 99, 5000000, 2237, 885, 95, 4473, 1770, 190, 1 ],
+    [ "Fleet Admiral Sakazuki - Determination for the New Era", "STR", ["Fighter", "Shooter"], "6+", 65, 4, 5, 99, 5000000, 2216, 908, 153, 4432, 1816, 306, 1 ],
 ];
 
 var calcGhostStartID = { "start": 5000 };
