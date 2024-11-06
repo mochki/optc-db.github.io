@@ -4751,6 +4751,12 @@ window.families = {
     4216: [ ...EdwardNewgate ],
     4217: [ ...Sakazuki ],
     // break
+    4246: [ ...Kuzan ],
+    4249: [ ...Coby ],
+    4250: [ ...Coby ],
+    4251: [ ...MonkeyDGarp ],
+    4252: [ ...Kuzan ],
+    // break
     4262: [ ...Uta ],
     4263: [ ...Perona ],
     //break
