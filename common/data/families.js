@@ -4747,6 +4747,12 @@ window.families = {
     4144: [ ...JeanBart ],
     4145: [ ...Hakugan ],
     4146: [ ...MarshallDTeach ],
+    // break
+    4216: [ ...EdwardNewgate ],
+    4217: [ ...Sakazuki ],
+    // break
+    4262: [ ...Uta ],
+    4263: [ ...Perona ],
     //break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
