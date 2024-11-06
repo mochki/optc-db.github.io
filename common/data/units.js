@@ -4223,11 +4223,11 @@ window.units = [
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Bepo - Captain-Protecting Sulong", "PSY", ["Powerhouse", "Striker"], "5+", 40, 5, 4, 99, 5000000, 1640, 788, 120, 3279, 1576, 239, 1 ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Lucci & Kaku - Awakened Zoan Fruit Powers", ["QCK", "DEX"], [["Driven", "Fighter"], ["Driven", "Fighter"]], 6, 55, 4, 5, 99, 5000000, 1835, 934, 208, 3670, 1867, 416, 1 ],
+    [ "Stussy - Grasping an Unusual Situation", "QCK", ["Driven", "Cerebral"], 5, 30, 5, 4, 99, 4000000, 1956, 702, 90, 3912, 1404, 180, 1 ],
+    [ "S-Snake & S-Hawk & S-Shark - ", "DEX", ["Driven", "Powerhouse"], 5, 30, 4, 4, 99, 4000000, 1967, 712, 85, 3934, 1423, 170, 1 ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
@@ -4933,6 +4933,8 @@ var ghostsUnits = [
     [ "⚐ Kaido - Fight to the Death", "DEX", ["Driven", "Powerhouse"], 5, 30, 4, 3, 70, 1066998, 1279, 458, 51, 2557, 916, 103, 1 ],
     [ "⚐ Monkey D. Luffy - Fate of the Land of Wano", "QCK", ["Free Spirit", "Fighter"], 6, 55, 4, 5, 99, 5000000, 2428, 878, 128, 4856, 1756, 256, 1 ],
     [ "⚐ Kaido - Fate of the Land of Wano", "DEX", ["Driven", "Powerhouse"], 6, 55, 4, 5, 99, 5000000, 2527, 910, 101, 5054, 1820, 201, 1 ],
+    [ "⚐ Rob Lucci - Awakened Zoan Fruit Powers", "QCK", ["Driven", "Fighter"], 6, 55, 6, 5, 99, 5000000, 1705, 909, 176, 3410, 1817, 351, 1 ],
+    [ "⚐ Kaku - Awakened Zoan Fruit Powers", "DEX", ["Driven", "Fighter"], 6, 55, 4, 5, 99, 5000000, 1715, 899, 177, 3430, 1798, 354, 1 ],
 ];
 
 window.units = window.units.concat(ghostsUnits);

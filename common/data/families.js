@@ -709,6 +709,7 @@ const York = [ "York", "PUNK-06" ];
 const Vegapunk = [ "Dr. Vegapunk", "Stella" ];
 const Shaka = [ "Shaka", "PUNK-01" ];
 const Hakugan = [ "Hakugan" ];
+const SSnake = [ "S-Snake" ];
 
 window.families = {
     1: [ ...MonkeyDLuffy ],
@@ -4751,6 +4752,11 @@ window.families = {
     4216: [ ...EdwardNewgate ],
     4217: [ ...Sakazuki ],
     // break
+    4225: [ ...Bepo ],
+    4227 : [ ...RobLucci, ...Kaku ],
+    4228 : [ ...Stussy ],
+    4229 : [ ...SSnake, ...SHawk, ...SShark ],
+    // break
     4246: [ ...Kuzan ],
     4249: [ ...Coby ],
     4250: [ ...Coby ],
@@ -4759,7 +4765,7 @@ window.families = {
     // break
     4262: [ ...Uta ],
     4263: [ ...Perona ],
-    //break
+    // break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
     4988: [ ...NefertariVivi ],
