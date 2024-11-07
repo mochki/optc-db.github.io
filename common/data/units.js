@@ -4255,10 +4255,10 @@ window.units = [
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Roger & Rayleigh & Gaban - Aiming to Become the World's Greatest Pirates", ["STR", "INT"], [["Slasher", "Free Spirit"], ["Slasher", "Free Spirit"]], 6, 55, 4, 5, 99, 5000000, 1995, 881, 200, 3989, 1761, 399, 1 ],
+    [ "Admiral Sengoku & Vice Admiral Garp - Fierce Battle at Marineford", "STR", ["Fighter", "Free Spirit"], 5, 30, 4, 4, 99, 4000000, 1876, 730, 95, 3752, 1459, 189, 1 ],
+    [ "Whitebeard & Oden - ", "INT", ["Slasher", "Powerhouse"], 5, 30, 4, 4, 99, 4000000, 1855, 766, 86, 3709, 1532, 172, 1 ],
+    [ "Dr. Vegapunk - Head of the Punk Hazard Research Facility", "STR", ["Cerebral", "Free Spirit"], 5, 40, 5, 4, 99, 5000000, 1670, 734, 103, 3339, 1468, 205, 1 ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "Uta - Happy Halloween", "DEX", ["Cerebral", "Driven"], 6, 55, 6, 5, 99, 5000000, 1905, 861, 171, 3810, 1721, 342, 1 ],
     [ "Perona: Misty Ghost Princess - Night of Halloween", "INT", ["Driven", "Shooter"], "6+", 65, 4, 5, 99, 5000000, 2217, 974, 184, 4433, 1662, 368, 1 ],
@@ -4935,6 +4935,8 @@ var ghostsUnits = [
     [ "⚐ Kaido - Fate of the Land of Wano", "DEX", ["Driven", "Powerhouse"], 6, 55, 4, 5, 99, 5000000, 2527, 910, 101, 5054, 1820, 201, 1 ],
     [ "⚐ Rob Lucci - Awakened Zoan Fruit Powers", "QCK", ["Driven", "Fighter"], 6, 55, 6, 5, 99, 5000000, 1705, 909, 176, 3410, 1817, 351, 1 ],
     [ "⚐ Kaku - Awakened Zoan Fruit Powers", "DEX", ["Driven", "Fighter"], 6, 55, 4, 5, 99, 5000000, 1715, 899, 177, 3430, 1798, 354, 1 ],
+    [ "⚐ Gol D. Roger - Aiming to Become the World's Greatest Pirates", "STR", ["Slasher", "Free Spirit"], 6, 55, 4, 5, 99, 5000000, 1878, 824, 188, 3755, 1648, 375, 1 ],
+    [ "⚐ Rayleigh & Gaban - Aiming to Become the World's Greatest Pirates", "INT", ["Slasher", "Free Spirit"], 6, 55, 5, 5, 99, 5000000, 1871, 819, 191, 3742, 1638, 381, 1 ],
 ];
 
 window.units = window.units.concat(ghostsUnits);

@@ -4763,6 +4763,10 @@ window.families = {
     4251: [ ...MonkeyDGarp ],
     4252: [ ...Kuzan ],
     // break
+    4257: [ ...GolDRoger, ...SilversRayleigh, ...Gaban ],
+    4258: [ ...Sengoku, ...MonkeyDGarp ],
+    4259: [ ...EdwardNewgate, ...KozukiOden ],
+    4260: [ ...Vegapunk ],
     4262: [ ...Uta ],
     4263: [ ...Perona ],
     4264: [ ...Tsuru ],
