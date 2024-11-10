@@ -711,6 +711,9 @@ const Shaka = [ "Shaka", "PUNK-01" ];
 const Hakugan = [ "Hakugan" ];
 const SSnake = [ "S-Snake" ];
 const SBear = [ "S-Bear" ];
+const PrinceGrus = [ "Prince Grus" ];
+const Kujaku = [ "Kujaku" ];
+const Hibari = [ "Hibari" ];
 const Doll = [ "Doll" ];
 
 window.families = {
@@ -4760,6 +4763,13 @@ window.families = {
     4228 : [ ...Stussy ],
     4229 : [ ...SSnake, ...SHawk, ...SShark ],
     // break
+    4239: [ ...MonkeyDGarp ],
+    4240: [ ...MonkeyDGarp ],
+    4241: [ ...PrinceGrus, ...Kujaku, ...Hibari ],
+    4242: [ ...PrinceGrus, ...Kujaku, ...Hibari ],
+    4243: [ ...Helmeppo ],
+    4244: [ ...Tashigi ],
+    4245: [ ...Kuzan ],
     4246: [ ...Kuzan ],
     4247: [ ...AvaloPizarro ],
     4248: [ ...SanjuanWolf ],
