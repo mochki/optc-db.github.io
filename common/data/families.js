@@ -4761,6 +4761,8 @@ window.families = {
     4229 : [ ...SSnake, ...SHawk, ...SShark ],
     // break
     4246: [ ...Kuzan ],
+    4247: [ ...AvaloPizarro ],
+    4248: [ ...SanjuanWolf ],
     4249: [ ...Coby ],
     4250: [ ...Coby ],
     4251: [ ...MonkeyDGarp ],
