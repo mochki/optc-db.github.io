@@ -710,6 +710,7 @@ const Vegapunk = [ "Dr. Vegapunk", "Stella" ];
 const Shaka = [ "Shaka", "PUNK-01" ];
 const Hakugan = [ "Hakugan" ];
 const SSnake = [ "S-Snake" ];
+const SBear = [ "S-Bear" ];
 const Doll = [ "Doll" ];
 
 window.families = {
@@ -4754,6 +4755,7 @@ window.families = {
     4217: [ ...Sakazuki ],
     // break
     4225: [ ...Bepo ],
+    4226: [ ...SBear ],
     4227 : [ ...RobLucci, ...Kaku ],
     4228 : [ ...Stussy ],
     4229 : [ ...SSnake, ...SHawk, ...SShark ],

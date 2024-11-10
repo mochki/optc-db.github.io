@@ -4224,7 +4224,7 @@ window.units = [
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "Bepo - Captain-Protecting Sulong", "PSY", ["Powerhouse", "Striker"], "5+", 40, 5, 4, 99, 5000000, 1640, 788, 120, 3279, 1576, 239, 1 ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "S-Bear", "PSY", ["Shooter", "Powerhouse"], 6, 40, 4, 5, 99, 5000000, 2380, 846, 84, 4760, 1692, 168, 1 ],
     [ "Lucci & Kaku - Awakened Zoan Fruit Powers", ["QCK", "DEX"], [["Driven", "Fighter"], ["Driven", "Fighter"]], 6, 55, 4, 5, 99, 5000000, 1835, 934, 208, 3670, 1867, 416, 1 ],
     [ "Stussy - Grasping an Unusual Situation", "QCK", ["Driven", "Cerebral"], 5, 30, 5, 4, 99, 4000000, 1956, 702, 90, 3912, 1404, 180, 1 ],
     [ "S-Snake & S-Hawk & S-Shark - ", "DEX", ["Driven", "Powerhouse"], 5, 30, 4, 4, 99, 4000000, 1967, 712, 85, 3934, 1423, 170, 1 ],
