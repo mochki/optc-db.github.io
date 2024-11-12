@@ -711,6 +711,9 @@ const Shaka = [ "Shaka", "PUNK-01" ];
 const Hakugan = [ "Hakugan" ];
 const SSnake = [ "S-Snake" ];
 const SBear = [ "S-Bear" ];
+const FugarTheAddenturer = [ "Fugar the Addenturer" ];
+const FrogToesRibbitini = [ "Frog-Toes Ribbitini" ];
+const PururuTheBrrrave = [ "Pururu the Brr-rave" ];
 const PrinceGrus = [ "Prince Grus" ];
 const Kujaku = [ "Kujaku" ];
 const Hibari = [ "Hibari" ];
@@ -4762,6 +4765,14 @@ window.families = {
     4227 : [ ...RobLucci, ...Kaku ],
     4228 : [ ...Stussy ],
     4229 : [ ...SSnake, ...SHawk, ...SShark ],
+    4230 : [ ...Shanks, ...EustassKid ],
+    4231 : [ ...Shanks, ...EustassKid ],
+    4232 : [ ...Dorry, ...Broggy ],
+    4233 : [ ...Dorry, ...Broggy ],
+    4234 : [ ...FugarTheAddenturer ],
+    4235 : [ ...FrogToesRibbitini ],
+    4236 : [ ...PururuTheBrrrave ],
+    4237 : [ ...BasilHawkins ],
     // break
     4239: [ ...MonkeyDGarp ],
     4240: [ ...MonkeyDGarp ],
