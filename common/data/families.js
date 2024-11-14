@@ -4806,6 +4806,10 @@ window.families = {
     4268: [ ...CharlotteLinlin, ...CharlotteKatakuri ],
     4269: [ ...MarshallDTeach, ...Shiryu ],
     4270: [ ...Shanks, ...BenBeckman ],
+    4271: [ ...NefertariVivi, ...Wapol ],
+    4272: [ ...Morgans ],
+    4273: [ ...JewelryBonney ],
+    4274: [ ...Crocodile ],
     // break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
