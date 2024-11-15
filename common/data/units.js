@@ -4236,7 +4236,7 @@ window.units = [
     [ "Frog-Toes Ribbitini", "QCK", ["Cerebral", "Slasher"], 5, 30, 4, 4, 99, 4000000, 1795, 769, 96, 3589, 1538, 191, 1 ],
     [ "Pururu the Brr-rave", "PSY", ["Cerebral", "Slasher"], 5, 1, 5, 4, 99, 4000000, 1770, 724, 114, 3540, 1448, 228, 1 ],
     [ "Basil Hawkins - Opening of the Conniving Game", "DEX", ["Cerebral", "Slasher"], "6+", 65, 4, 5, 99, 5000000, 2202, 974, 161, 4404, 1710, 321, 1 ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Nefeltari Vivi - Memories of Alabasta", "DEX", ["Free Spirit", "Slasher"], 6, 55, 4, 5, 99, 25000000, 1561, 702, 106, 3122, 1403, 212, 1 ],
     [ "Monkey D. Garp - Landing on Pirate Island", "PSY", ["Fighter", "Free Spirit"], 5, 30, 4, 3, 70, 1066998, 1111, 444, 53, 2221, 887, 106, 1 ],
     [ "Monkey D. Garp - Fists to Save His Protege", "PSY", ["Fighter", "Free Spirit"], 6, 55, 4, 5, 99, 5000000, 2200, 881, 104, 4400, 1762, 208, 1 ],
     [ "Prince Grus & Kujaku & Hibari", "INT", ["Striker", "Shooter"], 5, 30, 5, 3, 70, 1066998, 1113, 443, 53, 2227, 886, 106, 1 ],
