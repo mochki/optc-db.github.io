@@ -4759,7 +4759,13 @@ window.families = {
     // break
     4216: [ ...EdwardNewgate ],
     4217: [ ...Sakazuki ],
-    // break
+    4218: [ ...MarshallDTeach, ...TrafalgarDWaterLaw ],
+    4219: [ ...MarshallDTeach, ...TrafalgarDWaterLaw ],
+    4220: [ ...Kuzan ],
+    4221: [ ...Kuzan ],
+    4222: [ ...JesusBurgess ],
+    4223: [ ...VanAugur ],
+    4224: [ ...Bepo ],
     4225: [ ...Bepo ],
     4226: [ ...SBear ],
     4227: [ ...RobLucci, ...Kaku ],
