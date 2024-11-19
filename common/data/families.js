@@ -4756,6 +4756,7 @@ window.families = {
     4144: [ ...JeanBart ],
     4145: [ ...Hakugan ],
     4146: [ ...MarshallDTeach ],
+    4147: [ ...MarshallDTeach ],
     // break
     4216: [ ...EdwardNewgate ],
     4217: [ ...Sakazuki ],
