@@ -3296,7 +3296,7 @@ window.drops = {
 
         {
             name: 'Brook',
-            dropID: 'pka6',
+            dropID: 'pka7',
             thumb: 2952,
             global: true,
             //nakama: 6395200,
@@ -3306,7 +3306,7 @@ window.drops = {
 
         {
             name: 'Edward Newgate',
-            dropID: 'pka7',
+            dropID: 'pka8',
             thumb: 4066,
             global: true,
             //nakama: 6395200,
@@ -3316,7 +3316,7 @@ window.drops = {
 
         {
             name: 'Lilith',
-            dropID: 'pka8',
+            dropID: 'pka9',
             thumb: 4082,
             global: true,
             //nakama: 6395200,
@@ -3325,9 +3325,9 @@ window.drops = {
         },
 
         {
-            name: 'Blackbeard',
-            dropID: 'pka9',
-            thumb: 4100,
+            name: 'Coby',
+            dropID: 'pka10',
+            thumb: 4107,
             global: true,
             //nakama: 6395200,
             gamewith: null,
@@ -3336,7 +3336,7 @@ window.drops = {
 
         {
             name: 'CP-0',
-            dropID: 'pka10',
+            dropID: 'pka11',
             thumb: 4127,
             global: true,
             //nakama: 6395200,
@@ -3363,7 +3363,7 @@ window.drops = {
 
         {
             name: 'Blackbeard',
-            dropID: 'pka11',
+            dropID: 'pka12',
             thumb: 4146,
             global: true,
             //nakama: 6395200,
@@ -3386,6 +3386,60 @@ window.drops = {
                     { "title": "Lv. 100+", "gimmicks": "BATTLE 3\n\nSlot Change: [EMPTY]\nBind: Right-Column (8 turns)\nSpecial Reverse: (1 turn)\nDespair: (8 turns)\nSlot Change Impossible: Middle-Row (PERFECT 1 time)\nSlot Change Impossible: Bottom-Row (GOOD 1 time)\nDefeated Action\nRemove Beneficial Effects\n\nBATTLE 4\n\nImmunity (DEF Down): (98 turns)\nNon-Normal Attacks Deals 1 Damage: (2 turns)\nATK Boost: (98 turns)\nBarrier (Damage): (50000000 damage)  (2 turns)\nParalysis: (4 turns)\nStun: Friend Captain (Top-Left)\nIntimidation: ATK Boost (-2 turns) (3 turns)\nSpecial Reverse: (2 turns)\nGunman x3\nBarrier (Damage): (30000000 damage) (2 turns)\n\nBOSS\n\nImmunity (Delay): (98 turns)\nNullify Percentage Damage: (98 turns)\nResilience: (5 turns)\nSpecial Bind: (7 turns)\nBurn (take Burn damage when landing PERFECT strikes): (6 turns)\nBarrier (Tap-Timing): PERFECT 5 times (2 turns)\nDamage Nullification: For over 20000000 damage (98 turns) (reduce 50 turns for each defeated Gunman)\nLock Target: (3 turns)\nGunman x2\nResilience: (5 turns)" }
                 ]
             }
+        },
+
+        {
+            name: 'Mihawk',
+            dropID: 'pka13',
+            thumb: 4176,
+            global: true,
+            gamewith: null,
+            'Defeat Level Rewards': [ 4176 ],
+        },
+
+        {
+            name: 'Arlong',
+            dropID: 'pka14',
+            thumb: 4190,
+            global: true,
+            gamewith: null,
+            'Defeat Level Rewards': [ 4190 ],
+        },
+
+        {
+            name: 'Ace',
+            dropID: 'pka15',
+            thumb: 4205,
+            global: true,
+            gamewith: null,
+            'Defeat Level Rewards': [ 4205 ],
+        },
+
+        {
+            name: 'Bepo',
+            dropID: 'pka16',
+            thumb: 4224,
+            global: true,
+            gamewith: null,
+            'Defeat Level Rewards': [ 4224 ],
+        },
+
+        {
+            name: 'Kuzan',
+            dropID: 'pka17',
+            thumb: 4221,
+            global: true,
+            gamewith: null,
+            'Defeat Level Rewards': [ 4245 ],
+        },
+
+        {
+            name: 'Vegapunk',
+            dropID: 'pka18',
+            thumb: 4260,
+            global: true,
+            gamewith: null,
+            'Defeat Level Rewards': [ 4260 ],
         },
 
     ],
