@@ -4881,6 +4881,11 @@ window.families = {
     4272: [ ...Morgans ],
     4273: [ ...JewelryBonney ],
     4274: [ ...Crocodile ],
+    4275: [ ...KozukiOden, ...Kinemon, ...Denjiro ],
+    4276: [ ...Carrot, ...Inuarashi, ...Nekomamushi ],
+    4277: [ ...MonkeyDLuffy, ...RoronoaZoro, ...VinsmokeSanji, ...Jinbe ],
+    4278: [ ...KozukiMomonosuke, ...Yamato ],
+    4279: [ ...KurozumiOrochi, ...KurozumiKanjuro ],
     // break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],

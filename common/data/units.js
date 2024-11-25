@@ -4273,11 +4273,11 @@ window.units = [
     [ "Morgans - World-Shaking Entertainer", "QCK", ["Cerebral", "Fighter"], 5, 30, 5, 4, 99, 4000000, 1850, 799, 76, 3699, 1597, 152, 1 ],
     [ "Jewelry Bonney - Girl's False Tears", "QCK", ["Free Spirit", "Cerebral"], 5, 1, 5, 4, 99, 4000000, 1767, 734, 115, 3533, 1468, 230, 1 ],
     [ "Sir Crocodile - Unexpected Assistance", "DEX", ["Cerebral", "Driven"], "6+", 65, 4, 5, 99, 5000000, 2201, 974, 160, 4401, 1795, 319, 1 ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Oden & Kin'emon & Denjiro - Blades Reflecting a Passionate Determination", ["DEX", "STR"], [["Slasher", "Free Spirit"], ["Slasher", "Free Spirit"]], 6, 55, 4, 5, 99, 5000000, 1994, 887, 197, 3988, 1774, 394, 1 ],
+    [ "Carrot & Dogstorm & Cat Viper - Moonlit Raging Sulongs", ["STR", "DEX"], [["Slasher", "Fighter"], ["Slasher", "Fighter"]], 6, 55, 4, 5, 99, 5000000, 1997, 884, 198, 3994, 1768, 395, 1 ],
+    [ "Luffy & Zoro & Sanji & Jinbe", "STR", ["Fighter", "Slasher"], 5, 30, 4, 4, 99, 4000000, 1854, 755, 90, 3708, 1510, 179, 1 ],
+    [ "Momonosuke & Yamato - Farewell with Tears and Smiles", "DEX", ["Slasher", "Striker"], 5, 30, 4, 4, 99, 4000000, 1861, 753, 89, 3722, 1505, 178, 1 ],
+    [ "Orochi & Kanjuro - Revenge Against the Land of Wano", "INT", ["Driven", "Powerhouse"], 5, 40, 4, 4, 99, 5000000, 1662, 724, 107, 3323, 1448, 214, 1 ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
@@ -4949,6 +4949,10 @@ var ghostsUnits = [
     [ "⚐ King - Flame to Change the World", "STR", ["Driven", "Powerhouse"], 6, 55, 4, 5, 99, 5000000, 2273, 834, 119, 4546, 1668, 237, 1 ],
     [ "⚐ Big Mom - Beginning of Hell", "QCK", ["Driven", "Powerhouse"], 6, 55, 4, 5, 99, 5000000, 2220, 839, 126, 4440, 1678, 251, 1 ],
     [ "⚐ Charlotte Katakuri - Beginning of Hell", "DEX", ["Driven", "Powerhouse"], 6, 55, 4, 5, 99, 5000000, 2241, 816, 130, 4482, 1632, 259, 1 ],
+    [ "⚐ Kozuki Oden - Blades Reflecting a Passionate Determination", "DEX", ["Slasher", "Free Spirit"], 6, 55, 4, 5, 99, 5000000, 1877, 839, 183, 3753, 1678, 366, 1 ],
+    [ "⚐ Kin'emon & Denjiro - Blades Reflecting a Passionate Determination", "STR", ["Slasher", "Free Spirit"], 6, 55, 4, 5, 99, 5000000, 1879, 819, 189, 3758, 1638, 378, 1 ],
+    [ "⚐ Carrot - Moonlit Raging Sulongs", "STR", ["Slasher", "Fighter"], 6, 55, 4, 5, 99, 5000000, 1862, 829, 189, 3724, 1658, 377, 1 ],
+    [ "⚐ Dogstorm & Cat Viper - Moonlit Raging Sulongs", "DEX", ["Slasher", "Fighter"], 6, 55, 4, 5, 99, 5000000, 1873, 831, 186, 3746, 1662, 372, 1 ],
 ];
 
 window.units = window.units.concat(ghostsUnits);
