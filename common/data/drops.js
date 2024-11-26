@@ -3442,6 +3442,15 @@ window.drops = {
             'Defeat Level Rewards': [ 4260 ],
         },
 
+        {
+            name: 'Orochi & Kanjuro',
+            dropID: 'pka19',
+            thumb: 4279,
+            global: true,
+            gamewith: null,
+            'Defeat Level Rewards': [ 4279 ],
+        },
+
     ],
 
 
