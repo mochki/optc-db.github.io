@@ -4279,7 +4279,7 @@ window.units = [
     [ "Momonosuke & Yamato - Farewell with Tears and Smiles", "DEX", ["Slasher", "Striker"], 5, 30, 4, 4, 99, 4000000, 1861, 753, 89, 3722, 1505, 178, 1 ],
     [ "Orochi & Kanjuro - Revenge Against the Land of Wano", "INT", ["Driven", "Powerhouse"], 5, 40, 4, 4, 99, 5000000, 1662, 724, 107, 3323, 1448, 214, 1 ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Dr. Vegapunk \"York the Greedy\" - Informant Within Egghead", "INT", ["Cerebral", "Driven"], 6, 55, 5, 5, 99, 5000000, 2258, 809, 117, 4516, 1617, 234, 1 ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
