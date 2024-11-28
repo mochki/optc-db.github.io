@@ -6927,23 +6927,33 @@ window.drops = {
         },
 
         {
-            name: 'Zoro',
+            name: 'Edward Newgate',
             dropID: 'treasuremap77',
-            thumb: 3755,
+            thumb: 4074,
             global: true,
             nakama: 8375500,
             gamewith: null,
-            'Raging Sea': [ "4074-skull" ]
+            'Calm Sea': [ "4074-skull" ]
         },
 
         {
-            name: 'S-Hawk',
+            name: 'Jinbe',
             dropID: 'treasuremap78',
-            thumb: 4109,
+            thumb: 4089,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Calm Sea': [ "4089-skull" ],
+        },
+
+        {
+            name: 'Coby',
+            dropID: 'treasuremap79',
+            thumb: 4108,
             global: true,
             nakama: 8375500,
             gamewith: null,
-            'Raging Sea': [ "4108-skull" ],
+            'Sea of Celebration': [ "4108-skull" ],
             boosters: [
                 {"effect": "Boosts Treasure Pts by 2.5x! Plus, stats boosted by 2.5x and Special charge time reduced by 10 turns at start of quest!\n[Card Enhance Effect] Adds 1 Card slot! Boosts success chance of Steering Wheel Cards by +20%! Boosts Treasure Pts multiplier of Slingshot/Pistol/Cannon Cards by +0.5!", "units": [4111]},
                 {"effect": "Boosts Treasure Pts by 1.6x! Plus, stats boosted by 2.5x and Special charge time reduced by 10 turns at start of quest!\n[Card Enhance Effect] Boosts success chance of  Slingshot/Pistol/Cannon Cards by +20%!", "units": [4112]},
@@ -6976,12 +6986,12 @@ window.drops = {
 
         {
             name: 'CP-0',
-            dropID: 'treasuremap79',
+            dropID: 'treasuremap80',
             thumb: 4128,
             global: true,
             nakama: 8375500,
             gamewith: null,
-            'Raging Sea': [ "4128-skull" ],
+            'Calm Sea': [ "4128-skull" ],
             boosters: [
                 {"effect": "Boosts Treasure Pts by 2.5x! Plus, stats boosted by 2.5x and Special charge time reduced by 10 turns at start of quest! [Card Enhance Effect] Adds 1 Card slot! Boosts success chance of Steering Wheel Cards by +20%! Boosts Treasure Pts multiplier of Slingshot/Pistol/Cannon Cards by +0.5!", "units": [4133]},
                 {"effect": "Boosts Treasure Pts by 1.6x! Plus, stats boosted by 2.5x and Special charge time reduced by 10 turns at start of quest! [Card Enhance Effect] Boosts success chance of  Slingshot/Pistol/Cannon Cards by +20%!", "units": [4134]},
@@ -7161,6 +7171,76 @@ window.drops = {
                     }
                 ]
             }
+        },
+
+        {
+            name: 'Blackbeard',
+            dropID: 'treasuremap81',
+            thumb: 4147,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Sea of Celebration': [ "4147-skull" ],
+        },
+
+        {
+            name: 'Mihawk',
+            dropID: 'treasuremap82',
+            thumb: 4177,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Calm Sea': [ "4177-skull" ],
+        },
+
+        {
+            name: 'Arlong',
+            dropID: 'treasuremap83',
+            thumb: 4191,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Calm Sea': [ "4191-skull" ],
+        },
+
+        {
+            name: 'Ace',
+            dropID: 'treasuremap84',
+            thumb: 4206,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Calm Sea': [ "4206-skull" ],
+        },
+
+        {
+            name: 'Bepo',
+            dropID: 'treasuremap85',
+            thumb: 4225,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Calm Sea': [ "4225-skull" ],
+        },
+
+        {
+            name: 'Kuzan',
+            dropID: 'treasuremap86',
+            thumb: 4246,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Calm Sea': [ "4246-skull" ],
+        },
+
+        {
+            name: 'Dr. Vegapunk',
+            dropID: 'treasuremap87',
+            thumb: 4261,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Sea of Celebration': [ "4261-skull" ],
         },
 
     ],
