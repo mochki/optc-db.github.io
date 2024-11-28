@@ -4009,6 +4009,24 @@ window.flags = {
     4145: { rr: 1, rro: 1 },
     4148: { rr: 1, rro: 1, lrr: 1, pflrr: 1 },
     //break
+
+    // Super Sugos
+    4149: { rr: 1, rro: 1, lrr: 1, superlrr: 1 },
+    4150: { rr: 1, rro: 1, lrr: 1, superlrr: 1 },
+    4152: { rr: 1, rro: 1, lrr: 1, superlrr: 1 },
+    4153: { rr: 1, rro: 1, lrr: 1, superlrr: 1 },
+    4154: { rr: 1, rro: 1, lrr: 1, superlrr: 1 },
+    4162: { rr: 1, rro: 1, lrr: 1, superlrr: 1 },
+    4210: { rr: 1, rro: 1, lrr: 1, superlrr: 1 },
+    4211: { rr: 1, rro: 1, lrr: 1, superlrr: 1 },
+    4212: { rr: 1, rro: 1, lrr: 1, superlrr: 1 },
+    4218: { rr: 1, rro: 1, lrr: 1, superlrr: 1 },
+    4219: { rr: 1, rro: 1, lrr: 1, superlrr: 1 },
+    4230: { rr: 1, rro: 1, lrr: 1, superlrr: 1 },
+    4231: { rr: 1, rro: 1, lrr: 1, superlrr: 1 },
+
+
+    //break
     4986: { rr: 1, rro: 1, global: 1 },
     4987: { rr: 1, rro: 1, global: 1 },
     4988: { rr: 1, rro: 1, lrr: 1, global: 1 },
