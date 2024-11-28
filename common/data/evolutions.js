@@ -5779,40 +5779,131 @@ window.evolutions = {
         evolution: 4142,
         evolvers: [118, 2662, 304, 102, 267]
     },
-
-    // break
-
     4146: {
         evolution: 4147,
         evolvers: [ "4147-skull", "4147-skull", "4147-skull", "4147-skull", "4147-skull" ]
+    },
+    4149: {
+        evolution: 4150,
+        evolvers: [118, 88, 304, 104, 267]
+    },
+    4152: {
+        evolution: 4153,
+        evolvers: ["ink", "ink", "ink", "ink", "ink"]
+    },
+    3607: {
+        evolution: 4162,
+        evolvers: ["4162-skull", "4162-skull", "4162-skull", "4162-skull", "4162-skull"]
+    },
+    4163: {
+        evolution: 4164,
+        evolvers: [ "4164-skull", "4164-skull", "4164-skull", "4164-skull", "4164-skull" ]
+    },
+    4166: {
+        evolution: 4167,
+        evolvers: [118, 86, 266, 97, 267]
+    },
+    3422: {
+        evolution: 4170,
+        evolvers: [ "4170-skull", "4170-skull", "4170-skull", "4170-skull", "4170-skull" ]
     },
     4176: {
         evolution: 4177,
         evolvers: [ "4177-skull", "4177-skull", "4177-skull", "4177-skull", "4177-skull" ]
     },
+    3027: {
+        evolution: 4185,
+        evolvers: [ "4185-skull", "4185-skull", "4185-skull", "4185-skull", "4185-skull" ]
+    },
     4190: {
         evolution: 4191,
         evolvers: [ "4191-skull", "4191-skull", "4191-skull", "4191-skull", "4191-skull" ]
+    },
+    3038: {
+        evolution: 4199,
+        evolvers: [ "4199-skull", "4199-skull", "4199-skull", "4199-skull", "4199-skull" ]
+    },
+    4200: {
+        evolution: 4201,
+        evolvers: [ "4201-skull", "4201-skull", "4201-skull", "4201-skull", "4201-skull" ]
     },
     4205: {
         evolution: 4206,
         evolvers: [ "4206-skull", "4206-skull", "4206-skull", "4206-skull", "4206-skull" ]
     },
+    4208: {
+        evolution: 4209,
+        evolvers: [ "4209-skull", "4209-skull", "4209-skull", "4209-skull", "4209-skull" ]
+    },
+    4210: {
+        evolution: 4211,
+        evolvers: [118, 2662, 301, 102, 267]
+    },
+    3157: {
+        evolution: 4217,
+        evolvers: [ "4217-skull", "4217-skull", "4217-skull", "4217-skull", "4217-skull" ]
+    },
+    4218: {
+        evolution: 4219,
+        evolvers: [118, 104, 103, 266, 267]
+    },
+    4220: {
+        evolution: 4221,
+        evolvers: [118, 266, 301, 101, 267]
+    },
     4224: {
         evolution: 4225,
         evolvers: [ "4225-skull", "4225-skull", "4225-skull", "4225-skull", "4225-skull" ]
+    },
+    4230: {
+        evolution: 4231,
+        evolvers: [118, 104, 100, 266, 267]
+    },
+    4232: {
+        evolution: 4233,
+        evolvers: [118, 266, 300, 100, 267]
+    },
+    2982: {
+        evolution: 4237,
+        evolvers: [ "4237-skull", "4237-skull", "4237-skull", "4237-skull", "4237-skull" ]
+    },
+    4239: {
+        evolution: 4240,
+        evolvers: [118, 87, 303, 103, 267]
+    },
+    4241: {
+        evolution: 4242,
+        evolvers: [118, 88, 304, 104, 267]
     },
     4245: {
         evolution: 4246,
         evolvers: [ "4246-skull", "4246-skull", "4246-skull", "4246-skull", "4246-skull" ]
     },
+    4249: {
+        evolution: 4250,
+        evolvers: [118, 303, 2662, 103, 267]
+    },
+    3278: {
+        evolution: 4256,
+        evolvers: [ "4256-skull", "4256-skull", "4256-skull", "4256-skull", "4256-skull" ]
+    },
     4260: {
         evolution: 4261,
         evolvers: [ "4261-skull", "4261-skull", "4261-skull", "4261-skull", "4261-skull" ]
     },
-
+    3454: {
+        evolution: 4263,
+        evolvers: [ "4263-skull", "4263-skull", "4263-skull", "4263-skull", "4263-skull" ]
+    },
+    4265: {
+        evolution: 4266,
+        evolvers: [ "4266-skull", "4266-skull", "4266-skull", "4266-skull", "4266-skull" ]
+    },
+    3483: {
+        evolution: 4274,
+        evolvers: [ "4274-skull", "4274-skull", "4274-skull", "4274-skull", "4274-skull" ]
+    },
     // break
-
     4986: {
         evolution: 4987,
         evolvers: [ 118, 86, 266, 302, 267 ]
