@@ -2930,8 +2930,8 @@ window.flags = {
     2926: { global: 1 },
     2927: { global: 1 },
     2928: { global: 1 },
-    2929: { rr: 1, rro: 1, global: 1 },
-    2930: { rr: 1, rro: 1, global: 1 },
+    2929: { rr: 1, rro: 1, lrr: 1, pflrr: 1, global: 1 },
+    2930: { rr: 1, rro: 1, lrr: 1, pflrr: 1, global: 1 },
     2931: { rr: 1, rro: 1, lrr: 1, pflrr: 1, global: 1 },
     2932: { rr: 1, rro: 1, lrr: 1, pflrr: 1, global: 1 },
     2933: { rr: 1, rro: 1, lrr: 1, pflrr: 1, global: 1 },
@@ -3148,8 +3148,8 @@ window.flags = {
     3152: { rr: 1, rro: 1, lrr: 1, kclrr: 1, global: 1 },
     3153: { global: 1 },
     3154: { rr: 1, rro: 1, global: 1, inkable: 1 },
-    3156: { rr: 1, rro: 1, global: 1 },
-    3157: { rr: 1, rro: 1, global: 1 },
+    3156: { rr: 1, rro: 1, lrr: 1, pflrr: 1, global: 1 },
+    3157: { rr: 1, rro: 1, lrr: 1, pflrr: 1, global: 1 },
     3158: { rr: 1, rro: 1, lrr: 1, pflrr: 1, global: 1 },
     3159: { rr: 1, rro: 1, lrr: 1, slrr: 1, global: 1 },
     3160: { rr: 1, rro: 1, lrr: 1, slrr: 1, global: 1 },
@@ -4025,6 +4025,34 @@ window.flags = {
     4230: { rr: 1, rro: 1, lrr: 1, superlrr: 1 },
     4231: { rr: 1, rro: 1, lrr: 1, superlrr: 1 },
 
+    // Anni Sugos
+    4151: { rr: 1, rro: 1, lrr: 1, annilrr: 1 },
+    4257: { rr: 1, rro: 1, lrr: 1, annilrr: 1 },
+    4267: { rr: 1, rro: 1, lrr: 1, annilrr: 1 },
+    4268: { rr: 1, rro: 1, lrr: 1, annilrr: 1 },
+
+    // TM Legends
+    4179: { rr: 1, rro: 1, lrr: 1, tmlrr: 1 },
+    4193: { rr: 1, rro: 1, lrr: 1, tmlrr: 1 },
+    4227: { rr: 1, rro: 1, lrr: 1, tmlrr: 1 },
+    4249: { rr: 1, rro: 1, lrr: 1, tmlrr: 1 },
+    4250: { rr: 1, rro: 1, lrr: 1, tmlrr: 1 },
+
+    // Kizuna Legends
+    4166: { rr: 1, rro: 1, lrr: 1, kclrr: 1 },
+    4167: { rr: 1, rro: 1, lrr: 1, kclrr: 1 },
+    4182: { rr: 1, rro: 1, lrr: 1, kclrr: 1 },
+    4197: { rr: 1, rro: 1, lrr: 1, kclrr: 1 },
+    4216: { rr: 1, rro: 1, lrr: 1, kclrr: 1 },
+    4253: { rr: 1, rro: 1, lrr: 1, kclrr: 1 },
+
+    // Rumble Legend
+    4217: { rr: 1, rro: 1, lrr: 1, pflrr: 1 },
+    4226: { rr: 1, rro: 1, lrr: 1, pflrr: 1 },
+    4247: { rr: 1, rro: 1, lrr: 1, pflrr: 1 },
+
+    // Ray Shop Legend
+    4068: { shop: 1 },
 
     //break
     4986: { rr: 1, rro: 1, global: 1 },
