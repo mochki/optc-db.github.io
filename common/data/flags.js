@@ -4080,7 +4080,7 @@ window.flags = {
     4235: { rr: 1, rro: 1 },
     4236: { rr: 1, rro: 1, lrr: 1, slrr: 1 },
     4237: { rr: 1, rro: 1 },
-    4138: { shop: 1 },
+    4238: { shop: 1 },
     4239: { rr: 1, rro: 1 },
     4240: { rr: 1, rro: 1 },
     4241: { rr: 1, rro: 1 },
