@@ -5703,6 +5703,10 @@ window.evolutions = {
         evolution: 4062,
         evolvers: [118, 118, 102, 101, 267]
     },
+    3336: {
+        evolution: 4063,
+        evolvers: [ "4063-skull", "4063-skull", "4063-skull", "4063-skull", "4063-skull" ]
+    },
     4067: {
         evolution: 4068,
         evolvers: [ "4068-skull", "4068-skull", "4068-skull", "4068-skull", "4068-skull" ]
@@ -5719,9 +5723,21 @@ window.evolutions = {
         evolution: 4080,
         evolvers: [ "4080-skull", "4080-skull", "4080-skull", "4080-skull", "4080-skull" ]
     },
+    4081: {
+        evolution: 4082,
+        evolvers: [118, 88, 304, 104, 267]
+    },
+    4083: {
+        evolution: 4084,
+        evolvers: [118, 88, 304, 104, 267]
+    },
     4088: {
         evolution: 4089,
         evolvers: [ "4089-skull", "4089-skull", "4089-skull", "4089-skull", "4089-skull" ]
+    },
+    4095: {
+        evolution: 4096,
+        evolvers: [118, 87, 266, 98, 267]
     },
     2897: {
         evolution: 4098,
@@ -5766,6 +5782,10 @@ window.evolutions = {
     4127: {
         evolution: 4128,
         evolvers: [ "4128-skull", "4128-skull", "4128-skull", "4128-skull", "4128-skull" ]
+    },
+    4130: {
+        evolution: 4131,
+        evolvers: [ "4131-skull", "4131-skull", "4131-skull", "4131-skull", "4131-skull" ]
     },
     4136: {
         evolution: 4137,
