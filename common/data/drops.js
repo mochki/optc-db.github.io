@@ -7985,7 +7985,7 @@ window.drops = {
             global: true,
             nakama: null,
             gamewith: null,
-            'Kizuna Exchange': [ "4079-skull", "4080-skull" ],
+            'Kizuna Exchange': [ 4078, "4079-skull", "4080-skull" ],
         },
 
         {
@@ -8015,9 +8015,9 @@ window.drops = {
         },
 
         {
-            name: 'Lucci',
+            name: 'Bonney',
             dropID: 'kizuna55',
-            thumb: 3422,
+            thumb: 4139,
             global: true,
             nakama: null,
             gamewith: null,
@@ -8028,6 +8028,76 @@ window.drops = {
                 {"effect": "Stats boosted by 2x, Special charge time reduced by 15 turns at start of quest!", "units": [4122, 4124, 4125, 4126, 4132, 4133, 4134, 4135, 4128, 3307, 4139, 5578, 5579, 5580, 5581, 5586, 5587, 5588, 5589]},
                 {"effect": "Stats boosted by 1.5x, Special charge time reduced by 15 turns at start of quest!", "units": [4115, 4116, 3886, 2936, 2938, 2940, 2942, 2944, 2946, 2948, 2950, 2952, 3884, 4127, 2729, 2583, 2792, 2977, 2023, 2025, 4082, 4054, 3780, 4084, 3917, 3590, 3646, 3692, 3738, 4035, 3302, 3445, 3803, 4034, 3427, 3861, 4012, 4037, 3957, 3956, 3607, 3515, 4129, 4100, 4102, 4111, 3625, 3592, 5488, 5489, 5490, 5491, 5385, 5386, 5387, 5388]},
             ],
+        },
+
+        {
+            name: 'Luffy',
+            dropID: 'kizuna56',
+            thumb: 4131,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Kizuna Exchange': [ "4131-skull", "4164-skull", "4170-skull" ]
+        },
+
+        {
+            name: 'Law',
+            dropID: 'kizuna57',
+            thumb: 4185,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Kizuna Exchange': [ "4185-skull" ]
+        },
+
+        {
+            name: 'Moria',
+            dropID: 'kizuna58',
+            thumb: 4201,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Kizuna Exchange': [ 4200, "4199-skull", "4201-skull" ]
+        },
+
+        {
+            name: 'Akainu',
+            dropID: 'kizuna59',
+            thumb: 4217,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Kizuna Exchange': [ "4209-skull", "4217-skull" ]
+        },
+
+        {
+            name: 'Hawkins',
+            dropID: 'kizuna60',
+            thumb: 4237,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Kizuna Exchange': [ 2861 , "4237-skull" ]
+        },
+
+        {
+            name: 'Magellan',
+            dropID: 'kizuna61',
+            thumb: 4256,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Kizuna Exchange': [ 2535 , "4256-skull" ]
+        },
+
+        {
+            name: 'Crocodile',
+            dropID: 'kizuna62',
+            thumb: 4274,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Kizuna Exchange': [ 1984 , "4274-skull" ]
         },
 
     ],
@@ -9188,6 +9258,14 @@ window.drops = {
             global: true,
             nakama: 6402100,
             'Chopper Man Missions': [ 4021 ],
+        },
+
+        {
+            name: '10th Anniversary Pirate Alliance Blitz Battle',
+            thumb: 4130,
+            global: true,
+            nakama: null,
+            'Chopper Man Missions': [ 4130 ],
         },
 
         {
