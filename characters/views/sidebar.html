@@ -169,8 +169,12 @@
         ng-model="filters.farmable.Fortnight" ng-click="onDropFilterClick($event,false)">Hide Fortnight-only</span>
     <span class="filter width-6 drop" ng-class="{ active: filters.farmable.Pirateking }"
         ng-model="filters.farmable.Pirateking" ng-click="onDropFilterClick($event,true)">Pirate King-only</span><!--
-    --><span class="filter width-6 exc" ng-class="{ active: filters.farmable.Pirateking === false }"
+ --><span class="filter width-6 exc" ng-class="{ active: filters.farmable.Pirateking === false }"
         ng-model="filters.farmable.Pirateking" ng-click="onDropFilterClick($event,false)">Hide Pirate King-only</span>
+    <span class="filter width-6 drop" ng-class="{ active: filters.farmable.Coop }"
+        ng-model="filters.farmable.Coop" ng-click="onDropFilterClick($event,true)">Co-Op-only</span><!--
+ --><span class="filter width-6 exc" ng-class="{ active: filters.farmable.Coop === false }"
+        ng-model="filters.farmable.Coop" ng-click="onDropFilterClick($event,false)">Hide Co-Op-only</span>
     <span class="filter width-6 drop" ng-class="{ active: filters.farmable.Raid }"
         ng-model="filters.farmable.Raid" ng-click="onDropFilterClick($event,true)">Raid-only</span><!--
  --><span class="filter width-6 exc"  ng-class="{ active: filters.farmable.Raid === false }"

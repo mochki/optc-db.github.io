@@ -3393,6 +3393,7 @@ window.drops = {
             dropID: 'pka13',
             thumb: 4176,
             global: true,
+            nakama: null,
             gamewith: null,
             'Defeat Level Rewards': [ 4176 ],
         },
@@ -3402,6 +3403,7 @@ window.drops = {
             dropID: 'pka14',
             thumb: 4190,
             global: true,
+            nakama: null,
             gamewith: null,
             'Defeat Level Rewards': [ 4190 ],
         },
@@ -3411,6 +3413,7 @@ window.drops = {
             dropID: 'pka15',
             thumb: 4205,
             global: true,
+            nakama: null,
             gamewith: null,
             'Defeat Level Rewards': [ 4205 ],
         },
@@ -3420,6 +3423,7 @@ window.drops = {
             dropID: 'pka16',
             thumb: 4224,
             global: true,
+            nakama: null,
             gamewith: null,
             'Defeat Level Rewards': [ 4224 ],
         },
@@ -3429,6 +3433,7 @@ window.drops = {
             dropID: 'pka17',
             thumb: 4221,
             global: true,
+            nakama: null,
             gamewith: null,
             'Defeat Level Rewards': [ 4245 ],
         },
@@ -3438,6 +3443,7 @@ window.drops = {
             dropID: 'pka18',
             thumb: 4260,
             global: true,
+            nakama: null,
             gamewith: null,
             'Defeat Level Rewards': [ 4260 ],
         },
@@ -3447,8 +3453,44 @@ window.drops = {
             dropID: 'pka19',
             thumb: 4279,
             global: true,
+            nakama: null,
             gamewith: null,
             'Defeat Level Rewards': [ 4279 ],
+        },
+
+    ],
+
+
+    'Co-Op': [
+
+        {
+            name: 'Yamato',
+            dropID: 'coop1',
+            thumb: 4163,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Grand Feast Sugo': [ 4163 ]
+        },
+
+        {
+            name: 'Hiyori',
+            dropID: 'coop2',
+            thumb: 4208,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Grand Feast Sugo': [ 4208 ]
+        },
+
+        {
+            name: 'Zoro',
+            dropID: 'coop3',
+            thumb: 4265,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Grand Feast Sugo': [ 4265 ]
         },
 
     ],

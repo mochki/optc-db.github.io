@@ -6,7 +6,7 @@ var CharUtils = { };
 
 var reverseDropMap = null;
 var alternateDropMap = null;
-var marks = { 'Story Island': 1, 'Booster and Evolver Island': 2, 'Rookie Mission': 4, 'Fortnight': 8, 'Raid': 16, 'Coliseum': 32, 'Treasure Map': 64, 'Ambush': 128, 'Kizuna Clash': 256, 'Arena': 512, 'Pirate Rumble': 1024, 'Special': 2048, 'Pirate King Adventure': 4096 };
+var marks = { 'Story Island': 1, 'Booster and Evolver Island': 2, 'Rookie Mission': 4, 'Fortnight': 8, 'Raid': 16, 'Coliseum': 32, 'Treasure Map': 64, 'Ambush': 128, 'Kizuna Clash': 256, 'Arena': 512, 'Pirate Rumble': 1024, 'Special': 2048, 'Pirate King Adventure': 4096, 'Co-Op': 8192 };
 
 var comparators = {
     "<": (a, b) => a < b,
