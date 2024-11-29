@@ -7845,7 +7845,7 @@ window.drops = {
             global: true,
             nakama: null,
             gamewith: null,
-            'Kizuna Exchange': [ 3739, "3739-skull" ],
+            'Kizuna Exchange': [ "3739-skull" ],
         },
 
         {
@@ -8077,7 +8077,7 @@ window.drops = {
             global: true,
             nakama: null,
             gamewith: null,
-            'Kizuna Exchange': [ 2861 , "4237-skull" ]
+            'Kizuna Exchange': [ "4237-skull" ]
         },
 
         {
@@ -8087,7 +8087,7 @@ window.drops = {
             global: true,
             nakama: null,
             gamewith: null,
-            'Kizuna Exchange': [ 2535 , "4256-skull" ]
+            'Kizuna Exchange': [ "4256-skull" ]
         },
 
         {
@@ -8097,7 +8097,7 @@ window.drops = {
             global: true,
             nakama: null,
             gamewith: null,
-            'Kizuna Exchange': [ 1984 , "4274-skull" ]
+            'Kizuna Exchange': [ "4274-skull" ]
         },
 
     ],
