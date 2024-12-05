@@ -7285,6 +7285,16 @@ window.drops = {
             'Sea of Celebration': [ "4261-skull" ],
         },
 
+        {
+            name: 'Orochi & Kanjuro',
+            dropID: 'treasuremap88',
+            thumb: 4280,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Calm Sea': [ "4280-skull" ],
+        },
+
     ],
 
     
