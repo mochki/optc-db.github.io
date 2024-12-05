@@ -4886,7 +4886,11 @@ window.families = {
     4277: [ ...MonkeyDLuffy, ...RoronoaZoro, ...VinsmokeSanji, ...Jinbe ],
     4278: [ ...KozukiMomonosuke, ...Yamato ],
     4279: [ ...KurozumiOrochi, ...KurozumiKanjuro ],
+    4280: [ ...KurozumiOrochi, ...KurozumiKanjuro ],
     4281: [ ...York ],
+    4282: [ ...Stussy ],
+    4283: [ ...Sentomaru ],
+    4284: [ ...Pacifista ],
     // break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
