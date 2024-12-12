@@ -4891,6 +4891,9 @@ window.families = {
     4282: [ ...Stussy ],
     4283: [ ...Sentomaru ],
     4284: [ ...Pacifista ],
+    4285: [ ...Shaka ],
+    4286: [ ...Vegapunk ],
+    4287: [ ...VinsmokeSanji, ...CharlottePudding ],
     // break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],

@@ -4283,9 +4283,9 @@ window.units = [
     [ "\"Stussy\" - Clone Experiment", "INT", ["Cerebral", "Driven"], 6, 55, 4, 5, 99, 5000000, 1763, 898, 182, 3526, 1795, 364, 1 ],
     [ "Sentomaru - Vegapunk's Bodyguard", "INT", ["Powerhouse", "Cerebral"], 5, 30, 5, 4, 99, 4000000, 1887, 761, 82, 3774, 1521, 164, 1 ],
     [ "Pacifista Mk. III", "INT", ["Powerhouse", "Cerebral"], 5, 30, 4, 4, 99, 4000000, 2006, 736, 71, 4012, 1471, 141, 1 ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Shaka the Good & Edison the Thinker & Pythagoras the Wise", "INT", ["Cerebral", "Free Spirit"], 6, 55, 4, 5, 99, 5000000, 2249, 888, 93, 4498, 1775, 185, 1 ],
+    [ "Dr. Vegapunk - A Sudden Request", "INT", ["Cerebral", "Free Spirit"], 5, 30, 5, 4, 99, 4000000, 1932, 753, 78, 3864, 1505, 155, 1 ],
+    [ "Sanji & Pudding - Special Cake to Decorate the Holy Night", ["QCK", "DEX"], [["Fighter", "Cerebral"], ["Cerebral", "Shooter"], ["Fighter", "Cerebral"]], "6+", 65, 5, 5, 99, 5000000, 1962, 1156, 209, 3924, 1734, 418, 1 ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
@@ -4953,6 +4953,8 @@ var ghostsUnits = [
     [ "⚐ Kin'emon & Denjiro - Blades Reflecting a Passionate Determination", "STR", ["Slasher", "Free Spirit"], 6, 55, 4, 5, 99, 5000000, 1879, 819, 189, 3758, 1638, 378, 1 ],
     [ "⚐ Carrot - Moonlit Raging Sulongs", "STR", ["Slasher", "Fighter"], 6, 55, 4, 5, 99, 5000000, 1862, 829, 189, 3724, 1658, 377, 1 ],
     [ "⚐ Dogstorm & Cat Viper - Moonlit Raging Sulongs", "DEX", ["Slasher", "Fighter"], 6, 55, 4, 5, 99, 5000000, 1873, 831, 186, 3746, 1662, 372, 1 ],
+    [ "⚐ Sanji - Special Cake to Decorate the Holy Night", "QCK", ["Fighter", "Cerebral"], "6+", 65, 4, 5, 99, 5000000, 1840, 1110, 191, 3680, 1665, 382, 1 ],
+    [ "⚐ Pudding - Special Cake to Decorate the Holy Night", "DEX", ["Cerebral", "Shooter"], "6+", 65, 5, 5, 99, 5000000, 1796, 1093, 203, 3592, 1640, 405, 1 ],
 ];
 
 window.units = window.units.concat(ghostsUnits);
