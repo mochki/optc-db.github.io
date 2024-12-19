@@ -4286,8 +4286,8 @@ window.units = [
     [ "Shaka the Good & Edison the Thinker & Pythagoras the Wise", "INT", ["Cerebral", "Free Spirit"], 6, 55, 4, 5, 99, 5000000, 2249, 888, 93, 4498, 1775, 185, 1 ],
     [ "Dr. Vegapunk - A Sudden Request", "INT", ["Cerebral", "Free Spirit"], 5, 30, 5, 4, 99, 4000000, 1932, 753, 78, 3864, 1505, 155, 1 ],
     [ "Sanji & Pudding - Special Cake to Decorate the Holy Night", ["QCK", "DEX"], [["Fighter", "Cerebral"], ["Cerebral", "Shooter"], ["Fighter", "Cerebral"]], "6+", 65, 5, 5, 99, 5000000, 1962, 1156, 209, 3924, 1734, 418, 1 ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Uta - Happy Christmas!!", "STR", ["Cerebral", "Shooter"], 6, 55, 4, 5, 99, 5000000, 1926, 911, 151, 3851, 1821, 302, 1 ],
+    [ "Vivi & Rebecca - Beauties Decorating for a White Christmas", ["QCK", "DEX"], [["Cerebral", "Striker"], ["Cerebral", "Striker"], ["Cerebral", "Striker"]], "6+", 65, 4, 5, 99, 5000000, 1781, 1137, 244, 3562, 1706, 488, 1 ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
@@ -4969,6 +4969,10 @@ var ghostsUnits = [
     [ "⚐ Pudding - Special Cake to Decorate the Holy Night", "DEX", ["Cerebral", "Shooter"], "6+", 65, 5, 5, 99, 5000000, 1796, 1093, 203, 3592, 1640, 405, 1 ],
     [ "⚐ Sanji & Pudding - Special Cake to Decorate the Holy Night", "QCK", ["Fighter", "Cerebral"], "6+", 65, 5, 5, 99, 5000000, 1962, 1156, 209, 3924, 1734, 418, 1 ],
     [ "⚐ Sanji & Pudding - Special Cake to Decorate the Holy Night", "DEX", ["Cerebral", "Shooter"], "6+", 65, 5, 5, 99, 5000000, 1962, 1156, 209, 3924, 1734, 418, 1 ],
+    [ "⚐ Vivi - Beauties Decorating for a White Christmas", "QCK", ["Cerebral", "Striker"], "6+", 65, 4, 5, 99, 5000000, 1724, 1081, 218, 3448, 1622, 435, 1 ],
+    [ "⚐ Rebecca - Beauties Decorating for a White Christmas", "DEX", ["Cerebral", "Striker"], "6+", 65, 4, 5, 99, 5000000, 1727, 1085, 216, 3454, 1628, 432, 1 ],
+    [ "⚐ Vivi & Rebecca - Beauties Decorating for a White Christmas", "QCK", ["Cerebral", "Striker"], "6+", 65, 4, 5, 99, 5000000, 1781, 1137, 244, 3562, 1706, 488, 1 ],        
+    [ "⚐ Vivi & Rebecca - Beauties Decorating for a White Christmas", "DEX", ["Cerebral", "Striker"], "6+", 65, 4, 5, 99, 5000000, 1781, 1137, 244, 3562, 1706, 488, 1 ],   
 ];
 
 window.units = window.units.concat(ghostsUnits);
