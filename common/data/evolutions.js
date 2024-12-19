@@ -5929,7 +5929,7 @@ window.evolutions = {
     },
     3204: {
         evolution: 4287,
-        evolvers: [ "4287-skull", "4287-skull", "4287-skull", "4287-skull", "4287-skull" ]
+        evolvers: [ "4287-skull", "4287-skull", "4287-skull", "skullQCK", "skullDEX" ]
     },
     // break
     4986: {
