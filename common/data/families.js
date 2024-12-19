@@ -5555,6 +5555,9 @@ const ghostFamilies = {
     639: [ ...VinsmokeSanji, ...CharlottePudding ],
     640: [ ...VinsmokeSanji, ...CharlottePudding ],
     641: [ ...VinsmokeSanji, ...CharlottePudding ],
+    642: [ ...NefertariVivi, ...Rebecca ],
+    643: [ ...NefertariVivi, ...Rebecca ],
+    644: [ ...NefertariVivi, ...Rebecca ],
 }
 
 Object.keys(ghostFamilies).forEach(function (key) {
