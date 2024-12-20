@@ -721,6 +721,7 @@
 	/* * * * * Thumbnail control * * * * */
 
 	utils.getGlobalThumbnailUrl = function (n, relPathToRoot = "") {
+		// relPathToRoot = relPathToRoot + "/optc-db.github.io";
 		if (
 			n === null ||
 			n === undefined ||

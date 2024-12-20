@@ -2560,7 +2560,7 @@
 			},
 			{
 				name: "Set Target",
-				targets: ["special"],
+				targets: ["special", "superSpecial"],
 				regex: /Set Target/i,
 				regex:
 					/Inflicts all (?:the )?enemies with Set Target, increasing damage taken from (?=((?:[^c."]+|c(?!har))*))\1characters? by ([?.\d]+)x(?:-([?.\d]+)x)? and reducing special cooldown of (?=((?:[^c."]+|c(?!har))*))\1characters?(?: by ([?\d]+\+?)(?:-([?\d]+))? turns?)(?:\D+,) for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
@@ -2577,7 +2577,7 @@
 					{
 						type: "number",
 						description: "Increased Damage Multiplier:",
-						groups: [2, 3, 4, 5],
+						groups: [2],
 					},
 					{
 						type: "separator",
