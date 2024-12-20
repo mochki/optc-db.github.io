@@ -2558,6 +2558,58 @@
 					},
 				],
 			},
+			{
+				name: "Set Target",
+				targets: ["special", "superSpecial"],
+				regex: /Set Target/i,
+				regex:
+					/Inflicts all (?:the )?enemies with Set Target, increasing damage taken from (?=((?:[^c."]+|c(?!har))*))\1characters? by ([?.\d]+)x(?:-([?.\d]+)x)? and reducing special cooldown of (?=((?:[^c."]+|c(?!har))*))\1characters?(?: by ([?\d]+\+?)(?:-([?\d]+))? turns?)(?:\D+,) for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Set Target Turns:",
+						groups: [7],
+					},
+					{
+						type: "separator",
+						description: "---Increased Damage Stuff---",
+					},
+					{
+						type: "number",
+						description: "Increased Damage Multiplier:",
+						groups: [2],
+					},
+					{
+						type: "separator",
+						description: "Increased Damage Types:",
+					},
+					...createTypesSubmatchers([1]),
+					{
+						type: "separator",
+						description: "Increased Damage Classes:",
+					},
+					...createClassesSubmatchers([1]),
+					{
+						type: "separator",
+						description: "---CD Reduce Stuff---",
+					},
+					{
+						type: "number",
+						description: "CD Reduce Turns:",
+						groups: [5],
+					},
+					{
+						type: "separator",
+						description: "CD Reduced Types:",
+					},
+					...createTypesSubmatchers([4]),
+					{
+						type: "separator",
+						description: "CD Reduced Classes:",
+					},
+					...createClassesSubmatchers([4]),
+				],
+			},
 		],
 		"Modify Buff": [
 			{
