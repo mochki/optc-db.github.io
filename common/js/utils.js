@@ -2734,7 +2734,7 @@
 				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4268-2.png";
 				break;
 			case (ghostPoint + 628).toString():
-				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4268-QCK-.png";
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4268-QCK.png";
 				break;
 			case (ghostPoint + 629).toString():
 				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4268-DEX.png";
@@ -2743,7 +2743,7 @@
 				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4275-1.png";
 				break;
 			case (ghostPoint + 631).toString():
-				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4275=2.png";
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4275-2.png";
 				break;
 			case (ghostPoint + 632).toString():
 				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4275-DEX.png";
@@ -2785,7 +2785,7 @@
 				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4289-QCK.png";
 				break;
 			case (ghostPoint + 645).toString():
-				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4289=DEX.png";
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4289-DEX.png";
 				break;
 			default:
 				break;
