@@ -5558,6 +5558,7 @@ const ghostFamilies = {
     642: [ ...NefertariVivi, ...Rebecca ],
     643: [ ...NefertariVivi, ...Rebecca ],
     644: [ ...NefertariVivi, ...Rebecca ],
+    645: [ ...NefertariVivi, ...Rebecca ],
 }
 
 Object.keys(ghostFamilies).forEach(function (key) {

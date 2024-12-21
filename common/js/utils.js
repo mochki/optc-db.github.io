@@ -2571,6 +2571,222 @@
 			case (ghostPoint + 573).toString():
 				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4118-STR.png";
 				break;
+			case (ghostPoint + 574).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4121-1.png";
+				break;
+			case (ghostPoint + 575).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4121-2.png";
+				break;
+			case (ghostPoint + 576).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4121-QCK.png";
+				break;
+			case (ghostPoint + 577).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4121-INT.png";
+				break;
+			case (ghostPoint + 578).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4122-1.png";
+				break;
+			case (ghostPoint + 579).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4122-2.png";
+				break;
+			case (ghostPoint + 580).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4122-QCK.png";
+				break;
+			case (ghostPoint + 581).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4122-INT.png";
+				break;
+			case (ghostPoint + 582).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4123-1.png";
+				break;
+			case (ghostPoint + 583).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4123-2.png";
+				break;
+			case (ghostPoint + 584).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4123-INT.png";
+				break;
+			case (ghostPoint + 585).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4123-QCK.png";
+				break;
+			case (ghostPoint + 586).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4124-1.png";
+				break;
+			case (ghostPoint + 587).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4124-2.png";
+				break;
+			case (ghostPoint + 588).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4124-INT.png";
+				break;
+			case (ghostPoint + 589).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4124-QCK.png";
+				break;
+			case (ghostPoint + 590).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4140-1.png";
+				break;
+			case (ghostPoint + 591).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4140-2.png";
+				break;
+			case (ghostPoint + 592).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4140-INT.png";
+				break;
+			case (ghostPoint + 593).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4140-DEX.png";
+				break;
+			case (ghostPoint + 594).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4141-1.png";
+				break;
+			case (ghostPoint + 595).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4141-2.png";
+				break;
+			case (ghostPoint + 596).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4141-INT.png";
+				break;
+			case (ghostPoint + 597).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4141-DEX.png";
+				break;
+			case (ghostPoint + 598).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4142-1.png";
+				break;
+			case (ghostPoint + 599).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4142-2.png";
+				break;
+			case (ghostPoint + 600).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4142-INT.png";
+				break;
+			case (ghostPoint + 601).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/100/4142-DEX.png";
+				break;
+			case (ghostPoint + 602).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4210-1.png";
+				break;
+			case (ghostPoint + 603).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4210-2.png";
+				break;
+			case (ghostPoint + 604).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4211-1.png";
+				break;
+			case (ghostPoint + 605).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4211-2.png";
+				break;
+			case (ghostPoint + 606).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4218-1.png";
+				break;
+			case (ghostPoint + 607).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4218-2.png";
+				break;
+			case (ghostPoint + 608).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4219-1.png";
+				break;
+			case (ghostPoint + 609).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4219-2.png";
+				break;
+			case (ghostPoint + 610).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4227-1.png";
+				break;
+			case (ghostPoint + 611).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4227-2.png";
+				break;
+			case (ghostPoint + 612).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4227-QCK.png";
+				break;
+			case (ghostPoint + 613).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4227-DEX.png";
+				break;
+			case (ghostPoint + 614).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4230-1.png";
+				break;
+			case (ghostPoint + 615).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4230-2.png";
+				break;
+			case (ghostPoint + 616).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4231-1.png";
+				break;
+			case (ghostPoint + 617).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4231-2.png";
+				break;
+			case (ghostPoint + 618).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4257-1.png";
+				break;
+			case (ghostPoint + 619).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4257-2.png";
+				break;
+			case (ghostPoint + 620).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4257-STR.png";
+				break;
+			case (ghostPoint + 621).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4257-INT.png";
+				break;
+			case (ghostPoint + 622).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4267-1.png";
+				break;
+			case (ghostPoint + 623).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4267-2.png";
+				break;
+			case (ghostPoint + 624).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4267-QCK.png";
+				break;
+			case (ghostPoint + 625).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4267-STR.png";
+				break;
+			case (ghostPoint + 626).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4268-1.png";
+				break;
+			case (ghostPoint + 627).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4268-2.png";
+				break;
+			case (ghostPoint + 628).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4268-QCK-.png";
+				break;
+			case (ghostPoint + 629).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4268-DEX.png";
+				break;
+			case (ghostPoint + 630).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4275-1.png";
+				break;
+			case (ghostPoint + 631).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4275=2.png";
+				break;
+			case (ghostPoint + 632).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4275-DEX.png";
+				break;
+			case (ghostPoint + 633).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4275-STR.png";
+				break;
+			case (ghostPoint + 634).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4276-1.png";
+				break;
+			case (ghostPoint + 635).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4276-2.png";
+				break;
+			case (ghostPoint + 636).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4276-STR.png";
+				break;
+			case (ghostPoint + 637).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4276-DEX.png";
+				break;
+			case (ghostPoint + 638).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4287-1.png";
+				break;
+			case (ghostPoint + 639).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4287-2.png";
+				break;
+			case (ghostPoint + 640).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4287-QCK.png";
+				break;
+			case (ghostPoint + 641).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4287-DEX.png";
+				break;
+			case (ghostPoint + 642).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4289-1.png";
+				break;
+			case (ghostPoint + 643).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4289-2.png";
+				break;
+			case (ghostPoint + 644).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4289-QCK.png";
+				break;
+			case (ghostPoint + 645).toString():
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4289=DEX.png";
+				break;
 			default:
 				break;
 		}
