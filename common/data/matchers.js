@@ -2610,6 +2610,41 @@
 					...createClassesSubmatchers([4]),
 				],
 			},
+			{
+				name: "Territory",
+				targets: [
+					"captain",
+					"special",
+					"superSpecial",
+					"swap",
+					"sailor",
+					"support",
+				],
+				regex: /Territory/i,
+				regex: /Applies Territory: (?=((?:[^c."]+|c(?!lass))*))\1class to the field, boosts ATK by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, (\D+?),)? and reduces damage received by ([?.\d]+)%(?:-([?.\d]+)%)? (?:based|depending) on number of characters matching the territory, for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, for ([?\d]+\+?)(?:-([?\d]+))? turns?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Multiplier:",
+						groups: [2, 3],
+					},
+					{
+						type: "number",
+						description: "Percentage:",
+						groups: [4, 5],
+					},
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [6, 7, 8, 9],
+					},
+					{
+						type: "separator",
+						description: "Affected Classes:",
+					},
+					...createClassesSubmatchers([1]),
+				],
+			},
 		],
 		"Modify Buff": [
 			{
