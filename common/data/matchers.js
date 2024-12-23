@@ -2631,12 +2631,12 @@
 					{
 						type: "number",
 						description: "Percentage:",
-						groups: [4, 5],
+						groups: [5, 6],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [6, 7, 8, 9],
+						groups: [7, 8, 9, 10],
 					},
 					{
 						type: "separator",
