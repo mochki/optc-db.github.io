@@ -2213,6 +2213,37 @@
 			},
 
 			{
+				name: "Status ATK Boost: Weaken",
+				targets: ["captain"],
+				regex: /Boosts (?:ATK|([^."]*?)characters? ATK) against[^."]+?enemies inflicted with Weaken[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Multiplier:",
+						groups: [2, 3, 4, 5],
+					},
+				],
+			},
+
+			{
+				name: "Status ATK Boost: Weaken",
+				targets: ["special", "superSpecial", "swap", "support"],
+				regex: /Boosts ATK against[^."]+?enemies inflicted with Weaken[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Multiplier:",
+						groups: [1, 2, 5, 6],
+					},
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [3, 4, 7, 8],
+					},
+				],
+			},
+
+			{
 				name: "Old Specific Enemy ATK boosters",
 				targets: ["support"],
 				regex: /Boosts the supported character's ATK.+against/i,
