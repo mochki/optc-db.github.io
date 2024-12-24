@@ -4142,6 +4142,31 @@
 					},
 				],
 			},
+
+			{
+				name: "HP Guard",
+				targets: [
+					"captain",
+					"special",
+					"superSpecial",
+					"swap",
+					"sailor",
+					"support",
+				],
+				regex: /Activates HP Guard of ([?.\d]+)%(?:-([?.\d]+)%)? effect for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, of ([?.\d]+)%(?:-([?.\d]+)%)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Percentage:",
+						groups: [1, 2, 5, 6],
+					},
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [3, 4, 7, 8],
+					},
+				],
+			},
 		],
 		Slot: [
 			{
