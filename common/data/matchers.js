@@ -2617,7 +2617,6 @@
 					"special",
 					"superSpecial",
 					"swap",
-					"sailor",
 					"support",
 				],
 				regex: /Territory/i,
@@ -4150,7 +4149,6 @@
 					"special",
 					"superSpecial",
 					"swap",
-					"sailor",
 					"support",
 				],
 				regex: /Activates HP Guard of ([?.\d]+)%(?:-([?.\d]+)%)? effect for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, of ([?.\d]+)%(?:-([?.\d]+)%)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
@@ -6576,6 +6574,37 @@
 						description: "Affected classes:",
 					},
 					...createClassesSubmatchers([1]),
+				],
+			},
+
+			{
+				name: "Weaken",
+				targets: [
+					"captain",
+					"special",
+					"superSpecial",
+					"swap",
+					"support",
+				],
+				regex:
+					/(Ignores (?:Weakened )?Debuff Protection and )?Inflicts (?:all enemies) with Weaken by ([?.\d]+)x(?:-([?.\d]+)x)?, by ([?.\d]+)x(?:-([?.\d]+)x)? if enemies are inflicted with Increase Damage Taken, for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Multiplier:",
+						groups: [2, 3, 4, 5],
+					},
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [6, 7, 8, 9],
+					},
+					{
+						type: "option",
+						description: "Ignores Immunity",
+						regex: /i/,
+						groups: [1],
+					},
 				],
 			},
 		],
