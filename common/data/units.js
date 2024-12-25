@@ -4288,16 +4288,16 @@ window.units = [
     [ "Sanji & Pudding - Special Cake to Decorate the Holy Night", ["QCK", "DEX"], [["Fighter", "Cerebral"], ["Cerebral", "Shooter"], ["Fighter", "Cerebral"]], "6+", 65, 5, 5, 99, 5000000, 1962, 1156, 209, 3924, 1734, 418, 1 ],
     [ "Uta - Happy Christmas!!", "STR", ["Cerebral", "Shooter"], 6, 55, 4, 5, 99, 5000000, 1926, 911, 151, 3851, 1821, 302, 1 ],
     [ "Vivi & Rebecca - Beauties Decorating for a White Christmas", ["QCK", "DEX"], [["Cerebral", "Striker"], ["Cerebral", "Striker"], ["Cerebral", "Striker"]], "6+", 65, 4, 5, 99, 5000000, 1781, 1137, 244, 3562, 1706, 488, 1 ],
+    [ "Monkey D. Luffy - Reaching the Pinnacle", "STR", ["Fighter", "Free Spirit"], 6, 55, 4, 5, 99, 5000000, 2128, 933, 160, 4256, 1865, 319, 1 ],
+    [ "Sabo - Witnessed Truth at the Sacred Land", "INT", ["Cerebral", "Fighter"], 6, 55, 4, 5, 99, 5000000, 2120, 935, 160, 4240, 1870, 320, 1 ],
+    [ "Sabo - Ignited Flames of Revolution", "INT", ["Cerebral", "Fighter"], 6, 55, 4, 5, 99, 5000000, 2120, 935, 160, 4240, 1870, 320, 1 ],
+    [ "Whitebeard & Ace - Bond of Father and Son", ["QCK", "QCK"], [["Powerhouse", "Fighter"], ["Powerhouse", "Fighter"], ["Powerhouse", "Fighter"]], 6, 55, 4, 5, 99, 5000000, 2119, 1075, 164, 4238, 2150, 327, 1 ],
+    [ "Hancock & Nami & Robin - Fragrance of the Bewitching Flowers", "INT", ["Free Spirit", "Cerebral"], "6+", 65, 4, 5, 99, 5000000, 2224, 1155, 216, 4448, 1732, 432, 1 ],
+    [ "Monkey D. Garp - Advice on Eating", "STR", ["Fighter", "Powerhouse"], 5, 30, 5, 4, 99, 4000000, 1801, 810, 93, 3602, 1619, 185, 1 ],
+    [ "Curly Dadan - Determination of a Foster Parent", "QCK", ["Powerhouse", "Fighter"], 5, 30, 4, 4, 99, 4000000, 1855, 763, 99, 3710, 1526, 198, 1 ],
+    [ "Akainu - Justice Captures Evil", "QCK", ["Fighter", "Powerhouse"], 5, 40, 4, 4, 99, 5000000, 1562, 777, 106, 3123, 1553, 212, 1 ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
-    [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
+    [ "Fujitora & Ryokugyu", "QCK", ["Slasher", "Fighter"], 6, 55, 4, 5, 99, 5000000, 2405, 845, 93, 4810, 1690, 185, 1 ],
     [ "", "Type", [ "Class1", "Class2" ], null, null, null, null, null, null, null, null, null, null, null, null, null ],
 ];
 
@@ -4972,7 +4972,10 @@ var ghostsUnits = [
     [ "⚐ Vivi - Beauties Decorating for a White Christmas", "QCK", ["Cerebral", "Striker"], "6+", 65, 4, 5, 99, 5000000, 1724, 1081, 218, 3448, 1622, 435, 1 ],
     [ "⚐ Rebecca - Beauties Decorating for a White Christmas", "DEX", ["Cerebral", "Striker"], "6+", 65, 4, 5, 99, 5000000, 1727, 1085, 216, 3454, 1628, 432, 1 ],
     [ "⚐ Vivi & Rebecca - Beauties Decorating for a White Christmas", "QCK", ["Cerebral", "Striker"], "6+", 65, 4, 5, 99, 5000000, 1781, 1137, 244, 3562, 1706, 488, 1 ],        
-    [ "⚐ Vivi & Rebecca - Beauties Decorating for a White Christmas", "DEX", ["Cerebral", "Striker"], "6+", 65, 4, 5, 99, 5000000, 1781, 1137, 244, 3562, 1706, 488, 1 ],   
+    [ "⚐ Vivi & Rebecca - Beauties Decorating for a White Christmas", "DEX", ["Cerebral", "Striker"], "6+", 65, 4, 5, 99, 5000000, 1781, 1137, 244, 3562, 1706, 488, 1 ],
+    [ "⚐ Whitebeard - Bond of Father and Son", "QCK", ["Powerhouse", "Fighter"], 6, 55, 4, 5, 99, 5000000, 2112, 990, 143, 4224, 1980, 286, 1 ],
+    [ "⚐ Ace - Bond of Father and Son", "QCK", ["Powerhouse", "Fighter"], 6, 55, 4, 5, 99, 5000000, 2096, 959, 156, 4192, 1918, 312, 1 ],
+    [ "⚐ Whitebeard & Ace - Bond of Father and Son", "QCK", ["Powerhouse", "Fighter"], 6, 55, 4, 5, 99, 5000000, 2119, 1075, 164, 4238, 2150, 327, 1 ], 
 ];
 
 window.units = window.units.concat(ghostsUnits);

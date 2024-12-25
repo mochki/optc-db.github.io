@@ -3458,6 +3458,15 @@ window.drops = {
             'Defeat Level Rewards': [ 4279 ],
         },
 
+        {
+            name: 'Akainu',
+            dropID: 'pka20',
+            thumb: 4297,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Defeat Level Rewards': [ 4297 ],
+        },
     ],
 
 
@@ -9286,6 +9295,27 @@ window.drops = {
             global: true,
             nakama: null,
             'Chopper Man Missions': [ 4130 ],
+        },
+
+        {
+            name: 'Kuzan VS Garp Pirate Alliance Blitz Battle!',
+            thumb: 2251,
+            global: true,
+            nakama: null,
+        },
+
+        {
+            name: 'Pirate Alliance Challenge! Happy Halloween',
+            thumb: 4263,
+            global: true,
+            nakama: null,
+        },
+
+        {
+            name: 'VS Navy Pirate Alliance Blitz Battle!',
+            thumb: 3847,
+            global: true,
+            nakama: null,
         },
 
         {
