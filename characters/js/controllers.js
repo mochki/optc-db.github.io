@@ -295,8 +295,8 @@ app.controller('DetailsCtrl',function($scope, $rootScope, $state, $stateParams, 
         $('#compare').prop('disabled', false);
     };
     $scope.openBigThumbTab = function(id) {
-        console.log(Utils.getBigThumbnailUrl(id, ''))
-        window.open(Utils.getBigThumbnailUrl(id, ''), '_blank');
+        console.log(Utils.getBigThumbnailUrl(id, '..'))
+        window.open(Utils.getBigThumbnailUrl(id, '..'), '_blank');
     };
     $scope.getPrevious = function() { return $stateParams.previous.concat($scope.id); };
     $scope.isCaptainHybrid = ($scope.details && $scope.details.captain && ($scope.details.captain.global || $scope.details.captain.base || $scope.details.captain.combined || $scope.details.captain.character1));
