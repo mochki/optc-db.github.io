@@ -2595,12 +2595,12 @@
 				name: "Set Target",
 				targets: ["special", "superSpecial"],
 				regex:
-					/Inflicts all (?:the )?enemies with Set Target, increasing damage taken from (?=((?:[^c."]+|c(?!har))*))\1characters? by ([?.\d]+)x(?:-([?.\d]+)x)? and reducing special cooldown of (?=((?:[^c."]+|c(?!har))*))\1characters?(?: by ([?\d]+\+?)(?:-([?\d]+))? turns?)(?:\D+,) for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+					/Inflicts all (?:the )?enemies with Set Target, increasing damage taken from (?=((?:[^c."]+|c(?!har))*))\1characters? by ([?.\d]+)x(?:-([?.\d]+)x)? and reducing special cooldown of (?=((?:[^c."]+|c(?!har))*))\4characters?(?: by ([?\d]+\+?)(?:-([?\d]+))? turns?)(?:\D+,) for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Set Target Turns:",
-						groups: [7],
+						groups: [7, 8],
 					},
 					{
 						type: "separator",
@@ -2609,7 +2609,7 @@
 					{
 						type: "number",
 						description: "Increased Damage Multiplier:",
-						groups: [2],
+						groups: [2, 3],
 					},
 					{
 						type: "separator",
@@ -2628,7 +2628,7 @@
 					{
 						type: "number",
 						description: "CD Reduce Turns:",
-						groups: [5],
+						groups: [5, 6],
 					},
 					{
 						type: "separator",
@@ -2680,7 +2680,7 @@
 					{
 						type: "number",
 						description: "Increased Critical Rate Turns:",
-						groups: [4],
+						groups: [4, 5],
 					},
 					{
 						type: "number",
@@ -2708,7 +2708,7 @@
 					{
 						type: "number",
 						description: "Increased Critical Damage Turns:",
-						groups: [4],
+						groups: [4, 5],
 					},
 					{
 						type: "number",
