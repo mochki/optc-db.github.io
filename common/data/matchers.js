@@ -2215,7 +2215,8 @@
 			{
 				name: "Status ATK Boost: Weaken",
 				targets: ["captain"],
-				regex: /Boosts (?:ATK|([^."]*?)characters? ATK) against[^."]+?enemies inflicted with Weaken[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?)?/i,
+				regex:
+					/Boosts (?:ATK|([^."]*?)characters? ATK) against[^."]+?enemies inflicted with Weaken[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -2228,7 +2229,8 @@
 			{
 				name: "Status ATK Boost: Weaken",
 				targets: ["special", "superSpecial", "swap", "support"],
-				regex: /Boosts ATK against[^."]+?enemies inflicted with Weaken[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+				regex:
+					/Boosts ATK against[^."]+?enemies inflicted with Weaken[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -2592,7 +2594,6 @@
 			{
 				name: "Set Target",
 				targets: ["special", "superSpecial"],
-				regex: /Set Target/i,
 				regex:
 					/Inflicts all (?:the )?enemies with Set Target, increasing damage taken from (?=((?:[^c."]+|c(?!har))*))\1characters? by ([?.\d]+)x(?:-([?.\d]+)x)? and reducing special cooldown of (?=((?:[^c."]+|c(?!har))*))\1characters?(?: by ([?\d]+\+?)(?:-([?\d]+))? turns?)(?:\D+,) for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
 				submatchers: [
@@ -2643,15 +2644,10 @@
 			},
 			{
 				name: "Territory",
-				targets: [
-					"captain",
-					"special",
-					"superSpecial",
-					"swap",
-					"support",
-				],
+				targets: ["captain", "special", "superSpecial", "swap", "support"],
 				regex: /Territory/i,
-				regex: /Applies Territory: (?=((?:[^c."]+|c(?!lass))*))\1class to the field, boosts ATK by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, (\D+?),)? and reduces damage received by ([?.\d]+)%(?:-([?.\d]+)%)? (?:based|depending) on number of characters matching the territory, for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, for ([?\d]+\+?)(?:-([?\d]+))? turns?)?/i,
+				regex:
+					/Applies Territory: (?=((?:[^c."]+|c(?!lass))*))\1class to the field, boosts ATK by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, (\D+?),)? and reduces damage received by ([?.\d]+)%(?:-([?.\d]+)%)? (?:based|depending) on number of characters matching the territory, for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, for ([?\d]+\+?)(?:-([?\d]+))? turns?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -2671,6 +2667,62 @@
 					{
 						type: "separator",
 						description: "Affected Classes:",
+					},
+					...createClassesSubmatchers([1]),
+				],
+			},
+			{
+				name: "Critical Hit Rate",
+				targets: ["captain", "special", "superSpecial", "swap"],
+				regex:
+					/Boosts Critical Hit Rate of (?=((?:[^c."]+|c(?!har))*))\1characters? by(?: up to)? ([?.\d]+)%(?:-([?.\d]+)%)? for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Increased Critical Rate Turns:",
+						groups: [4],
+					},
+					{
+						type: "number",
+						description: "Increased Critical Rate Percentage:",
+						groups: [2, 3],
+					},
+					{
+						type: "separator",
+						description: "Increased Critical Rate Types:",
+					},
+					...createTypesSubmatchers([1]),
+					{
+						type: "separator",
+						description: "Increased Critical Rate Classes:",
+					},
+					...createClassesSubmatchers([1]),
+				],
+			},
+			{
+				name: "Critical Hit Damage",
+				targets: ["captain", "special", "superSpecial", "swap"],
+				regex:
+					/Boosts Critical Hit Damage of (?=((?:[^c."]+|c(?!har))*))\1characters? by(?: up to)? ([?.\d]+)%(?:-([?.\d]+)%)? for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Increased Critical Damage Turns:",
+						groups: [4],
+					},
+					{
+						type: "number",
+						description: "Increased Critical Damage Percentage:",
+						groups: [2, 3],
+					},
+					{
+						type: "separator",
+						description: "Increased Critical Damage Types:",
+					},
+					...createTypesSubmatchers([1]),
+					{
+						type: "separator",
+						description: "Increased Critical Damage Classes:",
 					},
 					...createClassesSubmatchers([1]),
 				],
@@ -4175,14 +4227,9 @@
 
 			{
 				name: "HP Guard",
-				targets: [
-					"captain",
-					"special",
-					"superSpecial",
-					"swap",
-					"support",
-				],
-				regex: /Activates HP Guard of ([?.\d]+)%(?:-([?.\d]+)%)? effect for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, of ([?.\d]+)%(?:-([?.\d]+)%)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+				targets: ["captain", "special", "superSpecial", "swap", "support"],
+				regex:
+					/Activates HP Guard of ([?.\d]+)%(?:-([?.\d]+)%)? effect for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, of ([?.\d]+)%(?:-([?.\d]+)%)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -6610,13 +6657,7 @@
 
 			{
 				name: "Weaken",
-				targets: [
-					"captain",
-					"special",
-					"superSpecial",
-					"swap",
-					"support",
-				],
+				targets: ["captain", "special", "superSpecial", "swap", "support"],
 				regex:
 					/(Ignores (?:Weakened )?Debuff Protection and )?Inflicts (?:all enemies) with Weaken by ([?.\d]+)x(?:-([?.\d]+)x)?, by ([?.\d]+)x(?:-([?.\d]+)x)? if enemies are inflicted with Increase Damage Taken, for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
 				submatchers: [
