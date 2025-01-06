@@ -2692,10 +2692,10 @@
 				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4227-DEX.png";
 				break;
 			case (ghostPoint + 614).toString():
-				return relPathToRoot + "/api/images/thumbnail/glo/4/200/4230-1.png";
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4230-1.png";
 				break;
 			case (ghostPoint + 615).toString():
-				return relPathToRoot + "/api/images/thumbnail/glo/4/200/4230-2.png";
+				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4230-2.png";
 				break;
 			case (ghostPoint + 616).toString():
 				return relPathToRoot + "/api/images/thumbnail/jap/4/200/4231-1.png";
