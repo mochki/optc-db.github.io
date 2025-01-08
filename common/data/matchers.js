@@ -6323,9 +6323,9 @@
 
 			{
 				name: "Special Use Limit",
-				targets: ["potential"],
+				targets: ["captain", "potential", "support"],
 				regex:
-					/Reduces Special Use Limit duration (?:by ([?\d]+) turns?|(completely))/i,
+					/(?:reduces|removes)(?: |[^."]+? and |[^."]+?, )Special Use Limit[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))/i,
 				submatchers: [
 					{
 						type: "number",
