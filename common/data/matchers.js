@@ -6323,9 +6323,9 @@
 
 			{
 				name: "Special Use Limit",
-				targets: ["captain", "potential", "support"],
+				targets: ["captain", "special", "potential", "support"],
 				regex:
-					/(?:reduces|removes)(?: |[^."]+? and |[^."]+?, )Special Use Limit[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))/i,
+					/(?:reduces|removes)[^."]+?(?: |[^."]+? and |[^."]+?, )(?:Special Use Limit|selected debuffs)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))/i,
 				submatchers: [
 					{
 						type: "number",
