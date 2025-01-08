@@ -4617,6 +4617,39 @@
 					...createPositionsSubmatchers([1]),
 				],
 			},
+			{
+				name: "STND Expansion",
+				targets: ["special"],
+				regex:
+					/allows crew to perform Super Tandem with ([^".]+?)orbs for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [2, 3],
+					},
+					{
+						type: "separator",
+						description: "Expanded to orbs:",
+					},
+					...createOrbsSubmatchers(
+						[
+							"STR",
+							"DEX",
+							"QCK",
+							"PSY",
+							"INT",
+							"RCV",
+							"BOMB",
+							"SEMLA",
+							"SUPERBOMB",
+							"RAINBOW",
+							"WANO",
+						],
+						[1]
+					),
+				],
+			},
 		],
 		"Slot Change": [
 			{
