@@ -290,7 +290,7 @@
                                 </tr>
                                 <tr ng-if="details.sailor">
                                     <td width="5%">Sailor</td>
-                                    <td colspan="{{details.sailor.llbbase || details.sailor.llblevel1 || details.sailor.llblevel2 ? 1 : 2}}">
+                                    <td colspan="{{details.sailor.llbbase || details.sailor.llbcharacter1 || details.sailor.llbcharacter2 || details.sailor.llbcombined || details.sailor.llblevel1 || details.sailor.llblevel2 ? 1 : 2}}">
                                         <!-- same sailor ability -->
                                         <div ng-if="!isSailorHybrid" ng-bind-html="details.sailor | decorate"></div>
                                         <!-- different sailor abilities -->
@@ -316,10 +316,16 @@
                                         </div>
                                         <span class="notes" ng-if="details.sailorNotes" ng-bind-html="details.sailorNotes | notes | decorate"></span>
                                     </td>
-                                    <td ng-if="details.sailor.llbbase || details.sailor.llblevel1 || details.sailor.llblevel2">
+                                    <td ng-if="details.sailor.llbbase || details.sailor.llbcharacter1 || details.sailor.llbcharacter2 || details.sailor.llbcombined || details.sailor.llblevel1 || details.sailor.llblevel2">
                                         <div ng-if="isSailorHybrid">
                                             <span class="badge badge-slevel1" ng-show="details.sailor.llbbase">LLB Sailor Ability</span>
                                             <div ng-show="details.sailor.llbbase" ng-bind-html="details.sailor.llbbase | decorate"></div>
+                                            <span class="badge badge-character1" ng-show="details.sailor.llbcharacter1">LLB Character 1 Sailor Ability</span>
+                                            <div ng-show="details.sailor.llbcharacter1" ng-bind-html="details.sailor.llbcharacter1 | decorate"></div>
+                                            <span class="badge badge-character2" ng-show="details.sailor.llbcharacter2">LLB Character 2 Sailor Ability</span>
+                                            <div ng-show="details.sailor.llbcharacter2" ng-bind-html="details.sailor.llbcharacter2 | decorate"></div>
+                                            <span class="badge badge-combined" ng-show="details.sailor.llbcombined">LLB Dual Characters Sailor Ability</span>
+                                            <div ng-show="details.sailor.llbcombined" ng-bind-html="details.sailor.llbcombined | decorate"></div>
                                             <span class="badge badge-slevel1" ng-show="details.sailor.llblevel1">LLB Sailor Ability 1</span>
                                             <div ng-show="details.sailor.llblevel1" ng-bind-html="details.sailor.llblevel1 | decorate"></div>
                                             <span class="badge badge-slevel2" ng-show="details.sailor.llblevel2">LLB Sailor Ability 2</span>
@@ -390,13 +396,13 @@
                                         <strong class="specialName" ng-if="details.specialName">{{::details.specialName}}</strong>
                                         <!-- different specials -->
                                         <div ng-if="isSpecialHybrid && !isSpecialStaged">
-                                            <span class="badge badge-slevel1" ng-show="details.special.llbbase">Level Limit Break Base Special Ability</span><div ng-show="details.special.llbbase" ng-bind-html="details.special.llbbase | decorate"></div>
-                                            <span class="badge badge-slevel1" ng-show="details.special.llblevel1">Level Limit Break Level 1 Special Ability</span><div ng-show="details.special.llblevel1" ng-bind-html="details.special.llblevel1 | decorate"></div>
-                                            <span class="badge badge-slevel1" ng-show="details.special.llblevel2">Level Limit Break Level 2 Special Ability</span><div ng-show="details.special.llblevel2" ng-bind-html="details.special.llblevel2 | decorate"></div>
-                                            <span class="badge badge-combined" ng-show="details.special.llbcombined">Level Limit Break Combined Special Ability</span><div ng-show="details.special.llbcombined" ng-bind-html="details.special.llbcombined | decorate"></div>
+                                            <span class="badge badge-slevel1" ng-show="details.special.llbbase">LLB Base Special Ability</span><div ng-show="details.special.llbbase" ng-bind-html="details.special.llbbase | decorate"></div>
+                                            <span class="badge badge-slevel1" ng-show="details.special.llblevel1">LLB Level 1 Special Ability</span><div ng-show="details.special.llblevel1" ng-bind-html="details.special.llblevel1 | decorate"></div>
+                                            <span class="badge badge-slevel1" ng-show="details.special.llblevel2">LLB Level 2 Special Ability</span><div ng-show="details.special.llblevel2" ng-bind-html="details.special.llblevel2 | decorate"></div>
+                                            <span class="badge badge-combined" ng-show="details.special.llbcombined">LLB Combined Special Ability</span><div ng-show="details.special.llbcombined" ng-bind-html="details.special.llbcombined | decorate"></div>
                                         </div>
                                         <div ng-if="isSpecialHybrid && isSpecialStaged">
-                                            <span class="badge badge-level1" ng-show="details.special.llbbase">Level Limit Break Special</span><br>
+                                            <span class="badge badge-level1" ng-show="details.special.llbbase">LLB Special</span><br>
                                             <div ng-repeat="stage in details.special.llbbase track by $index">
                                                 <strong>Stage {{::$index + 1}}</strong>
                                                 ({{::stage.cooldown.length ? stage.cooldown[0] : stage.cooldown}}{{::stage.cooldown.length ? ' \u2192 ' + stage.cooldown[1] : ''}} turns) <span ng-if="unit.limitCD != 0"><strong>➤</strong>
@@ -748,6 +754,9 @@
                                             <span ng-if="stage.sailor.base" class="badge badge-sbase">Sailor</span><div ng-if="stage.sailor.base" ng-bind-html="stage.sailor.base | decorate"></div>
                                             <span ng-if="stage.sailor.level1" class="badge badge-slevel1">Level 1 Sailor</span><div ng-if="stage.sailor.level1" ng-bind-html="stage.sailor.level1 | decorate"></div>
                                             <span ng-if="stage.sailor.level2" class="badge badge-slevel2">Level 2 Sailor</span><div ng-if="stage.sailor.level2" ng-bind-html="stage.sailor.level2 | decorate"></div>
+                                            <span ng-if="stage.sailor.character1" class="badge badge-character1">Character 1 Sailor</span><div ng-if="stage.sailor.character1" ng-bind-html="stage.sailor.character1 | decorate"></div>
+                                            <span ng-if="stage.sailor.character1" class="badge badge-character2">Character 2 Sailor</span><div ng-if="stage.sailor.character2" ng-bind-html="stage.sailor.character2 | decorate"></div>
+                                            <span ng-if="stage.sailor.combined" class="badge badge-combined">Dual Character Sailor</span><div ng-if="stage.sailor.combined" ng-bind-html="stage.sailor.combined | decorate"></div>
                                             <span ng-if="stage.special && !stage.special.base" class="badge badge-slevel1">Special</span><div ng-if="stage.special && !stage.special.base && !isLLBSpecialStaged[$index]" ng-bind-html="stage.special | decorate"></div>
                                             <span ng-if="stage.special.base" class="badge badge-slevel1">Base Special</span><div ng-if="stage.special.base && !isLLBSpecialStaged[$index]" ng-bind-html="stage.special.base | decorate"></div>
                                             <span ng-if="stage.special.combined" class="badge badge-combined">Combined Special</span><div ng-if="stage.special.combined && !isLLBSpecialStaged[$index]" ng-bind-html="stage.special.combined | decorate"></div>
