@@ -6388,6 +6388,19 @@
 					},
 				],
 			},
+			{
+				name: "Pain",
+				targets: ["captain", "special", "sailor"],
+				regex:
+					/(?:Reduces|Removes) Pain duration (?:by ([?\d]+) turns?|(completely))/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [1, 2],
+					},
+				],
+			},
 		],
 		"Apply Enemy Effects": [
 			{
