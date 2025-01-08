@@ -6375,6 +6375,19 @@
 					},
 				],
 			},
+			{
+				name: "Bleed",
+				targets: ["captain", "special", "sailor"],
+				regex:
+					/(?:Reduces|Removes) Bleed duration (?:by ([?\d]+) turns?|(completely))/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [1, 2],
+					},
+				],
+			},
 		],
 		"Apply Enemy Effects": [
 			{
