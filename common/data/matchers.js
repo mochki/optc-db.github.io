@@ -2727,6 +2727,29 @@
 					...createClassesSubmatchers([1]),
 				],
 			},
+			{
+				name: "Advantageous Class Effect",
+				targets: ["special"],
+				regex:
+					/Boosts Advantageous Class Effect of (?=((?:[^c."]+|c(?!har))*))\1characters? by(?: up to)? ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Advantageous Class Effect Boost Turns:",
+						groups: [4, 5],
+					},
+					{
+						type: "number",
+						description: "Advantageous Class Effect Boost Amount:",
+						groups: [2, 3],
+					},
+					{
+						type: "separator",
+						description: "Advantageous Class Effect Boosted Classes:",
+					},
+					...createClassesSubmatchers([1]),
+				],
+			},
 		],
 		"Modify Buff": [
 			{
