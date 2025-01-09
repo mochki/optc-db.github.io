@@ -7007,6 +7007,19 @@
 					},
 				],
 			},
+			{
+				name: "Positive Buff",
+				targets: ["special", "superSpecial", "swap", "support"],
+				regex:
+					/(?:reduces|removes) enemies'[^."]+?positive buff[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [1, 2, 3, 4, 5],
+					},
+				],
+			},
 		],
 		Other: [
 			{
@@ -7083,6 +7096,25 @@
 				targets: ["potential"],
 				regex: /Barrier Penetration/i,
 			},
+			{
+				name: "Class Change",
+				targets: ["special", "superSpecial"],
+				regex:
+					/changes class [?.\d]+? of (?:all non-(?=((?:[^c."]+|c(?!har))*))\1characters?|(?=((?:[^c."]+|c(?!har))*))\2characters?) to (?=((?:[^f."]+|f(?!or))*))\3for ([?\d]+)(?:-([?\d]+))? turns?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [4, 5],
+					},
+					{
+						type: "separator",
+						description: "Affected classes:",
+					},
+					...createClassesSubmatchers([3]),
+				],
+			},
+
 		],
 		Uncategorized: [
 			/* * * * * Specials * * * * */
