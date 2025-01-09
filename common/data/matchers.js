@@ -6761,6 +6761,19 @@
 					},
 				],
 			},
+			{
+				name: "Marked",
+				targets: ["special", "superSpecial"],
+				regex:
+					/marks all enemies (?:with ([?.,\d]+) or more max hp) as a powerful enemy/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Enemy's minimum MAX HP:",
+						groups: [2],
+					},
+				],
+			},
 		],
 		"Reduce Enemy Effects": [
 			{
