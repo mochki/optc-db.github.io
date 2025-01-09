@@ -1396,7 +1396,7 @@
                 otherwise."
             */
 				regex:
-					/Boosts ATK(?: and HP| and RCV|, HP and RCV)? of (?=((?:[^c."]+|c(?!har))*))\1characters? by (?:([?.\d]+)x(?:-([?.\d]+)x)?|([?.,\d]+)(?:-([?.,\d]+))?)(?:, (\D+?),)? (?:after [?\d\w]+? hit in the chain )?for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by (?:([?.\d]+)x(?:-([?.\d]+)x)?|([?.,\d]+)(?:-([?.,\d]+))?)(?:, (\D+?),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?)?/i,
+					/Boosts ATK(?: and HP| and RCV|, HP and RCV)? of (?=((?:[^c."]+|c(?!har))*))\1characters? by (?:([?.\d]+)x(?:-([?.\d]+)x)?|([?.,\d]+)(?:-([?.,\d]+))?)(?:, ([^,]+),)? (?:after [?\d\w]+? hit in the chain )?for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by (?:([?.\d]+)x(?:-([?.\d]+)x)?|([?.,\d]+)(?:-([?.,\d]+))?)(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -1425,6 +1425,14 @@
 						type: "option",
 						description: "Buff Clear Immune",
 						regex: /preventing buff clears/,
+						radioGroup: "targets",
+						groups: [6, 13],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
 						radioGroup: "targets",
 						groups: [6, 13],
 						cssClasses: ["min-width-6"],
@@ -1464,7 +1472,7 @@
 				name: "Base ATK Boost",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts base ATK(?: and HP| and RCV|, HP and RCV)? of (?=((?:[^c."]+|c(?!har))*))\1characters? by (?:([?.\d]+)x(?:-([?.\d]+)x)?|([?.,\d]+)(?:-([?.,\d]+))?)(?:, (\D+?),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by (?:([?.\d]+)x(?:-([?.\d]+)x)?|([?.,\d]+)(?:-([?.,\d]+))?)(?:, (\D+?),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?)?/i,
+					/Boosts base ATK(?: and HP| and RCV|, HP and RCV)? of (?=((?:[^c."]+|c(?!har))*))\1characters? by (?:([?.\d]+)x(?:-([?.\d]+)x)?|([?.,\d]+)(?:-([?.,\d]+))?)(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by (?:([?.\d]+)x(?:-([?.\d]+)x)?|([?.,\d]+)(?:-([?.,\d]+))?)(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -1493,6 +1501,14 @@
 						type: "option",
 						description: "Buff Clear Immune",
 						regex: /preventing buff clears/,
+						radioGroup: "targets",
+						groups: [6, 13],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
 						radioGroup: "targets",
 						groups: [6, 13],
 						cssClasses: ["min-width-6"],
@@ -1589,7 +1605,7 @@
 				name: "Orb Effect: Boost",
 				targets: ["captain", "special", "superSpecial", "swap", "support"],
 				regex:
-					/boosts Orb Effects of (?=((?:[^c."]+|c(?!har))*))\1characters? by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, (\D+?),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, (\D+?),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/boosts Orb Effects of (?=((?:[^c."]+|c(?!har))*))\1characters? by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -1613,6 +1629,14 @@
 						type: "option",
 						description: "Buff Clear Immune",
 						regex: /preventing buff clears/,
+						radioGroup: "targets",
+						groups: [4, 9],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
 						radioGroup: "targets",
 						groups: [4, 9],
 						cssClasses: ["min-width-6"],
@@ -1729,7 +1753,7 @@
 				name: "Color Affinity Boost",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts (?:the )?Color Affinity of (?=((?:[^c."]+|c(?!har))*))\1characters? by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, (\D+?),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, (\D+?),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts (?:the )?Color Affinity of (?=((?:[^c."]+|c(?!har))*))\1characters? by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -1753,6 +1777,14 @@
 						type: "option",
 						description: "Buff Clear Immune",
 						regex: /preventing buff clears/,
+						radioGroup: "targets",
+						groups: [4, 9],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
 						radioGroup: "targets",
 						groups: [4, 9],
 						cssClasses: ["min-width-6"],
@@ -2301,8 +2333,32 @@
 				name: "Chain Boost: Multiplicative",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts Chain Multiplier Growth Rate by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts Chain Multiplier Growth Rate by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
+					{
+						type: "option",
+						description: "Allowing Override",
+						regex: /allowing override/,
+						radioGroup: "targets",
+						groups: [3, 7],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Buff Clear Immune",
+						regex: /preventing buff clears/,
+						radioGroup: "targets",
+						groups: [3, 7],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 7],
+						cssClasses: ["min-width-6"],
+					},
 					{
 						type: "number",
 						description: "Multiplier:",
@@ -2311,7 +2367,7 @@
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 8, 9],
 					},
 				],
 			},
@@ -2346,7 +2402,7 @@
 				name: "Chain Boost: Additive",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/adds ([?.\d]+)x(?:-([?.\d]+)x)?(?:, (\D+?),)? to (?:the )?Chain multiplier for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+					/adds ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? to (?:the )?Chain multiplier for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
 				submatchers: [
 					{
 						type: "option",
@@ -2360,6 +2416,14 @@
 						type: "option",
 						description: "Buff Clear Immune",
 						regex: /preventing buff clears/,
+						radioGroup: "targets",
+						groups: [3],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
 						radioGroup: "targets",
 						groups: [3],
 						cssClasses: ["min-width-6"],
@@ -2381,7 +2445,7 @@
 				name: "Chain Boost: Tap Timing",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/increases Chain Tap Timing Bonus of ([^."]+?)characters? to \+([?.\d]+)x(?:-([?.\d]+)x)?(?:, (\D+?),)? for (\d) turns? depending on Tap Timing/i,
+					/increases Chain Tap Timing Bonus of ([^."]+?)characters? to \+([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for (\d) turns? depending on Tap Timing/i,
 				submatchers: [
 					{
 						type: "option",
@@ -2395,6 +2459,14 @@
 						type: "option",
 						description: "Buff Clear Immune",
 						regex: /preventing buff clears/,
+						radioGroup: "targets",
+						groups: [4],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/i,
 						radioGroup: "targets",
 						groups: [4],
 						cssClasses: ["min-width-6"],
@@ -2448,8 +2520,24 @@
 				name: "Chain Limit: Lock",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Locks the chain multiplier at ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, at ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Locks the chain multiplier at ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, at ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
+					{
+						type: "option",
+						description: "Allowing Override",
+						regex: /allowing override/,
+						radioGroup: "targets",
+						groups: [3, 7],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 7],
+						cssClasses: ["min-width-6"],
+					},
 					{
 						type: "number",
 						description: "Multiplier:",
@@ -2458,7 +2546,7 @@
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 8, 9],
 					},
 				],
 			},
@@ -2498,8 +2586,24 @@
 				name: "Chain Limit: Boundary",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Sets chain boundaries to ([?.\d]+)x and ([?.\d]+)x for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+					/Sets chain boundaries to ([?.\d]+)x and ([?.\d]+)x(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
 				submatchers: [
+					{
+						type: "option",
+						description: "Allowing Override",
+						regex: /allowing override/,
+						radioGroup: "targets",
+						groups: [3],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3],
+						cssClasses: ["min-width-6"],
+					},
 					{
 						type: "number",
 						description: "Lower Bound:",
@@ -2513,7 +2617,7 @@
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4],
+						groups: [4, 5],
 					},
 				],
 			},
