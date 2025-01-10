@@ -2831,6 +2831,29 @@
 					...createClassesSubmatchers([1]),
 				],
 			},
+			{
+				name: "Advantageous Class Effect",
+				targets: ["special"],
+				regex:
+					/Boosts Advantageous Class Effect of (?=((?:[^c."]+|c(?!har))*))\1characters? by(?: up to)? ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Advantageous Class Effect Boost Turns:",
+						groups: [4, 5],
+					},
+					{
+						type: "number",
+						description: "Advantageous Class Effect Boost Amount:",
+						groups: [2, 3],
+					},
+					{
+						type: "separator",
+						description: "Advantageous Class Effect Boosted Classes:",
+					},
+					...createClassesSubmatchers([1]),
+				],
+			},
 		],
 		"Modify Buff": [
 			{
@@ -4698,6 +4721,39 @@
 					...createPositionsSubmatchers([1]),
 				],
 			},
+			{
+				name: "STND Expansion",
+				targets: ["special"],
+				regex:
+					/allows crew to perform Super Tandem with ([^".]+?)orbs for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [2, 3],
+					},
+					{
+						type: "separator",
+						description: "Expanded to orbs:",
+					},
+					...createOrbsSubmatchers(
+						[
+							"STR",
+							"DEX",
+							"QCK",
+							"PSY",
+							"INT",
+							"RCV",
+							"BOMB",
+							"SEMLA",
+							"SUPERBOMB",
+							"RAINBOW",
+							"WANO",
+						],
+						[1]
+					),
+				],
+			},
 		],
 		"Slot Change": [
 			{
@@ -6371,9 +6427,9 @@
 
 			{
 				name: "Special Use Limit",
-				targets: ["potential"],
+				targets: ["captain", "special", "potential", "support"],
 				regex:
-					/Reduces Special Use Limit duration (?:by ([?\d]+) turns?|(completely))/i,
+					/(?:reduces|removes)[^."]+?(?: |[^."]+? and |[^."]+?, )(?:Special Use Limit|selected debuffs)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))/i,
 				submatchers: [
 					{
 						type: "number",
@@ -6420,6 +6476,32 @@
 						type: "number",
 						description: "Turns:",
 						groups: [2, 3, 4, 5, 6],
+					},
+				],
+			},
+			{
+				name: "Bleed",
+				targets: ["captain", "special", "sailor"],
+				regex:
+					/(?:Reduces|Removes) Bleed duration (?:by ([?\d]+) turns?|(completely))/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [1, 2],
+					},
+				],
+			},
+			{
+				name: "Pain",
+				targets: ["captain", "special", "sailor"],
+				regex:
+					/(?:Reduces|Removes) Pain duration (?:by ([?\d]+) turns?|(completely))/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [1, 2],
 					},
 				],
 			},
@@ -6783,6 +6865,37 @@
 					},
 				],
 			},
+			{
+				name: "Marked",
+				targets: ["special", "superSpecial"],
+				regex:
+					/marks all enemies (?:with ([?.,\d]+) or more max hp) as a powerful enemy/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Enemy's minimum MAX HP:",
+						groups: [2],
+					},
+				],
+			},
+			{
+				name: "Percent Damage Reduction",
+				targets: ["special", "superSpecial"],
+				regex:
+					/(ignores? (?:Percent Damage Reduction )?Debuff Protection and )?(?:Reduces|Removes) enemies' damage received by ([?\d]+)%(?:-([?\d]+)%)? for ([?\d]+)(?:-([?\d]+))? turns?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Damage reduced percentage:",
+						groups: [1, 2],
+					},
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [3, 4],
+					},
+				],
+			},
 		],
 		"Reduce Enemy Effects": [
 			{
@@ -6998,6 +7111,19 @@
 					},
 				],
 			},
+			{
+				name: "Positive Buff",
+				targets: ["special", "superSpecial", "swap", "support"],
+				regex:
+					/(?:reduces|removes) enemies'[^."]+?positive buff[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [1, 2, 3, 4, 5],
+					},
+				],
+			},
 		],
 		Other: [
 			{
@@ -7074,6 +7200,25 @@
 				targets: ["potential"],
 				regex: /Barrier Penetration/i,
 			},
+			{
+				name: "Class Change",
+				targets: ["special", "superSpecial"],
+				regex:
+					/changes class [?.\d]+? of (?:all non-(?=((?:[^c."]+|c(?!har))*))\1characters?|(?=((?:[^c."]+|c(?!har))*))\2characters?) to (?=((?:[^f."]+|f(?!or))*))\3for ([?\d]+)(?:-([?\d]+))? turns?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [4, 5],
+					},
+					{
+						type: "separator",
+						description: "Affected classes:",
+					},
+					...createClassesSubmatchers([3]),
+				],
+			},
+
 		],
 		Uncategorized: [
 			/* * * * * Specials * * * * */
