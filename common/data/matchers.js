@@ -1931,18 +1931,26 @@
 				name: "Status ATK Boost: Delay",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts ATK against[^."]+?delayed enemies[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts ATK against[^."]+?delayed enemies[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [1, 2, 5, 6],
+						groups: [1, 2, 6, 7],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 9, 10],
 					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
 				],
 			},
 
@@ -1977,18 +1985,26 @@
 				name: "Status ATK Boost: Defense Reduction",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts ATK against[^."]+?enemies with reduced defense[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts ATK against[^."]+?enemies with reduced defense[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [1, 2, 5, 6],
+						groups: [1, 2, 6, 7],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 9, 10],
 					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
 				],
 			},
 
@@ -2071,18 +2087,26 @@
 				name: "Status ATK Boost: Poison",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts ATK against[^."]+?(?:(?:(?:strongly )?poisoned.+enemies|enemies inflicted with (?:(?:strong )?poison|Toxic)))[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts ATK against[^."]+?(?:(?:(?:strongly )?poisoned.+enemies|enemies inflicted with (?:(?:strong )?poison|Toxic)))[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [1, 2, 5, 6],
+						groups: [1, 2, 6, 7],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 9, 10],
 					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
 				],
 			},
 
@@ -2117,18 +2141,26 @@
 				name: "Status ATK Boost: Burn",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts ATK against[^."]+?enemies inflicted with burn[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts ATK against[^."]+?enemies inflicted with burn[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [1, 2, 5, 6],
+						groups: [1, 2, 6, 7],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 9, 10],
 					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
 				],
 			},
 
@@ -2163,18 +2195,26 @@
 				name: "Status ATK Boost: Negative",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts ATK against[^."]+?enemies inflicted with negative[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts ATK against[^."]+?enemies inflicted with negative[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [1, 2, 5, 6],
+						groups: [1, 2, 6, 7],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 9, 10],
 					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
 				],
 			},
 
@@ -2196,18 +2236,26 @@
 				name: "Status ATK Boost: Paralysis",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts ATK against[^."]+?paralyzed enemies[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts ATK against[^."]+?paralyzed enemies[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [1, 2, 5, 6],
+						groups: [1, 2, 6, 7],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 9, 10],
 					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
 				],
 			},
 
@@ -2229,18 +2277,26 @@
 				name: "Status ATK Boost: Increase Damage Taken",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts ATK against[^."]+?enemies inflicted with Increase Damage Taken[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts ATK against[^."]+?enemies inflicted with Increase Damage Taken[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [1, 2, 5, 6],
+						groups: [1, 2, 6, 7],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 9, 10],
 					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
 				],
 			},
 
@@ -2262,18 +2318,26 @@
 				name: "Status ATK Boost: Weaken",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts ATK against[^."]+?enemies inflicted with Weaken[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts ATK against[^."]+?enemies inflicted with Weaken[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [1, 2, 5, 6],
+						groups: [1, 2, 6, 7],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 9, 10],
 					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
 				],
 			},
 
