@@ -3008,6 +3008,13 @@
 						cssClasses: ["min-width-12"],
 					},
 					{
+						type: "option",
+						description: "Chain Tap Timing",
+						regex: /Chain Tap Timing/i,
+						groups: [1],
+						cssClasses: ["min-width-12"],
+					},
+					{
 						type: "separator",
 						description: "Others",
 					},
@@ -3120,6 +3127,13 @@
 						type: "option",
 						description: "Chain Multiplication",
 						regex: /Chain Multiplication/i,
+						groups: [1],
+						cssClasses: ["min-width-12"],
+					},
+					{
+						type: "option",
+						description: "Chain Tap Timing",
+						regex: /Chain Tap Timing/i,
 						groups: [1],
 						cssClasses: ["min-width-12"],
 					},
@@ -3243,6 +3257,107 @@
 						type: "option",
 						description: "Chain Multiplication",
 						regex: /Chain Multiplication/i,
+						groups: [1],
+						cssClasses: ["min-width-12"],
+					},
+					{
+						type: "option",
+						description: "Chain Tap Timing",
+						regex: /Chain Tap Timing/i,
+						groups: [1],
+						cssClasses: ["min-width-12"],
+					},
+					{
+						type: "separator",
+						description: "Damage Boosting Debuffs",
+					},
+					{
+						type: "option",
+						description: "Increase Damage Taken",
+						regex: /Increase Damage Taken/i,
+						groups: [1],
+						cssClasses: ["min-width-12"],
+					},
+				],
+			},
+
+			{
+				name: "Double Buff Enabler",
+				targets: [
+					"captain",
+					"special",
+					"superSpecial",
+				],
+				regex:
+					/enables ([^."]+?) to be enhanced up to 2 times/i,
+				submatchers: [
+					// following should also match "...boosting"
+					{
+						type: "separator",
+						description: "Damage Boosting Buffs",
+					},
+					{
+						type: "option",
+						description: "ATK",
+						// could've used negative lookbehind, but some platforms don't support it
+						// either ATK boosting buffs or ATK UP or ATK boost
+						regex: /(?:^|(?!base|atus).{4} )ATK (?:boost|UP)/i, // do not match "base ATK boost" and "Status ATK boost"
+						groups: [1],
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "Orb",
+						regex: /Orb (?:Amplification|boost|effect)/i,
+						groups: [1],
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "Color Affinity",
+						regex: /Color Affinity/i,
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Base ATK",
+						regex: /Base ATK boost/i,
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Status ATK",
+						regex: /Status ATK boost/i,
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Chain Lock",
+						regex: /Chain Lock/i, // should also match "Chain Lock/Limit/Boundary"
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Chain Addition",
+						regex: /Chain Addition/i,
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Chain Multiplication",
+						regex: /Chain Multiplication/i,
+						groups: [1],
+						cssClasses: ["min-width-12"],
+					},
+					{
+						type: "option",
+						description: "Chain Tap Timing",
+						regex: /Chain Tap Timing/i,
 						groups: [1],
 						cssClasses: ["min-width-12"],
 					},
