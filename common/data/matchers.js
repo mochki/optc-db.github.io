@@ -5341,6 +5341,45 @@
 					},
 				],
 			},
+
+			{
+				name: "VS Gauge Charge",
+				targets: [
+					"captain",
+					"special",
+					"support",
+				],
+				// Reduces VS Gauge of all characters by 3 turns
+				// Reduces Switch Effect and VS Gauge of all characters by 3 turns
+				// Reduces VS Gauge and Switch Effect of all characters by 3 turns
+				// Reduces VS Gauge of all characters completely
+				// Advances VS Gauge of all characters to MAX
+				regex:
+					/(?:reduces|advances)(?: Switch Effect and)? VS Gauge(?: and Switch Effect)? of([^."]+?)characters? (?:(completely)|to (MAX)|by ([?\d]+)(?:-([?\d]+))?)(?:, by ([?\d]+)(?:-([?\d]+))?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [2, 3, 4, 5, 6, 7],
+					},
+					...createUniversalSubmatcher([1]),
+					{
+						type: "separator",
+						description: "Affected types:",
+					},
+					...createTypesSubmatchers([1]),
+					{
+						type: "separator",
+						description: "Affected classes:",
+					},
+					...createClassesSubmatchers([1]),
+					{
+						type: "separator",
+						description: "Affected positions:",
+					},
+					...createPositionsSubmatchers([1]),
+				],
+			},
 		],
 		"Bad Team Effects": [
 			{
