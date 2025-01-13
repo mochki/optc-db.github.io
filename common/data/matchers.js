@@ -5320,6 +5320,27 @@
 					...createPositionsSubmatchers([1]),
 				],
 			},
+
+			{
+				name: "Ship Special Cooldown Charge",
+				targets: [
+					"captain",
+					"special",
+					"support",
+				],
+				// Reduces Special Cooldown of Ship by 3 turns
+				// Reduces Special Cooldown of Ship completely
+				// Advances Special Cooldown of Ship to MAX
+				regex:
+					/(?:reduces|advances) Special Cooldown of(?: your)? Ship (?:(completely)|to (MAX)|by ([?\d]+)(?:-([?\d]+))? turns?)(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [1, 2, 3, 4, 5, 6],
+					},
+				],
+			},
 		],
 		"Bad Team Effects": [
 			{
