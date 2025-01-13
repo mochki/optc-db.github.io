@@ -295,6 +295,30 @@
 									window.details[n + 1].captain.llblevel6 =
 										window.details[n + 1].lLimit[x].captain.level6;
 								}
+								if (window.details[n + 1].lLimit[x].captain.character1) {
+									if (window.details[n + 1].captain.constructor == String)
+										window.details[n + 1].captain = {
+											base: window.details[n + 1].captain,
+										};
+									window.details[n + 1].captain.llbcharacter1 =
+										window.details[n + 1].lLimit[x].captain.character1;
+								}
+								if (window.details[n + 1].lLimit[x].captain.character2) {
+									if (window.details[n + 1].captain.constructor == String)
+										window.details[n + 1].captain = {
+											base: window.details[n + 1].captain,
+										};
+									window.details[n + 1].captain.llbcharacter2 =
+										window.details[n + 1].lLimit[x].captain.character2;
+								}
+								if (window.details[n + 1].lLimit[x].captain.combined) {
+									if (window.details[n + 1].captain.constructor == String)
+										window.details[n + 1].captain = {
+											base: window.details[n + 1].captain,
+										};
+									window.details[n + 1].captain.llbcombined =
+										window.details[n + 1].lLimit[x].captain.combined;
+								}
 								LLBcaptains++;
 							}
 							if (window.details[n + 1].lLimit[x].sailor) {
