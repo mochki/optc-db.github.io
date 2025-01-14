@@ -7178,12 +7178,6 @@
 			},
 
 			{
-				name: "Cooldown Reduction",
-				targets: ["potential"],
-				regex: /Cooldown Reduction/i,
-			},
-
-			{
 				name: "Double Special Activation",
 				targets: ["potential"],
 				regex: /Double Special Activation/i,
@@ -7340,6 +7334,13 @@
 				targets: ["potential"],
 				regex: /Rush/i,
 			},
+
+			/* * * * * Super Special Criteria * * * * */
+			{
+				name: "Non-captain super special users",
+				targets: ["superSpecialCriteria"],
+				regex: /^(?![^"]*This character must be captain)[^"]+/i,
+			},
 		],
 	};
 
@@ -7352,6 +7353,7 @@
 	var allTargets = [
 		"captain",
 		"special",
+		"superSpecialCriteria",
 		"superSpecial",
 		"swap",
 		"sailor",
