@@ -308,6 +308,10 @@ CharUtils.checkMatcher = function(matcher, id) {
         target = "VSSpecial";
         targetString = window.details[id]["VSSpecial"];
     }
+    if (matcher.target == "superSpecialCriteria" && window.details[id].VSCondition) {
+        target = "VSCondition";
+        targetString = window.details[id]["VSCondition"];
+    }
     if (matcher.name == "Has Level Limit Break" && window.details[id].lLimit) {//Override for Seach by Level Limit Break (To keep it with other Limit Break filters)
         return true;
     }

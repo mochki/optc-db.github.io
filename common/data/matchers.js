@@ -6708,7 +6708,7 @@
 				name: "Special Use Limit",
 				targets: ["captain", "special", "potential", "support"],
 				regex:
-					///(?:reduces|removes)[^."]+?(?: |[^."]+? and |[^."]+?, )(?:Special Use Limit|selected debuffs)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))/i,
+					// /(?:reduces|removes)[^."]+?(?: |[^."]+? and |[^."]+?, )?(?:Special Use Limit|selected debuffs?)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))/i,
 					/(?:reduces|removes)[^."]+?(?:Special Use Limit|selected debuffs?)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))/i,
 				submatchers: [
 					{
@@ -7617,14 +7617,14 @@
 //Can be launched as crewmate.
 			/* * * * * Super Special Criteria * * * * */
 			{
-				name: "Can be crewmate",
+				name: "Top Row Only",
 				targets: ["superSpecialCriteria"],
-				regex: /[\s\S]*?\bCan be launched as crewmate\b[\s\S]*/i,
+				regex: /^This character must be captain\.?[^."]*/i,
 			},
 			{
-				name: "Have to be captain",
+				name: "Universal Position",
 				targets: ["superSpecialCriteria"],
-				regex: /^(?![\s\S]*\bCan be launched as crewmate\b)[\s\S]*$/i,
+				regex: /^(?!This character must be captain\.?)[^."]*/i,
 			},
 		],
 	};
