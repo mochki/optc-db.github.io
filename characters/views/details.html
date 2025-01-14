@@ -847,7 +847,7 @@
                                 </tr>
                                 <tr ng-if="rumble.gpability">
                                     <td width="5%"><span ng-if="rumble2">Character 1 </span>GP Leader Skill</td>
-                                    <td th:style="${rumble.llbgpability && unit.maxLevel == 99 ? 'width: 47.5%' : 'width: 95%'}"">
+                                    <td th:style="${rumble.llbgpability && unit.maxLevel == 99 ? 'width: 47.5%' : 'width: 95%'}">
                                         <div>
                                             <div ng-repeat="item in rumble.gpability track by $index"><strong>Level {{::$index + 1}}:</strong> <span ng-bind-html="item.effects | abilityToString | decorate"></span></div>
                                         </div>
@@ -860,9 +860,14 @@
                                 </tr>
                                 <tr ng-if="rumble.gpcondition">
                                     <td width="5%"><span ng-if="rumble2">Character 1 </span>GP Burst Condition</td>
-                                    <td colspan="2">
+                                    <td th:style="${rumble.llbgpcondition && unit.maxLevel == 99 ? 'width: 47.5%' : 'width: 95%'}">
                                         <div>
                                             <div ng-repeat="item in rumble.gpcondition track by $index"><span ng-bind-html="item | gpconditionToString | decorate"></span></div>
+                                        </div>
+                                    </td>
+                                    <td style="width: 50%" ng-if="rumble.llbgpcondition && unit.maxLevel == 99">
+                                        <div>
+                                            <div ng-repeat="item in rumble.llbgpcondition track by $index"><span ng-bind-html="item | gpconditionToString | decorate"></span></div>
                                         </div>
                                     </td>
                                 </tr>
