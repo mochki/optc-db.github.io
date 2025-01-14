@@ -7614,7 +7614,7 @@
 				targets: ["potential"],
 				regex: /Rush/i,
 			},
-//Can be launched as crewmate.
+
 			/* * * * * Super Special Criteria * * * * */
 			{
 				name: "Top Row Only",
@@ -7625,6 +7625,16 @@
 				name: "Universal Position",
 				targets: ["superSpecialCriteria"],
 				regex: /^(?!This character must be captain\.?)[^."]*/i,
+			},
+			{
+				name: "Captain Shift Only",
+				targets: ["superSpecialCriteria"],
+				regex: /[^."]+?When character becomes [^."]+? during Captain Shift[^."]*?/i,
+			},
+			{
+				name: "Super Swap Only",
+				targets: ["superSpecialCriteria"],
+				regex: /[^."]+?When this character is in Combined Form from Super Swap Effect[^."]*?/i,
 			},
 		],
 	};
