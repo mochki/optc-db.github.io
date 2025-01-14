@@ -7334,12 +7334,17 @@
 				targets: ["potential"],
 				regex: /Rush/i,
 			},
-
+//Can be launched as crewmate.
 			/* * * * * Super Special Criteria * * * * */
 			{
-				name: "Non-captain super special users",
+				name: "Can be crewmate",
 				targets: ["superSpecialCriteria"],
-				regex: /^(?![^"]*This character must be captain)[^"]+/i,
+				regex: /[\s\S]*?\bCan be launched as crewmate\b[\s\S]*/i,
+			},
+			{
+				name: "Have to be captain",
+				targets: ["superSpecialCriteria"],
+				regex: /^(?![\s\S]*\bCan be launched as crewmate\b)[\s\S]*$/i,
 			},
 		],
 	};
