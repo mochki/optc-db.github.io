@@ -1931,18 +1931,26 @@
 				name: "Status ATK Boost: Delay",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts ATK against[^."]+?delayed enemies[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts ATK against[^."]+?delayed enemies[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [1, 2, 5, 6],
+						groups: [1, 2, 6, 7],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 9, 10],
 					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
 				],
 			},
 
@@ -1977,18 +1985,26 @@
 				name: "Status ATK Boost: Defense Reduction",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts ATK against[^."]+?enemies with reduced defense[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts ATK against[^."]+?enemies with reduced defense[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [1, 2, 5, 6],
+						groups: [1, 2, 6, 7],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 9, 10],
 					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
 				],
 			},
 
@@ -2071,18 +2087,26 @@
 				name: "Status ATK Boost: Poison",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts ATK against[^."]+?(?:(?:(?:strongly )?poisoned.+enemies|enemies inflicted with (?:(?:strong )?poison|Toxic)))[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts ATK against[^."]+?(?:(?:(?:strongly )?poisoned.+enemies|enemies inflicted with (?:(?:strong )?poison|Toxic)))[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [1, 2, 5, 6],
+						groups: [1, 2, 6, 7],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 9, 10],
 					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
 				],
 			},
 
@@ -2117,18 +2141,26 @@
 				name: "Status ATK Boost: Burn",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts ATK against[^."]+?enemies inflicted with burn[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts ATK against[^."]+?enemies inflicted with burn[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [1, 2, 5, 6],
+						groups: [1, 2, 6, 7],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 9, 10],
 					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
 				],
 			},
 
@@ -2163,18 +2195,26 @@
 				name: "Status ATK Boost: Negative",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts ATK against[^."]+?enemies inflicted with negative[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts ATK against[^."]+?enemies inflicted with negative[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [1, 2, 5, 6],
+						groups: [1, 2, 6, 7],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 9, 10],
 					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
 				],
 			},
 
@@ -2196,18 +2236,26 @@
 				name: "Status ATK Boost: Paralysis",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts ATK against[^."]+?paralyzed enemies[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts ATK against[^."]+?paralyzed enemies[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [1, 2, 5, 6],
+						groups: [1, 2, 6, 7],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 9, 10],
 					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
 				],
 			},
 
@@ -2229,18 +2277,26 @@
 				name: "Status ATK Boost: Increase Damage Taken",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts ATK against[^."]+?enemies inflicted with Increase Damage Taken[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts ATK against[^."]+?enemies inflicted with Increase Damage Taken[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [1, 2, 5, 6],
+						groups: [1, 2, 6, 7],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 9, 10],
 					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
 				],
 			},
 
@@ -2262,18 +2318,26 @@
 				name: "Status ATK Boost: Weaken",
 				targets: ["special", "superSpecial", "swap", "support"],
 				regex:
-					/Boosts ATK against[^."]+?enemies inflicted with Weaken[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+					/Boosts ATK against[^."]+?enemies inflicted with Weaken[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
 				submatchers: [
 					{
 						type: "number",
 						description: "Multiplier:",
-						groups: [1, 2, 5, 6],
+						groups: [1, 2, 6, 7],
 					},
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4, 7, 8],
+						groups: [4, 5, 9, 10],
 					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
 				],
 			},
 
@@ -2944,6 +3008,13 @@
 						cssClasses: ["min-width-12"],
 					},
 					{
+						type: "option",
+						description: "Chain Tap Timing",
+						regex: /Chain Tap Timing/i,
+						groups: [1],
+						cssClasses: ["min-width-12"],
+					},
+					{
 						type: "separator",
 						description: "Others",
 					},
@@ -3056,6 +3127,13 @@
 						type: "option",
 						description: "Chain Multiplication",
 						regex: /Chain Multiplication/i,
+						groups: [1],
+						cssClasses: ["min-width-12"],
+					},
+					{
+						type: "option",
+						description: "Chain Tap Timing",
+						regex: /Chain Tap Timing/i,
 						groups: [1],
 						cssClasses: ["min-width-12"],
 					},
@@ -3179,6 +3257,107 @@
 						type: "option",
 						description: "Chain Multiplication",
 						regex: /Chain Multiplication/i,
+						groups: [1],
+						cssClasses: ["min-width-12"],
+					},
+					{
+						type: "option",
+						description: "Chain Tap Timing",
+						regex: /Chain Tap Timing/i,
+						groups: [1],
+						cssClasses: ["min-width-12"],
+					},
+					{
+						type: "separator",
+						description: "Damage Boosting Debuffs",
+					},
+					{
+						type: "option",
+						description: "Increase Damage Taken",
+						regex: /Increase Damage Taken/i,
+						groups: [1],
+						cssClasses: ["min-width-12"],
+					},
+				],
+			},
+
+			{
+				name: "Double Buff Enabler",
+				targets: [
+					"captain",
+					"special",
+					"superSpecial",
+				],
+				regex:
+					/enables ([^."]+?) to be enhanced up to 2 times/i,
+				submatchers: [
+					// following should also match "...boosting"
+					{
+						type: "separator",
+						description: "Damage Boosting Buffs",
+					},
+					{
+						type: "option",
+						description: "ATK",
+						// could've used negative lookbehind, but some platforms don't support it
+						// either ATK boosting buffs or ATK UP or ATK boost
+						regex: /(?:^|(?!base|atus).{4} )ATK (?:boost|UP)/i, // do not match "base ATK boost" and "Status ATK boost"
+						groups: [1],
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "Orb",
+						regex: /Orb (?:Amplification|boost|effect)/i,
+						groups: [1],
+						cssClasses: ["min-width-3"],
+					},
+					{
+						type: "option",
+						description: "Color Affinity",
+						regex: /Color Affinity/i,
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Base ATK",
+						regex: /Base ATK boost/i,
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Status ATK",
+						regex: /Status ATK boost/i,
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Chain Lock",
+						regex: /Chain Lock/i, // should also match "Chain Lock/Limit/Boundary"
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Chain Addition",
+						regex: /Chain Addition/i,
+						groups: [1],
+						cssClasses: ["min-width-6"],
+					},
+					{
+						type: "option",
+						description: "Chain Multiplication",
+						regex: /Chain Multiplication/i,
+						groups: [1],
+						cssClasses: ["min-width-12"],
+					},
+					{
+						type: "option",
+						description: "Chain Tap Timing",
+						regex: /Chain Tap Timing/i,
 						groups: [1],
 						cssClasses: ["min-width-12"],
 					},
@@ -5141,6 +5320,106 @@
 					...createPositionsSubmatchers([1]),
 				],
 			},
+
+			{
+				name: "Ship Special Cooldown Charge",
+				targets: [
+					"captain",
+					"special",
+					"support",
+				],
+				// Reduces Special Cooldown of Ship by 3 turns
+				// Reduces Special Cooldown of Ship completely
+				// Advances Special Cooldown of Ship to MAX
+				regex:
+					/(?:reduces|advances) Special Cooldown of(?: your)? Ship (?:(completely)|to (MAX)|by ([?\d]+)(?:-([?\d]+))? turns?)(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [1, 2, 3, 4, 5, 6],
+					},
+				],
+			},
+
+			{
+				name: "Switch Effect Charge",
+				targets: [
+					"captain",
+					"special",
+					"sailor",
+					"support",
+				],
+				// Reduces Switch Effect of all characters by 3 turns
+				// Reduces Switch Effect and VS Gauge of all characters by 3 turns
+				// Reduces VS Gauge and Switch Effect of all characters by 3 turns
+				// Reduces Switch Effect of all characters completely
+				// Advances Switch Effect of all characters to MAX
+				regex:
+					/(?:reduces|advances)(?: VS Gauge and)? Switch Effect(?: and VS Gauge)? of([^."]+?)characters? (?:(completely)|to (MAX)|by ([?\d]+)(?:-([?\d]+))?)(?:, by ([?\d]+)(?:-([?\d]+))?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [2, 3, 4, 5, 6, 7],
+					},
+					...createUniversalSubmatcher([1]),
+					{
+						type: "separator",
+						description: "Affected types:",
+					},
+					...createTypesSubmatchers([1]),
+					{
+						type: "separator",
+						description: "Affected classes:",
+					},
+					...createClassesSubmatchers([1]),
+					{
+						type: "separator",
+						description: "Affected positions:",
+					},
+					...createPositionsSubmatchers([1]),
+				],
+			},
+
+			{
+				name: "VS Gauge Charge",
+				targets: [
+					"captain",
+					"special",
+					"support",
+				],
+				// Reduces VS Gauge of all characters by 3 turns
+				// Reduces Switch Effect and VS Gauge of all characters by 3 turns
+				// Reduces VS Gauge and Switch Effect of all characters by 3 turns
+				// Reduces VS Gauge of all characters completely
+				// Advances VS Gauge of all characters to MAX
+				regex:
+					/(?:reduces|advances)(?: Switch Effect and)? VS Gauge(?: and Switch Effect)? of([^."]+?)characters? (?:(completely)|to (MAX)|by ([?\d]+)(?:-([?\d]+))?)(?:, by ([?\d]+)(?:-([?\d]+))?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [2, 3, 4, 5, 6, 7],
+					},
+					...createUniversalSubmatcher([1]),
+					{
+						type: "separator",
+						description: "Affected types:",
+					},
+					...createTypesSubmatchers([1]),
+					{
+						type: "separator",
+						description: "Affected classes:",
+					},
+					...createClassesSubmatchers([1]),
+					{
+						type: "separator",
+						description: "Affected positions:",
+					},
+					...createPositionsSubmatchers([1]),
+				],
+			},
 		],
 		"Bad Team Effects": [
 			{
@@ -6429,7 +6708,8 @@
 				name: "Special Use Limit",
 				targets: ["captain", "special", "potential", "support"],
 				regex:
-					/(?:reduces|removes)[^."]+?(?: |[^."]+? and |[^."]+?, )(?:Special Use Limit|selected debuffs)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))/i,
+					///(?:reduces|removes)[^."]+?(?: |[^."]+? and |[^."]+?, )(?:Special Use Limit|selected debuffs)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))/i,
+					/(?:reduces|removes)[^."]+?(?:Special Use Limit|selected debuffs?)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))/i,
 				submatchers: [
 					{
 						type: "number",
