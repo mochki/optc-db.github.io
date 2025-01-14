@@ -6708,7 +6708,7 @@
 				name: "Special Use Limit",
 				targets: ["captain", "special", "potential", "support"],
 				regex:
-					///(?:reduces|removes)[^."]+?(?: |[^."]+? and |[^."]+?, )(?:Special Use Limit|selected debuffs)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))/i,
+					// /(?:reduces|removes)[^."]+?(?: |[^."]+? and |[^."]+?, )?(?:Special Use Limit|selected debuffs?)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))/i,
 					/(?:reduces|removes)[^."]+?(?:Special Use Limit|selected debuffs?)[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))/i,
 				submatchers: [
 					{
@@ -7458,12 +7458,6 @@
 			},
 
 			{
-				name: "Cooldown Reduction",
-				targets: ["potential"],
-				regex: /Cooldown Reduction/i,
-			},
-
-			{
 				name: "Double Special Activation",
 				targets: ["potential"],
 				regex: /Double Special Activation/i,
@@ -7620,6 +7614,18 @@
 				targets: ["potential"],
 				regex: /Rush/i,
 			},
+//Can be launched as crewmate.
+			/* * * * * Super Special Criteria * * * * */
+			{
+				name: "Top Row Only",
+				targets: ["superSpecialCriteria"],
+				regex: /^This character must be captain\.?[^."]*/i,
+			},
+			{
+				name: "Universal Position",
+				targets: ["superSpecialCriteria"],
+				regex: /^(?!This character must be captain\.?)[^."]*/i,
+			},
 		],
 	};
 
@@ -7632,6 +7638,7 @@
 	var allTargets = [
 		"captain",
 		"special",
+		"superSpecialCriteria",
 		"superSpecial",
 		"swap",
 		"sailor",
