@@ -4909,6 +4909,10 @@ window.families = {
     4300: [ ...Morley, ...Karasu ],
     4301: [ ...Lindbergh ],
     4302: [ ...BeloBetty ],
+    4303: [ ...Sai, ...Leo ],
+    4304: [ ...Fukaboshi ],
+    4305: [ ...Shirahoshi ],
+    4306: [ ...BartholomewKuma ],
     // break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
