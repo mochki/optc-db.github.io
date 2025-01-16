@@ -5351,12 +5351,10 @@
 					"support",
 				],
 				// Reduces Switch Effect of all characters by 3 turns
-				// Reduces Switch Effect and VS Gauge of all characters by 3 turns
-				// Reduces VS Gauge and Switch Effect of all characters by 3 turns
 				// Reduces Switch Effect of all characters completely
 				// Advances Switch Effect of all characters to MAX
 				regex:
-					/(?:reduces|advances)(?: VS Gauge and)? Switch Effect(?: and VS Gauge)? of([^."]+?)characters? (?:(completely)|to (MAX)|by ([?\d]+)(?:-([?\d]+))?)(?:, by ([?\d]+)(?:-([?\d]+))?)?/i,
+					/(?:reduces|advances)[^."]+?Switch Effect[^."]+?of([^."]+?)characters? (?:(completely)|to (MAX)|by ([?\d]+)(?:-([?\d]+))?)(?:, by ([?\d]+)(?:-([?\d]+))?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -5390,12 +5388,10 @@
 					"support",
 				],
 				// Reduces VS Gauge of all characters by 3 turns
-				// Reduces Switch Effect and VS Gauge of all characters by 3 turns
-				// Reduces VS Gauge and Switch Effect of all characters by 3 turns
 				// Reduces VS Gauge of all characters completely
 				// Advances VS Gauge of all characters to MAX
 				regex:
-					/(?:reduces|advances)(?: Switch Effect and)? VS Gauge(?: and Switch Effect)? of([^."]+?)characters? (?:(completely)|to (MAX)|by ([?\d]+)(?:-([?\d]+))?)(?:, by ([?\d]+)(?:-([?\d]+))?)?/i,
+					/(?:reduces|advances)[^."]+?VS Gauge[^."]+?of([^."]+?)characters? (?:(completely)|to (MAX)|by ([?\d]+)(?:-([?\d]+))?)(?:, by ([?\d]+)(?:-([?\d]+))?)?/i,
 				submatchers: [
 					{
 						type: "number",
