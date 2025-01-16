@@ -4902,7 +4902,7 @@
 			},
 			{
 				name: "STND Expansion",
-				targets: ["special"],
+				targets: ["special", "support"],
 				regex:
 					/allows crew to perform Super Tandem with ([^".]+?)orbs for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
 				submatchers: [
