@@ -307,7 +307,7 @@ app.controller('DetailsCtrl',function($scope, $rootScope, $state, $stateParams, 
     $scope.isLLBSpecialStaged = [false,false,false,false,false];
     if($scope.details && $scope.details.lLimit){
         for([key, value] of Object.entries($scope.details.lLimit)){
-            $scope.isLLBSpecialStaged[key] = ($scope.details.lLimit[key] && $scope.details.lLimit[key].special && $scope.details.lLimit[key].special.constructor == Array) ? true : false;
+            $scope.isLLBSpecialStaged[key] = ($scope.details.lLimit[key] && $scope.details.lLimit[key].special && $scope.details.lLimit[key].special.base && $scope.details.lLimit[key].special.base.constructor == Array) ? true : false;
         }
     }
     $scope.isLimitStaged = ($scope.details && $scope.details.limit && $scope.details.limit.constructor == Array);

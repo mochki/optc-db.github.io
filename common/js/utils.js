@@ -75,12 +75,10 @@
 			LBrcv = [],
 			LBsailor = [0],
 			LBcaptain = [0];
-		var LLBsailor1 = [0],
-			LLBsailor2 = [0],
+		var LLBsailor = [0],
 			LLBcaptain = [0],
 			LLBspecial = [0];
-		var LLBsailor1s = 0,
-			LLBsailor2s = 0,
+		var LLBsailors = 0,
 			LLBcaptains = 0,
 			LLBspecials = 0;
 		var LBhptotal = 0,
@@ -263,107 +261,40 @@
 					for (var x in window.details[n + 1].lLimit) {
 						if (window.details[n + 1].lLimit[x]) {
 							if (window.details[n + 1].lLimit[x].captain) {
-								if (window.details[n + 1].lLimit[x].captain.base) {
-									if (window.details[n + 1].captain.constructor == String)
-										window.details[n + 1].captain = {
-											base: window.details[n + 1].captain,
-										};
-									window.details[n + 1].captain.llbbase =
-										window.details[n + 1].lLimit[x].captain.base;
-								}
-								if (window.details[n + 1].lLimit[x].captain.level1) {
-									if (window.details[n + 1].captain.constructor == String)
-										window.details[n + 1].captain = {
-											base: window.details[n + 1].captain,
-										};
-									window.details[n + 1].captain.llblevel1 =
-										window.details[n + 1].lLimit[x].captain.level1;
-								}
-								if (window.details[n + 1].lLimit[x].captain.level2) {
-									if (window.details[n + 1].captain.constructor == String)
-										window.details[n + 1].captain = {
-											base: window.details[n + 1].captain,
-										};
-									window.details[n + 1].captain.llblevel2 =
-										window.details[n + 1].lLimit[x].captain.level2;
-								}
-								if (window.details[n + 1].lLimit[x].captain.level6) {
-									if (window.details[n + 1].captain.constructor == String)
-										window.details[n + 1].captain = {
-											base: window.details[n + 1].captain,
-										};
-									window.details[n + 1].captain.llblevel6 =
-										window.details[n + 1].lLimit[x].captain.level6;
-								}
-								if (window.details[n + 1].lLimit[x].captain.character1) {
-									if (window.details[n + 1].captain.constructor == String)
-										window.details[n + 1].captain = {
-											base: window.details[n + 1].captain,
-										};
-									window.details[n + 1].captain.llbcharacter1 =
-										window.details[n + 1].lLimit[x].captain.character1;
-								}
-								if (window.details[n + 1].lLimit[x].captain.character2) {
-									if (window.details[n + 1].captain.constructor == String)
-										window.details[n + 1].captain = {
-											base: window.details[n + 1].captain,
-										};
-									window.details[n + 1].captain.llbcharacter2 =
-										window.details[n + 1].lLimit[x].captain.character2;
-								}
-								if (window.details[n + 1].lLimit[x].captain.combined) {
-									if (window.details[n + 1].captain.constructor == String)
-										window.details[n + 1].captain = {
-											base: window.details[n + 1].captain,
-										};
-									window.details[n + 1].captain.llbcombined =
-										window.details[n + 1].lLimit[x].captain.combined;
-								}
-								LLBcaptains++;
+								if (window.details[n + 1].captain.constructor == String)
+									window.details[n + 1].captain = {
+										base: window.details[n + 1].captain
+									};
+								var keys = Object.entries(window.details[n + 1].lLimit[x].captain);
+								keys.forEach(([key, value]) => {
+									window.details[n + 1].captain["llb" + key] = value;
+									LLBcaptains++;
+								})
 							}
 							if (window.details[n + 1].lLimit[x].sailor) {
-								if (window.details[n + 1].lLimit[x].sailor.level1) {
-									if (!window.details[n + 1].sailor)
-										window.details[n + 1].sailor = {};
-									if (window.details[n + 1].sailor.constructor == String)
-										window.details[n + 1].sailor = {
-											base: window.details[n + 1].sailor,
-										};
-									window.details[n + 1].sailor.llblevel1 =
-										window.details[n + 1].lLimit[x].sailor.level1;
-									LLBsailor1s++;
-								}
-								if (window.details[n + 1].lLimit[x].sailor.level2) {
-									if (!window.details[n + 1].sailor)
-										window.details[n + 1].sailor = {};
-									if (window.details[n + 1].sailor.constructor == String)
-										window.details[n + 1].sailor = {
-											base: window.details[n + 1].sailor,
-										};
-									window.details[n + 1].sailor.llblevel2 =
-										window.details[n + 1].lLimit[x].sailor.level2;
-									LLBsailor2s++;
-								}
+								if (window.details[n + 1].sailor.constructor == String)
+									window.details[n + 1].sailor = {
+										base: window.details[n + 1].sailor
+									};
+								var keys = Object.entries(window.details[n + 1].lLimit[x].sailor);
+								keys.forEach(([key, value]) => {
+									window.details[n + 1].sailor["llb" + key] = value;
+									LLBsailors++;
+								})
 							}
 							if (window.details[n + 1].lLimit[x].special) {
-								if (window.details[n + 1].special.constructor == String)
+								if (window.details[n + 1].special.constructor == String || window.details[n + 1].special.constructor == Array)
 									window.details[n + 1].special = {
-										base: window.details[n + 1].special,
+										base: window.details[n + 1].special
 									};
-								window.details[n + 1].special.llbbase = window.details[n + 1]
-									.lLimit[x].special.base
-									? window.details[n + 1].lLimit[x].special.base
-									: window.details[n + 1].special.llbbase;
-								window.details[n + 1].special.llbcombined = window.details[
-									n + 1
-								].lLimit[x].special.combined
-									? window.details[n + 1].lLimit[x].special.combined
-									: window.details[n + 1].special.llbcombined;
-								LLBspecials++;
+								var keys = Object.entries(window.details[n + 1].lLimit[x].special);
+								keys.forEach(([key, value]) => {
+									window.details[n + 1].special["llb" + key] = value;
+									LLBsailors++;
+								})
 							}
 						}
-						LLBsailor1.push(LLBsailor1s);
-						LLBsailor2.push(LLBsailor2s);
+						LLBsailor.push(LLBsailors);
 						LLBcaptain.push(LLBcaptains);
 						LLBspecial.push(LLBspecials);
 					}
@@ -411,8 +342,7 @@
 				captains: LBcaptain,
 			},
 			llimitStats: {
-				sailors1: LLBsailor1,
-				sailors2: LLBsailor2,
+				sailors: LLBsailor,
 				captains: LLBcaptain,
 				specials: LLBspecial,
 			},
