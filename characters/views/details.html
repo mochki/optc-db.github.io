@@ -737,6 +737,7 @@
                                             <div ng-if="stage.rResilience" class="badge badge-slevel1">Rumble Resilience</div><br ng-if="stage.rResilience"><span ng-if="stage.rResilience" ng-repeat="item in rumble.llbresilience track by $index"><span ng-bind-html="item | resilienceToString | decorate"></span><br /></span>
                                             <div ng-if="stage.rAbility" class="badge badge-slevel1">Rumble Ability</div><div ng-if="stage.rAbility" ng-bind-html="rumble.llbability[rumble.llbability.length-1].effects | abilityToString | decorate"></div>
                                             <div ng-if="stage.rSpecial" class="badge badge-slevel1">Rumble Special</div><div ng-if="stage.rSpecial" ng-bind-html="rumble.llbspecial[rumble.llbspecial.length-1].effects | abilityToString | decorate"></div>
+                                            <div ng-if="stage.rSuperSpecial" class="badge badge-slevel1">Rumble Super Special</div><br ng-if="stage.rSuperSpecial"><span ng-if="stage.rSuperSpecial" ng-repeat="item in rumble.llbsuperspecial track by $index"><span ng-bind-html="item | resilienceToString | decorate"></span><br /></span>
                                             <div ng-if="stage.gpAbility" class="badge badge-slevel1">Grand Party Abilty</div><div ng-if="stage.gpAbility" ng-bind-html="rumble.llbgpability[rumble.llbgpability.length-1].effects | abilityToString | decorate"></div>
                                             <div ng-if="stage.gpSpecial" class="badge badge-slevel1">Grand Party Special</div><div ng-if="stage.gpSpecial" ng-bind-html="rumble.llbgpspecial[rumble.llbgpspecial.length-1].effects | abilityToString | decorate"></div>
                                             <br ng-if="$index != 4">
@@ -989,6 +990,51 @@
                                         <span class="notes" ng-if="details.festSpecialNotes" ng-bind-html="details.festSpecialNotes | notes | decorate"></span>
                                     </td>
                                 </tr>
+
+                                <ng-container ng-if="details.festSuperSpecial">
+                                    <tr ng-if="!(details.festResistance.hasOwnProperty('base') || details.festAbility.hasOwnProperty('base') || details.festSpecial.hasOwnProperty('base')) && details.festSuperSpecial.hasOwnProperty('base')">
+                                        <td width="5%"></td>
+                                        <td style="width: 47.5%"><strong>Base</strong></td>
+                                        <td style="width: 50%"><strong>Level Limit Break</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pirate Festival Super Special</td>
+                                        <td colspan="2" ng-if="!details.festSuperSpecial.hasOwnProperty('base')">
+                                            <div>
+                                                    <span ng-bind-html="details.festSuperSpecial.description | decorate"></span></div>
+                                            </div>
+                                        </td>
+                                        <td ng-if="details.festSuperSpecial.hasOwnProperty('base')">
+                                            <div>
+                                                    <span ng-bind-html="details.festSuperSpecial.base.description | decorate"></span></div>
+                                            </div>
+                                        </td>
+                                        <td ng-if="details.festSuperSpecial.hasOwnProperty('llbbase')">
+                                            <div>
+                                                    <span ng-bind-html="details.festSuperSpecial.llbbase.description | decorate"></span></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Super Special Condition</td>
+                                        <td colspan="2" ng-if="!details.festSuperSpecial.hasOwnProperty('base')">
+                                            <div>
+                                                    <span ng-bind-html="details.festSuperSpecial.condition | decorate"></span></div>
+                                            </div>
+                                        </td>
+                                        <td ng-if="details.festSuperSpecial.hasOwnProperty('base')">
+                                            <div>
+                                                    <span ng-bind-html="details.festSuperSpecial.base.condition | decorate"></span></div>
+                                            </div>
+                                        </td>
+                                        <td ng-if="details.festSuperSpecial.hasOwnProperty('llbbase')">
+                                            <div>
+                                                    <span ng-bind-html="details.festSuperSpecial.llbbase.condition | decorate"></span></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </ng-container>
+
                                 <tr ng-if="details.festAbilityGP">
                                     <td>Grand Party</td>
                                     <td>Ability</td>
