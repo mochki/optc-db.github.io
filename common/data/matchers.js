@@ -5136,10 +5136,44 @@
 				],
 			},
 
+			// {
+			// 	name: "Orb Control: Stage 1 Full",
+			// 	targets: ["sailor"],
+			// 	regex: /Changes all orbs into([^."]+?)orbs?/i,
+			// 	submatchers: [
+			// 		...createOrbsSubmatchers(
+			// 			[
+			// 				"STR",
+			// 				"DEX",
+			// 				"QCK",
+			// 				"PSY",
+			// 				"INT",
+			// 				"G",
+			// 				"RCV",
+			// 				"TND",
+			// 				"BOMB",
+			// 				"SEMLA",
+			// 				"SUPERBOMB",
+			// 				"RAINBOW",
+			// 				"WANO",
+			// 			],
+			// 			[1],
+			// 			false
+			// 		),
+			// 		{
+			// 			type: "option",
+			// 			description: "Matching",
+			// 			regex: /(?:^|(?!Badly ).{6}|^.{0,5})\bMatching/i, // alternative for negative lookbehind for "Badly " and "Non-"
+			// 			cssClasses: ["min-width-6"],
+			// 			groups: [1],
+			// 		},
+			// 	],
+			// },
+
 			{
-				name: "Orb Control: Stage 1 Full",
+				name: "Orb Control: Stage 1",
 				targets: ["sailor"],
-				regex: /Changes all orbs into([^."]+?)orbs?/i,
+				regex: /Changes (all )?orbs? (?:of (?=((?:[^c."]+|c(?!har))*))\2characters? )?into([^."]+?)orbs?/i,
 				submatchers: [
 					...createOrbsSubmatchers(
 						[
@@ -5157,7 +5191,7 @@
 							"RAINBOW",
 							"WANO",
 						],
-						[1],
+						[3],
 						false
 					),
 					{
@@ -5165,8 +5199,20 @@
 						description: "Matching",
 						regex: /(?:^|(?!Badly ).{6}|^.{0,5})\bMatching/i, // alternative for negative lookbehind for "Badly " and "Non-"
 						cssClasses: ["min-width-6"],
-						groups: [1],
+						groups: [3],
 					},
+					{
+						type: "separator",
+						description: "Positions:",
+					},
+					...createUniversalSubmatcher([1], "all"),
+					...createPositionsSubmatchers(
+						[2],
+						false,
+						"",
+						["Adjacent", "Selected"],
+						true
+					),
 				],
 			},
 

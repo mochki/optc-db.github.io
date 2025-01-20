@@ -4227,7 +4227,7 @@ window.units = [
     [ "S-Bear", "PSY", ["Shooter", "Powerhouse"], 6, 40, 4, 5, 99, 5000000, 2380, 846, 84, 4760, 1692, 168, 1 ],
     [ "Lucci & Kaku - Awakened Zoan Fruit Powers", ["QCK", "DEX"], [["Driven", "Fighter"], ["Driven", "Fighter"], ["Driven", "Fighter"]], 6, 55, 4, 5, 99, 5000000, 1835, 934, 208, 3670, 1867, 416, 1 ],
     [ "Stussy - Grasping an Unusual Situation", "QCK", ["Driven", "Cerebral"], 5, 30, 5, 4, 99, 4000000, 1956, 702, 90, 3912, 1404, 180, 1 ],
-    [ "S-Snake & S-Hawk & S-Shark - ", "DEX", ["Driven", "Powerhouse"], 5, 30, 4, 4, 99, 4000000, 1967, 712, 85, 3934, 1423, 170, 1 ],
+    [ "S-Snake & S-Hawk & S-Shark", "DEX", ["Driven", "Powerhouse"], 5, 30, 4, 4, 99, 4000000, 1967, 712, 85, 3934, 1423, 170, 1 ],
     [ "Shanks VS Kid - Encounter at Elbaph", ["INT", "STR"], [["Slasher", "Cerebral"], ["Shooter", "Driven"]], 5, 30, 5, 3, 70, 1066998, 1313, 442, 65, 2625, 884, 130, 1 ],
     [ "Shanks VS Kid - Clash Between the Emperor and the New Generation", ["INT", "STR"], [["Slasher", "Cerebral"], ["Shooter", "Driven"]], 6, 55, 5, 5, 99, 5000000, 2595, 878, 128, 5190, 1755, 255, 1 ],
     [ "Dorry & Broggy", "STR", ["Slasher", "Free Spirit"], 5, 30, 4, 3, 70, 1066998, 1162, 450, 49, 2324, 900, 97, 1 ],
