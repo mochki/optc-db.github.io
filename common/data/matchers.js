@@ -3955,8 +3955,8 @@
 					},
 					{
 						type: "option",
-						description: "Silence",
-						regex: /Silence/i,
+						description: "Special Bind",
+						regex: /Special Bind/i,
 						groups: [1],
 						cssClasses: ["min-width-6"],
 					},
@@ -5891,11 +5891,12 @@
 					"sailor",
 					"support",
 				],
-				regex: /(?:reduces|removes).+silence.+duration/i,
+				regex: /(?:reduces|removes).+special bind.+duration/i,
 			},
 
 			{
-				name: "Silence (IGN: Special Bind)",
+				//name: "Silence (IGN: Special Bind)",
+				name: "Special Bind",
 				targets: [
 					"captain",
 					"special",
@@ -5905,7 +5906,7 @@
 					"support",
 				],
 				regex:
-					/(?:reduces|removes)(?: |[^."]+?, |[^."]+? and )silence[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?: on ([^."]+?)characters?)?(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
+					/(?:reduces|removes)(?: |[^."]+?, |[^."]+? and )special bind[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?: on ([^."]+?)characters?)?(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
 				submatchers: [
 					{
 						type: "number",
@@ -5940,10 +5941,11 @@
 			},
 
 			{
-				name: "Active Ability Silence (IGN: Silence)",
+				//name: "Active Ability Silence (IGN: Silence)",
+				name: "Silence (Active Ability Silence)",
 				targets: ["captain", "special", "superSpecial", "swap", "support"],
 				regex:
-					/(?:reduces|removes)[^."]+?active ability silence[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?: on ([^."]+?)characters?)?(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
+					/(?:reduces|removes)[^."]+?silence[^."]+?duration (?:by ([?\d]+)(?:-([?\d]+))? turns?|(completely))(?: on ([^."]+?)characters?)?(?:, by ([?\d]+)(?:-([?\d]+))? turns?)?/i,
 				submatchers: [
 					{
 						type: "number",

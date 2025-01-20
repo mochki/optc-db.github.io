@@ -19,7 +19,7 @@ var notes = {
     specialProportional: "The exact multiplier used to compute the damage is proportional to the " +
         "crew's remaining HP and is higher the #1 the HP is. The multiplier is calculated as: #2.",
     stages: "The special can be used as soon as the first stage is reached.",
-    silence: "This is called 'Special Bind' in-game and refers to effects that prevent you from activating Special Abilities.",
+    specialBind: "Prevent you from activating Special Abilities.",
     rewind: "Some enemies can increase your cooldown by 1/2 turns, this Sailor Ability decreases that by #1 turn(s).",
     ignoreBarrier: "Damage that ignores damage negating abilities and barriers is similar to 6* Law's special, but only for this character.",
     zombie: "The protection only works when attacked by one single enemy and will leave the team with at least 1 HP; " +
