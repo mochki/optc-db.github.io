@@ -5173,7 +5173,7 @@
 			{
 				name: "Orb Control: Stage 1",
 				targets: ["sailor"],
-				regex: /Changes (all )?orbs? (?:of (?=((?:[^c."]+|c(?!har))*))\2characters? )?into([^."]+?)orbs?/i,
+				regex: /Changes (?:the )?orbs? (?:of (?=((?:[^c."]+|c(?!har))*))\1characters? )?into([^."]+?)orbs?/i,
 				submatchers: [
 					...createOrbsSubmatchers(
 						[
@@ -5191,7 +5191,7 @@
 							"RAINBOW",
 							"WANO",
 						],
-						[3],
+						[2],
 						false
 					),
 					{
@@ -5199,7 +5199,7 @@
 						description: "Matching",
 						regex: /(?:^|(?!Badly ).{6}|^.{0,5})\bMatching/i, // alternative for negative lookbehind for "Badly " and "Non-"
 						cssClasses: ["min-width-6"],
-						groups: [3],
+						groups: [2],
 					},
 					{
 						type: "separator",
@@ -5207,9 +5207,9 @@
 					},
 					...createUniversalSubmatcher([1], "all"),
 					...createPositionsSubmatchers(
-						[2],
-						false,
-						"",
+						[1],
+						true,
+						"all",
 						["Adjacent", "Selected"],
 						true
 					),
