@@ -3467,6 +3467,16 @@ window.drops = {
             gamewith: null,
             'Defeat Level Rewards': [ 4297 ],
         },
+
+        {
+            name: 'S-Shark',
+            dropID: 'pka21',
+            thumb: 4311,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Defeat Level Rewards': [ 4311 ],
+        },
     ],
 
 
