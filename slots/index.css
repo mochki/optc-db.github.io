@@ -25,7 +25,7 @@ html, body, body > [ui-view] {
 #content {
     display: inline-block;
     width: 408px;
-    height 300px;
+    height: 300px;
 }
 
 #summary > #table-container {

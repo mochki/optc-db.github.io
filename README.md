@@ -22,7 +22,8 @@ Just download it and run it in some kind of Live preview or via xampp. Or better
 Keep in mind though that the images are not hosted here, but instead linked from the offical site. So you would need an internet connection to see them.
 
 # Contact
- You can reach us on Discord @Mondfischer and @Zeenigami and on Reddit as Mondfischer and Zee_n1
+ <!--You can reach us on Discord @Mondfischer and @Zeenigami and on Reddit as Mondfischer and Zee_n1-->
+ You can reach us on Discord @2Shankz
  
  The site also has a google contact form, you can also open an Issue on here.
  

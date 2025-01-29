@@ -196,7 +196,7 @@ controllers.ShipCtrl = function($scope, $state) {
         return 'background-image: url(https://onepiece-treasurecruise.com/wp-content/uploads/' + ship.thumb + ')';
     };
 
-    $scope.getThumbnailLocal = function(ship, relPathToRoot = '') {
+    $scope.getThumbnailLocal = function(ship, relPathToRoot = '..') {
         if (!ship.thumb) return relPathToRoot + '/api/images/thumbnail/ship/ship_blank_t1.png';
         return relPathToRoot + '/api/images/thumbnail/ship/' + ship.thumb;
     };
