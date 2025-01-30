@@ -4918,6 +4918,13 @@ window.families = {
     4309: [ ...Franky ],
     4310: [ ...Brook ],
     4311: [ ...SShark ],
+    //4312: [ ...SShark ],
+    4313: [ ...Sentomaru ],
+    //4314: [ ... ],
+    //4315: [ ... ],
+    //4316: [ ... ],
+    4317: [ ...Vegapunk ],
+    4318: [ ...Vegapunk ],
     // break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
