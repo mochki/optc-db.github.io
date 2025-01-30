@@ -3512,6 +3512,16 @@ window.drops = {
             'Grand Feast Sugo': [ 4265 ]
         },
 
+        {
+            name: 'Dr. Vega Punk',
+            dropID: 'coop4',
+            thumb: 4317,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Grand Feast Sugo': [ 4317 ]
+        },
+
     ],
 
 
