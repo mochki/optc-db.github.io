@@ -274,46 +274,46 @@
 .unitOrb.opposite { animation: glowBlack .5s linear infinite alternate; }
 
 @keyframes glowRed {
-    from { box-shadow 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px red, 0 0 150px red; }
+    from { box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px red, 0 0 150px red; }
     to { box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px red, 0 0 35px red, 0 0 40px red, 0 0 50px red, 0 0 75px red; }
 }
 
 @keyframes glowBlue {
-    from { box-shadow 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px blue, 0 0 70px blue, 0 0 80px blue, 0 0 100px blue, 0 0 150px blue; }
+    from { box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px blue, 0 0 70px blue, 0 0 80px blue, 0 0 100px blue, 0 0 150px blue; }
     to { box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px blue, 0 0 35px blue, 0 0 40px blue, 0 0 50px blue, 0 0 75px blue; }
 }
 
 @keyframes glowGreen {
-    from { box-shadow 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px green, 0 0 70px green, 0 0 80px green, 0 0 100px green, 0 0 150px green; }
+    from { box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px green, 0 0 70px green, 0 0 80px green, 0 0 100px green, 0 0 150px green; }
     to { box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px green, 0 0 35px green, 0 0 40px green, 0 0 50px green, 0 0 75px green; }
 }
 
 @keyframes glowOrange {
-    from { box-shadow 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px orange, 0 0 70px orange, 0 0 80px orange, 0 0 100px orange, 0 0 150px orange; }
+    from { box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px orange, 0 0 70px orange, 0 0 80px orange, 0 0 100px orange, 0 0 150px orange; }
     to { box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px orange, 0 0 35px orange, 0 0 40px orange, 0 0 50px orange, 0 0 75px orange; }
 }
 
 @keyframes glowPurple {
-    from { box-shadow 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px purple, 0 0 70px purple, 0 0 80px purple, 0 0 100px purple, 0 0 150px purple; }
+    from { box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px purple, 0 0 70px purple, 0 0 80px purple, 0 0 100px purple, 0 0 150px purple; }
     to { box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px purple, 0 0 35px purple, 0 0 40px purple, 0 0 50px purple, 0 0 75px purple; }
 }
 
 @keyframes glowBlack {
-    from { box-shadow 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 70px black, 0 0 80px black, 0 0 100px black, 0 0 150px black; }
+    from { box-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 70px black, 0 0 80px black, 0 0 100px black, 0 0 150px black; }
     to { box-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black, 0 0 20px black, 0 0 35px black, 0 0 40px black, 0 0 50px black, 0 0 75px black; }
 }
 
 @keyframes glowG {
-    from { box-shadow 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px orangered, 0 0 70px orangered, 0 0 80px orangered, 0 0 100px orangered, 0 0 150px orangered; }
+    from { box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px orangered, 0 0 70px orangered, 0 0 80px orangered, 0 0 100px orangered, 0 0 150px orangered; }
     to { box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px orangered, 0 0 35px orangered, 0 0 40px orangered, 0 0 50px orangered, 0 0 75px orangered; }
 }
 
 @keyframes glowS {
-    from { box-shadow 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px red, 0 0 150px red; }
+    from { box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px red, 0 0 150px red; }
     to { box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px red, 0 0 35px red, 0 0 40px red, 0 0 50px red, 0 0 75px red; }
 }
 
 @keyframes glowR {
-    from { box-shadow 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px magenta, 0 0 70px magenta, 0 0 80px magenta, 0 0 100px magenta, 0 0 150px magenta; }
+    from { box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px magenta, 0 0 70px magenta, 0 0 80px magenta, 0 0 100px magenta, 0 0 150px magenta; }
     to { box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px magenta, 0 0 35px magenta, 0 0 40px magenta, 0 0 50px magenta, 0 0 75px magenta; }
 }
