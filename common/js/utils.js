@@ -455,7 +455,7 @@
 
 		// may be "and" or ", and" or ", " even with extra whitespace
 		// if using .split(), you should use non-capturing groups (?:)
-		let separatorRegex = /(?:\s*,\s*|\s+)(?:and|or)\s+|\s*,\s*|\//g;
+		let separatorRegex = /(?:\s*,\s*|\s+)(?:and|or)\s+|\s*,\s*|\/|:\s*/g;
 
 		let costMatch = criteria.match(costRegex);
 		if (costMatch) {
@@ -487,7 +487,7 @@
 				let typeMatch = term.match(typeRegex);
 				if (typeMatch) {
 					types.push(typeMatch[1]);
-					if (typeMatch[2]) classes.push(typeMatch[2]);
+					if (typeMatch[2] && classRegex.test(typeMatch[2])) classes.push(typeMatch[2]);
 				} else if (classRegex.test(term)) {
 					classes.push(term);
 				} else {
@@ -509,6 +509,7 @@
 			matchers.push("type:" + params.matchers.type);
 		}
 		if (classes.length > 0) {
+			// check if supported characters require both classes
 			let split = criteria.split(classRegex);
 			if (split.length === 3 && split[1] === "/") params.matchers.class = classes.join(",").replace(whitespaceRegex, "_");
 			else params.matchers.class = classes.join("|").replace(whitespaceRegex, "_");
