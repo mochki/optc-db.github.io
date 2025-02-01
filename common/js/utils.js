@@ -447,7 +447,7 @@
 		let specialCharactersRegex = /[*+?^${}()|[\]\\]/g; //except dot, no need to escape
 		let costRegex = /characters with cost (\d+) or (less|higher)/i;
 		let classRegex =
-			/^(?:Fighter|Slasher|Striker|Shooter|Free Spirit|Powerhouse|Cerebral|Driven)$/i;
+			/(?:Fighter|Slasher|Striker|Shooter|Free Spirit|Powerhouse|Cerebral|Driven)/i;
 
 		// "[STR] Free Spirit", we can't just split all by spaces
 		// first group is type, second group is optional class
@@ -455,7 +455,7 @@
 
 		// may be "and" or ", and" or ", " even with extra whitespace
 		// if using .split(), you should use non-capturing groups (?:)
-		let separatorRegex = /(?:\s*,\s*|\s+)(?:and|or)\s+|\s*,\s*/g;
+		let separatorRegex = /(?:\s*,\s*|\s+)(?:and|or)\s+|\s*,\s*|\//g;
 
 		let costMatch = criteria.match(costRegex);
 		if (costMatch) {
@@ -509,7 +509,9 @@
 			matchers.push("type:" + params.matchers.type);
 		}
 		if (classes.length > 0) {
-			params.matchers.class = classes.join("|").replace(whitespaceRegex, "_");
+			let split = criteria.split(classRegex);
+			if (split.length === 3 && split[1] === "/") params.matchers.class = classes.join(",").replace(whitespaceRegex, "_");
+			else params.matchers.class = classes.join("|").replace(whitespaceRegex, "_");
 			matchers.push("class:" + params.matchers.class);
 		}
 		if (supportingFamilies && supportingFamilies.length > 0) {
