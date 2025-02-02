@@ -2956,7 +2956,7 @@
 					{
 						type: "number",
 						description: "Turns:",
-						groups: [3, 4],
+						groups: [4, 5],
 					},
 					...createUniversalSubmatcher([1]),
 					// {
@@ -2969,6 +2969,35 @@
 					// 	description: "Affected classes:",
 					// },
 					// ...createClassesSubmatchers([1]),
+				],
+			},
+			{
+				name: "Enemy Damage Reduction to ATK",
+				targets: ["special"],
+				regex:
+					/boosts Enemy Damage Reduction to ATK of (?=((?:[^c."]+|c(?!har))*))\1characters? by ([?.\d]+)x-([?.\d]+)x, proportional to the strength of enemies' Percent Damage Reduction buff, for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Multiplier:",
+						groups: [2, 3],
+					},
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [4, 5],
+					},
+					...createUniversalSubmatcher([1]),
+					{
+						type: "separator",
+						description: "Affected types:",
+					},
+					...createTypesSubmatchers([1]),
+					{
+						type: "separator",
+						description: "Affected classes:",
+					},
+					...createClassesSubmatchers([1]),
 				],
 			},
 		],
