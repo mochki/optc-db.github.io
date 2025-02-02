@@ -2918,6 +2918,30 @@
 					...createClassesSubmatchers([1]),
 				],
 			},
+			{
+				name: "Final Tap ATK",
+				targets: ["captain", "special", "superSpecial", "swap", "support"],
+				regex:
+					/boosts Final Tap ATK of (?=((?:[^c."]+|c(?!har))*))\1characters? by ([?.\d]+)%(?:-([?.\d]+)%)?(?:, by ([?.\d]+)%(?:-([?.\d]+)%)?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Percentage:",
+						groups: [2, 3, 4, 5],
+					},
+					...createUniversalSubmatcher([1]),
+					{
+						type: "separator",
+						description: "Affected types:",
+					},
+					...createTypesSubmatchers([1]),
+					{
+						type: "separator",
+						description: "Affected classes:",
+					},
+					...createClassesSubmatchers([1]),
+				],
+			},
 		],
 		"Modify Buff": [
 			{
