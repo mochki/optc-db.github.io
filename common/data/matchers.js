@@ -2342,6 +2342,33 @@
 			},
 
 			{
+				name: "Status ATK Boost: Marked",
+				targets: ["special", "superSpecial"],
+				regex:
+				/Boosts ATK against[^."]+?Marked enemies[^."]+?by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)? for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, ([^,]+),)?(?: for ([?\d]+\+?)(?:-([?\d]+))? turns?)?)?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Multiplier:",
+						groups: [1, 2, 6, 7],
+					},
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [4, 5, 9, 10],
+					},
+					{
+						type: "option",
+						description: "Double Enhance",
+						regex: /can be enhanced up to 2 times/,
+						radioGroup: "targets",
+						groups: [3, 8],
+						cssClasses: ["min-width-6"],
+					}
+				],
+			},
+
+			{
 				name: "Old Specific Enemy ATK boosters",
 				targets: ["support"],
 				regex: /Boosts the supported character's ATK.+against/i,
@@ -7336,12 +7363,12 @@
 				name: "Marked",
 				targets: ["special", "superSpecial"],
 				regex:
-					/marks all enemies (?:with ([?.,\d]+) or more max hp) as a powerful enemy/i,
+					/Marks all enemies (?:with ([?.,\d]+) or more MAX HP)/i,
 				submatchers: [
 					{
 						type: "number",
-						description: "Enemy's minimum MAX HP:",
-						groups: [2],
+						description: "Enemy's Minimum MAX HP:",
+						groups: [1],
 					},
 				],
 			},
