@@ -5218,6 +5218,67 @@
 				],
 			},
 
+			{
+				name: "Orb Control: Auto",
+				targets: ["captain", "special", "superSpecial"],
+				regex:
+					/changes (?=((?:[^o."]+|o(?!rbs))*))\1orbs into (?=((?:[^o."]+|o(?!rbs))*))\2orbs for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [3, 4],
+					},
+					{
+						type: "separator",
+						description: "From orbs:",
+					},
+					{
+						type: "option",
+						description: "Any",
+						regex: /^$|all/i,
+						cssClasses: ["min-width-12"],
+						groups: [1],
+					},
+					...createOrbsSubmatchers(
+						[
+							"STR",
+							"DEX",
+							"QCK",
+							"PSY",
+							"INT",
+							"RCV",
+							"TND",
+							"BOMB",
+						],
+						[1],
+						false
+					),
+					{
+						type: "separator",
+						description: "To orbs:", // To orbs won't have "Any", since simply not selecting any "To" orb does the same thing
+					},
+					...createOrbsSubmatchers(
+						[
+							"STR",
+							"DEX",
+							"QCK",
+							"PSY",
+							"INT",
+							"RCV",
+							"TND",
+							"EMPTY",
+							"SUPERBOMB",
+							"RAINBOW",
+							"SEMLA",
+							"WANO",
+						],
+						[2],
+						false
+					),
+				],
+			},
+
 			// {
 			// 	name: "Orb Control: Stage 1 Full",
 			// 	targets: ["sailor"],
