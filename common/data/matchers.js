@@ -2786,6 +2786,7 @@
 					},
 				],
 			},
+
 			{
 				name: "Set Target",
 				targets: ["special", "superSpecial"],
@@ -2837,10 +2838,10 @@
 					...createClassesSubmatchers([4]),
 				],
 			},
+
 			{
 				name: "Territory",
 				targets: ["captain", "special", "superSpecial", "swap", "support"],
-				regex: /Territory/i,
 				regex:
 					/Applies Territory: (?=((?:[^c."]+|c(?!lass))*))\1class to the field, boosts ATK by ([?.\d]+)x(?:-([?.\d]+)x)?(?:, (\D+?),)? and reduces damage received by ([?.\d]+)%(?:-([?.\d]+)%)? (?:based|depending) on number of characters matching the territory, for ([?\d]+\+?)(?:-([?\d]+))? turns?(?:, for ([?\d]+\+?)(?:-([?\d]+))? turns?)?/i,
 				submatchers: [
@@ -2866,6 +2867,7 @@
 					...createClassesSubmatchers([1]),
 				],
 			},
+
 			{
 				name: "Critical Hit Rate",
 				targets: ["captain", "special", "superSpecial", "swap"],
@@ -2894,6 +2896,7 @@
 					...createClassesSubmatchers([1]),
 				],
 			},
+
 			{
 				name: "Critical Hit Damage",
 				targets: ["captain", "special", "superSpecial", "swap"],
@@ -2922,6 +2925,7 @@
 					...createClassesSubmatchers([1]),
 				],
 			},
+
 			{
 				name: "Advantageous Class Effect",
 				targets: ["special"],
@@ -2945,6 +2949,7 @@
 					...createClassesSubmatchers([1]),
 				],
 			},
+
 			{
 				name: "Final Tap ATK",
 				targets: ["captain", "special", "superSpecial", "swap", "support"],
@@ -2969,6 +2974,7 @@
 					...createClassesSubmatchers([1]),
 				],
 			},
+
 			{
 				name: "Crew Damage Reduction to ATK",
 				targets: ["captain", "special", "superSpecial"],
@@ -3023,6 +3029,35 @@
 					{
 						type: "separator",
 						description: "Affected classes:",
+					},
+					...createClassesSubmatchers([1]),
+				],
+			},
+
+			{
+				name: "Super Effect Boost",
+				targets: ["special", "superSpecial", "swap", "support"],
+				regex:
+					/Boosts Super (?:Type|Class) Effects of (?=((?:[^c."]+|c(?!har))*))\1characters to ([?.\d]+)x(?:-([?.\d]+)x)? for ([?\d]+\+?)(?:-([?\d]+))? turns?/i,
+				submatchers: [
+					{
+						type: "number",
+						description: "Multiplier:",
+						groups: [2, 3],
+					},
+					{
+						type: "number",
+						description: "Turns:",
+						groups: [4, 5],
+					},
+					{
+						type: "separator",
+						description: "Affected Types:",
+					},
+					...createTypesSubmatchers([1]),
+					{
+						type: "separator",
+						description: "Affected Classes:",
 					},
 					...createClassesSubmatchers([1]),
 				],
