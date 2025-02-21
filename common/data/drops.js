@@ -3477,6 +3477,16 @@ window.drops = {
             gamewith: null,
             'Defeat Level Rewards': [ 4311 ],
         },
+
+        {
+            name: 'S-Bear',
+            dropID: 'pka22',
+            thumb: 4326,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Defeat Level Rewards': [ 4326 ],
+        },
     ],
 
 
@@ -9374,6 +9384,13 @@ window.drops = {
         {
             name: 'VS Navy Pirate Alliance Blitz Battle!',
             thumb: 3847,
+            global: true,
+            nakama: null,
+        },
+
+        {
+            name: 'VS The Strongest Form of Humanity Blitz Battle!',
+            thumb: 4109,
             global: true,
             nakama: null,
         },
