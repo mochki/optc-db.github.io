@@ -4938,6 +4938,10 @@ window.families = {
     4329: [ ...SSnake ],
     4330: [ ...SShark ],
     4331: [ ...SHawk ],
+    4332: [ ...Fukuro ],
+    4333: [ ...Kalifa ],
+    4334: [ ...Jabra ],
+    4335: [ ...VinsmokeSanji ],
     // break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
