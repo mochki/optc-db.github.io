@@ -8186,7 +8186,7 @@ window.drops = {
             global: true,
             nakama: null,
             gamewith: null,
-            'Kizuna Exchange': [ "4287-skull" ]
+            'Kizuna Exchange': [ "4287-skull", "4263-skull" ]
         },
 
         {
@@ -8207,6 +8207,16 @@ window.drops = {
             nakama: null,
             gamewith: null,
             'Kizuna Exchange': [ "4321-skull" ]
+        },
+
+        {
+            name: 'Soba Mask',
+            dropID: 'kizuna66',
+            thumb: 4335,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Kizuna Exchange': [ "4335-skull", "4289-skull" ]
         },
 
     ],
