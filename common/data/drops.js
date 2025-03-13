@@ -8186,7 +8186,7 @@ window.drops = {
             global: true,
             nakama: null,
             gamewith: null,
-            'Kizuna Exchange': [ "4287-skull", "4263-skull" ]
+            'Kizuna Exchange': [ "4287-skull" ]
         },
 
         {
@@ -8196,7 +8196,7 @@ window.drops = {
             global: true,
             nakama: null,
             gamewith: null,
-            'Kizuna Exchange': [ "4306-skull" ]
+            'Kizuna Exchange': [ "4306-skull", "4263-skull" ]
         },
 
         {
