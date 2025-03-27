@@ -4942,6 +4942,13 @@ window.families = {
     4333: [ ...Kalifa ],
     4334: [ ...Jabra ],
     4335: [ ...VinsmokeSanji ],
+    4336: [ ...King ],
+    4337: [ ...DraculeMihawk ],
+    4338: [ ...DazBones ],
+    4339: [ ...BartholomewKuma ],
+    4340: [ ...ShimotsukiRyuma ],
+    4341: [ ...Monet ],
+    //4342: [ ...Monet ],
     // break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
