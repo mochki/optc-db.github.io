@@ -3487,6 +3487,16 @@ window.drops = {
             gamewith: null,
             'Defeat Level Rewards': [ 4326 ],
         },
+
+        {
+            name: 'Monet',
+            dropID: 'pka23',
+            thumb: 4341,
+            global: true,
+            nakama: null,
+            gamewith: null,
+            'Defeat Level Rewards': [ 4341 ],
+        },
     ],
 
 
