@@ -4950,6 +4950,8 @@ window.families = {
     4341: [ ...Monet ],
     //4342: [ ...Monet ],
     // break
+    4359: [ ...DemaloBlack, ...Chocolat, ...Cocoa, ...NoraGitsune, ...Manjaro, ...Drip, ...Mounblutain, ...Turco ],
+    // break
     4986: [ ...MonkeyDLuffy ],
     4987: [ ...MonkeyDLuffy ],
     4988: [ ...NefertariVivi ],
