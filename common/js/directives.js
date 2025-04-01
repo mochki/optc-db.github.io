@@ -89,6 +89,7 @@ filters.decorate = function() {
             .replace(/\[SUPERBLOCK\]/g,'<span class="badge SUPERBLOCK"><i class="block-icon"></i>SUPERBLOCK</span>')
             .replace(/\[BOMB\]/g,'<span class="badge BOMB"><i class="fa fa-bomb"></i>BOMB</span>')
             .replace(/\[SUPERBOMB\]/g,'<span class="badge SUPERBOMB"><i class="fa fa-bomb"></i>SUPERBOMB</span>')
+            .replace(/\[PARALYSIS\]/g,'<span class="badge PARALYSIS"></i>PARALYSIS</span>')
             .replace(/\[RAINBOW\]/g,'<span class="badge RAINBOW"></i>RAINBOW</span>')
             .replace(/\[SEMLA\]/g,'<span class="badge SEMLA"></i>SEMLA</span>')
             .replace(/\[WANO\]/g,'<span class="badge WANO"></i>WANO</span>')

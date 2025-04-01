@@ -364,23 +364,24 @@ input#burgerMenuState {
     border-bottom: 1px solid #aaa;
 }
 
-.STR       { background: salmon; }
-.QCK       { background: lightskyblue; }
-.DEX       { background: lightgreen; }
-.PSY       { background: gold; }
-.INT       { background: orchid; }
-.RCV       { background: sandybrown; }
-.TND       { background: peru; }
-.BLOCK     { background: darkslateblue; }
-.SUPERBLOCK     { background: darkslateblue; color: #ffe97d; }
-.BOMB      { background: maroon; }
-.SEMLA     { background: saddlebrown; }
-.WANO      { background: firebrick; }
-.RAINBOW   { background: linear-gradient(90deg,#fa8072,#ffd700,#90ee90,#87cefa, #da70d6); color: #333333; }
+.STR        { background: salmon; }
+.QCK        { background: lightskyblue; }
+.DEX        { background: lightgreen; }
+.PSY        { background: gold; }
+.INT        { background: orchid; }
+.RCV        { background: sandybrown; }
+.TND        { background: peru; }
+.BLOCK      { background: darkslateblue; }
+.SUPERBLOCK { background: darkslateblue; color: #ffe97d; }
+.BOMB       { background: maroon; }
+.SEMLA      { background: saddlebrown; }
+.WANO       { background: firebrick; }
+.RAINBOW    { background: linear-gradient(90deg,#fa8072,#ffd700,#90ee90,#87cefa, #da70d6); color: #333333; }
 /*.SUPERBOMB { background: linear-gradient(90deg, #ff2600, #debb2f, #ff2600); }*/
-.SUPERBOMB { background: maroon; color: #ffe97d; }
-.G         { background: orange; }
-.EMPTY     { background: #777; }
+.SUPERBOMB  { background: maroon; color: #ffe97d; }
+.PARALYSIS  { background: #af5210; color: gold; }
+.G          { background: orange; }
+.EMPTY      { background: #777; }
 
 .cell-STR { font-weight: bold; color: red; }
 .cell-QCK { font-weight: bold; color: blue; }
