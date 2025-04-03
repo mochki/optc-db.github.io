@@ -4949,6 +4949,8 @@ window.families = {
     4340: [ ...ShimotsukiRyuma ],
     4341: [ ...Monet ],
     //4342: [ ...Monet ],
+    4343: [ ...Pica ],
+    4344: [ ...DonquixoteDoflamingo ],
     // break
     4359: [ ...DemaloBlack, ...Chocolat, ...Cocoa, ...NoraGitsune, ...Manjaro, ...Drip, ...Mounblutain, ...Turco ],
     // break
