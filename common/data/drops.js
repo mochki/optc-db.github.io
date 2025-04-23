@@ -9505,6 +9505,14 @@ window.drops = {
             global: true,
             'Chopper Man Missions': [ 4129 ],
         },
+
+        {
+            name: 'Tutorial',
+            thumb: 4351,
+            global: true,
+            nakama: 6024700,
+            '': [ 4351 ]
+        },
    ],
 
 
