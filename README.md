@@ -1,5 +1,6 @@
 # optc-db.github.io
 
+
 The Continuation of the highly loved and apreciated OPTC Database.
 
 This is a Database for all things One Piece Treasure Cruise, including Stats, Drops, Sockets and a Damage Calculator.
